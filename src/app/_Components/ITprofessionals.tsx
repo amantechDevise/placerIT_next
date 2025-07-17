@@ -33,7 +33,7 @@ const ITprofessionals = () => {
         {/* Right Side - Text Content */}
         <div className="w-full lg:w-1/2 text-center lg:text-left">
           <h2 className="text-3xl sm:text-4xl md:text-[43px] font-extrabold text-gray-900 mb-4 font-raleway">
-            Who <span className="text-blue-600">We Are</span>
+            Who <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">We Are</span>
           </h2>
           <p className="text-gray-600 text-base sm:text-lg leading-relaxed font-raleway">
             At PlacerIT, we are a passionate team of tech experts, developers,
