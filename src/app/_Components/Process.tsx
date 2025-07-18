@@ -34,7 +34,7 @@ const Process = () => {
               <h3 className="text-lg md:text-[24px] font-semibold font-Raleway text-gray-800 text-start">
                 Transparency
               </h3>
-              <p className="text-sm md:text-[16px] font-regular font-Raleway text-gray-600">
+              <p className="text-sm md:text-[16px] font-regular font-Raleway text-gray-600 text-start md:text-center">
                 You’ll always know where your project stands.
               </p>
             </div>
@@ -51,7 +51,7 @@ const Process = () => {
               <h3 className="text-lg md:text-[24px] font-semibold font-Raleway text-gray-800 text-start">
                 Collaboration
               </h3>
-              <p className="text-sm md:text-[16px] font-regular font-Raleway text-gray-600">
+              <p className="text-sm md:text-[16px] font-regular font-Raleway text-gray-600 text-start md:text-center">
                 We believe in working together to achieve the best outcomes.
               </p>
             </div>
@@ -68,7 +68,7 @@ const Process = () => {
               <h3 className="text-lg md:text-[24px] font-semibold font-Raleway text-gray-800 text-start">
                 Flexibility
               </h3>
-              <p className="text-sm md:text-[16px] font-regular font-Raleway text-gray-600 text-start">
+              <p className="text-sm md:text-[16px] font-regular font-Raleway text-gray-600 text-start md:text-center">
                 We adapt to your needs, ensuring that our solutions evolve as
                 your business does.
               </p>
@@ -86,7 +86,7 @@ const Process = () => {
               <h3 className="text-lg md:text-[24px] font-semibold font-Raleway text-gray-800 text-start">
                 Customer Success
               </h3>
-              <p className="text-sm md:text-[16px] font-regular font-Raleway text-gray-600">
+              <p className="text-sm md:text-[16px] font-regular font-Raleway text-gray-600 text-start md:text-center">
                 We’re not happy until you’re fully satisfied with the results.
               </p>
             </div>

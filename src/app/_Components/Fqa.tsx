@@ -61,13 +61,13 @@ const Faq: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative font-inter antialiased bg-[#F7F7F7] min-h-screen flex flex-col justify-center overflow-hidden py-24 px-4">
+    <div className="relative font-inter antialiased bg-[#F7F7F7] min-h-screen flex flex-col justify-center overflow-hidden md:py-24 py-4 md:px-4">
       <div className="w-full max-w-7xl mx-auto px-3 sm:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Title and Description */}
           <div className="flex-1 text-center md:text-left">
             <h1
-              className="text-[40px] font-extrabold text-slate-900 mb-4 font-Raleway"
+              className="md:text-[40px] text-[30px] font-extrabold text-slate-900 mb-4 font-Raleway"
               data-aos="fade-up"
             >
               Frequently{" "}
@@ -82,7 +82,7 @@ const Faq: React.FC = () => {
                 Asked Questions
               </span>
             </h1>
-            <p className="text-slate-600" data-aos="fade-up">
+            <p className="text-slate-600 md:text-[16px] text-[12px]" data-aos="fade-up">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's <br /> standard
               dummy text.
@@ -90,7 +90,7 @@ const Faq: React.FC = () => {
           </div>
 
           {/* Image */}
-          <div className="flex-shrink-0 mt-6 md:mt-0" data-aos="fade-up">
+          <div className="flex-shrink-0 mt-2 md:mt-0" data-aos="fade-up">
             <img
               src="/images/fqa.png"
               alt="FAQ illustration"
@@ -112,7 +112,7 @@ const Faq: React.FC = () => {
                 <div className="px-4">
                   <button
                     type="button"
-                    className="flex items-center justify-between w-full py-4 text-left font-semibold text-[24px]"
+                    className="flex items-center justify-between w-full py-4 text-left font-semibold md:text-[24px] text-[16px]"
                     onClick={() => toggle(index)}
                     aria-expanded={isOpen}
                     aria-controls={`faq-content-${index}`}
@@ -148,7 +148,7 @@ const Faq: React.FC = () => {
                   {/* FAQ Content */}
                   <div
                     id={`faq-content-${index}`}
-                    className={`overflow-hidden transition-all duration-300 ease-in-out text-slate-600 text-[16px] ${
+                    className={`overflow-hidden transition-all duration-300 ease-in-out text-slate-600 md:text-[16px] text-[12px] ${
                       isOpen ? "max-h-[500px] opacity-100 pb-4" : "max-h-0 opacity-0"
                     }`}
                   >

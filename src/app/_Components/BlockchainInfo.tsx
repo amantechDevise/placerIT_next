@@ -12,9 +12,9 @@ export default function BlockchainInfo() {
         {/* Heading */}
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h1 className="text-2xl md:text-[42px] font-extrabold font-raleway mb-4 text-gray-800">
-            What is <span className="text-blue-600">Blockchain?</span>
+            What is <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] font-raleway">Blockchain?</span>
           </h1>
-          <p className="text-[16px] text-gray-600 font-raleway leading-relaxed">
+          <p className="md:text-[16px] text-[12px] text-gray-600 font-raleway leading-relaxed">
             Blockchain is a distributed digital ledger technology that ensures
             secure, transparent, and tamper-proof record-keeping without the
             need for a central authority. It enables peer-to-peer transactions
@@ -35,10 +35,10 @@ export default function BlockchainInfo() {
                 className="w-15 h-15"
               />
               <div className="text-start">
-                <h3 className="text-lg font-bold font-raleway mb-1">
+                <h3 className="md:text-[22px] text-[16px] font-bold font-raleway mb-1">
                   Decentralization
                 </h3>
-                <p className="text-gray-500 text-sm font-raleway">
+                <p className="text-gray-500 md:text-[16px] text-[12px] font-raleway">
                   Blockchain operates on a distributed network, eliminating the
                   need for a central authority.
                 </p>
@@ -46,17 +46,17 @@ export default function BlockchainInfo() {
             </div>
 
             {/* Security */}
-            <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-start gap-4 mb-5">
+            <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-start gap-4 md:mb-5">
               <img
                 src="images/Group 324.svg"
                 alt="Security"
                 className="w-15 h-15"
               />
               <div className="text-start">
-                <h3 className="text-lg font-bold font-raleway mb-1">
+                <h3 className="md:text-[22px] text-[16px] font-bold font-raleway mb-1">
                   Security
                 </h3>
-                <p className="text-gray-500 text-sm font-raleway">
+                <p className="text-gray-500 md:text-[16px] text-[12px] font-raleway">
                   Data is encrypted and stored in blocks, making it nearly
                   impossible to alter or hack.
                 </p>
@@ -64,17 +64,17 @@ export default function BlockchainInfo() {
             </div>
 
             {/* Immutability */}
-            <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-start gap-4 mt-5">
+            <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-start gap-4 md:mt-5">
               <img
                 src="images/Group 325.svg"
                 alt="Immutability"
                 className="w-15 h-15"
               />
               <div className="text-start">
-                <h3 className="text-lg font-bold font-raleway mb-1">
+                <h3 className="md:text-[22px] text-[16px] font-bold font-raleway mb-1">
                   Immutability
                 </h3>
-                <p className="text-gray-500 text-sm font-raleway">
+                <p className="text-gray-500 md:text-[16px] text-[12px] font-raleway">
                   Once data is added to the blockchain, it cannot be altered or
                   deleted, ensuring the integrity of the records.
                 </p>
@@ -89,10 +89,10 @@ export default function BlockchainInfo() {
                 className="w-15 h-15"
               />
               <div className="text-start">
-                <h3 className="text-lg font-bold font-raleway mb-1">
+                <h3 className="md:text-[22px] text-[16px] font-bold font-raleway mb-1">
                   Transparency
                 </h3>
-                <p className="text-gray-500 text-sm font-raleway">
+                <p className="text-gray-500 md:text-[16px] text-[12px] font-raleway">
                   All participants in the blockchain network can access the same
                   data, ensuring transparency and traceability.
                 </p>

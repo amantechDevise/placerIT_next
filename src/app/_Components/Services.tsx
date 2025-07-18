@@ -86,11 +86,11 @@ const Services = () => {
       />
 
       {/* Floating Icon */}
-      <div className="absolute top-12 right-6 z-10">
+      <div className="absolute md:top-12  top-4 md:right-6 right-8 z-10">
         <img
           src="images/image 1.svg"
           alt="Settings"
-          className="w-22 h-22 mr-[145px] animate-bounce"
+          className="w-22 h-22   animate-bounce"
         />
       </div>
 

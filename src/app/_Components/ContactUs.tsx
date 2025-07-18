@@ -18,9 +18,9 @@ const Contact_Us = ({ showBorder }: ContactUsProps) => {
   }, []);
 
   return (
-       <section className="relative w-full ">
+       <section className="relative w-full px-2 ">
       <div
-        className={`relative z-10 max-w-7xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden grid grid-cols-1 md:grid-cols-2 px-6 py-12 md:px-10 md:py-16
+        className={`relative z-10 max-w-7xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden grid grid-cols-1 md:grid-cols-2 px-6 py-4 md:px-10 md:py-16
         ${showBorder ? "border border-gray-300" : ""}`}
       >
         {/* Left Side: Text, Icon and Image1 */}
@@ -33,10 +33,10 @@ const Contact_Us = ({ showBorder }: ContactUsProps) => {
             data-aos="fade-down"
           />
 
-          <h2 className="text-3xl md:text-[36px] font-bold text-black text-raleway mb-4">
+          <h2 className="text-2xl md:text-[36px] font-bold text-black text-raleway mb-4">
             Hey! Let’s Talk
           </h2>
-          <p className="text-gray-600 text-base leading-relaxed mb-4 text-start">
+          <p className="text-gray-600 md:text-[16px] text-[12px] leading-relaxed mb-4 text-start">
             Is your business finding it difficult to flourish in the online
             world? Well, it’s no surprise because if proper digital marketing is
             not done, then your website will not be able to gain the desired

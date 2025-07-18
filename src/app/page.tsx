@@ -56,7 +56,7 @@ function Homepage() {
   return (
     <Layout>
       <main className="relative w-full h-full">
-        <div className="relative w-full h-[700px] md:h-[750px] pt-[120px] overflow-hidden">
+        <div className="relative w-full h-[600px] md:h-[750px] pt-[120px] overflow-hidden">
           {/* ✅ Video from public/videos */}
           <video
             className="absolute inset-0 w-full h-full object-cover opacity-90"
@@ -90,7 +90,7 @@ function Homepage() {
               ahead of the competition.
             </p>
           </div>
-   <div className="absolute bottom-[-44px] 2xl:bottom-[-222px] xl:bottom-[-155px] lg:bottom-[-133px] md:bottom-[-105px] left-0 w-full z-10">
+   <div className="absolute bottom-[-42px] 2xl:bottom-[-222px] xl:bottom-[-155px] lg:bottom-[-133px] md:bottom-[-105px] left-0 w-full z-10">
           <img src="/images/Shape_4_.svg" alt="" className="w-full object-cover" />
         </div>
 

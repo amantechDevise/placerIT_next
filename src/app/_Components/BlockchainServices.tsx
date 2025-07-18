@@ -16,10 +16,10 @@ const BlockchainServices = () => {
     return (
         <section className="py-16 px-4 bg-white text-gray-800">
             <div className="max-w-7xl mx-auto text-center">
-               <h2 className="text-[40px] font-extrabold mb-4">
+               <h2 className="md:text-[40px] text-[30px] font-extrabold mb-4">
   Our <span className="bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] bg-clip-text text-transparent">Blockchain Services</span>
 </h2>
-                <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+                <p className="text-gray-600 max-w-2xl mx-auto mb-12 md:text-[16px] text-[12px]">
                     We offer a wide range of blockchain development and consultancy services tailored to your unique needs. Whether you're looking to build decentralized applications, implement smart contracts, or integrate blockchain into your existing systems, we have the expertise to help.
                 </p>
 
@@ -42,10 +42,10 @@ const BlockchainServices = () => {
 
                                 {/* Right side content */}
                                 <div>
-                                    <h3 className="text-[22px] font-semibold text-raleway">
+                                    <h3 className="md:text-[22px]  text:[16px] font-semibold text-raleway">
                                         {service.title}
                                     </h3>
-                                    <p className="text-[16px] text-gray-600 font-normal text-raleway mt-1">
+                                    <p className="md:text-[16px]  text-[12px] text-gray-600 font-normal text-raleway mt-1">
                                         {service.description}
                                     </p>
                                 </div>
