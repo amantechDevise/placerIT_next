@@ -25,7 +25,7 @@ function DigitalMarketing() {
                     </div>
 
 
-                    <div className="absolute bottom-[-80px] 2xl:bottom-[-222px] xl:bottom-[-155px] lg:bottom-[-133px] md:bottom-[-105px] left-0 w-full z-10">
+                    <div className="absolute bottom-[-44px] 2xl:bottom-[-222px] xl:bottom-[-155px] lg:bottom-[-133px] md:bottom-[-105px] left-0 w-full z-10">
                         <img src="/images/Shape_4_.svg" alt="" className="w-full object-cover" />
                     </div>
                 </div>

@@ -111,12 +111,12 @@ const Navbar: React.FC = () => {
                   <div className="w-2/3 grid grid-cols-2 gap-4 px-6">
                     {[
                       { href: "/Blockchain", icon: "/images/Group 612.svg", label: "Blockchain" },
-                      { href: "/software-consultancy", icon: "/images/Group 607.svg", label: "Software Consultancy" },
+                      { href: "/SoftwareConsultancy", icon: "/images/Group 607.svg", label: "Software Consultancy" },
                       { href: "/DigitalMarketing", icon: "/images/Group 609.svg", label: "Digital Marketing" },
                       { href: "/it-staffing", icon: "/images/Group 615.svg", label: "IT Staffing" },
-                      { href: "/quality-assurance", icon: "/images/Group 606.svg", label: "Quality Assurance" },
+                      { href: "/QualityAssurance", icon: "/images/Group 606.svg", label: "Quality Assurance" },
                       { href: "/WebsiteDevelopment", icon: "/images/Group 608.svg", label: "Website Development" },
-                      { href: "/ui-ux-design", icon: "/images/Group 610.svg", label: "UI/UX Design" },
+                      { href: "/UXDesign", icon: "/images/Group 610.svg", label: "UI/UX Design" },
                     ].map(({ href, icon, label }) => (
                       <Link href={href} key={label}  className="flex items-center gap-3 hover:bg-gray-100 p-2 rounded-md" onClick={() => setDropdownOpen(false)} >
                     
@@ -215,12 +215,12 @@ const Navbar: React.FC = () => {
                 <div className="mt-2 space-y-2 pl-4 border-l border-gray-600">
                   {[
                     { href: "/Blockchain", icon: "/images/Group 612.svg", label: "Blockchain" },
-                    { href: "/software-consultancy", icon: "/images/Group 607.svg", label: "Software Consultancy" },
+                    { href: "/SoftwareConsultancy", icon: "/images/Group 607.svg", label: "Software Consultancy" },
                     { href: "/DigitalMarketing", icon: "/images/Group 609.svg", label: "Digital Marketing" },
                     { href: "/it-staffing", icon: "/images/Group 615.svg", label: "IT Staffing" },
-                    { href: "/quality-assurance", icon: "/images/Group 606.svg", label: "Quality Assurance" },
+                    { href: "/QualityAssurance", icon: "/images/Group 606.svg", label: "Quality Assurance" },
                     { href: "/WebsiteDevelopment", icon: "/images/Group 608.svg", label: "Website Development" },
-                    { href: "/ui-ux-design", icon: "/images/Group 610.svg", label: "UI/UX Design" },
+                    { href: "/UXDesign", icon: "/images/Group 610.svg", label: "UI/UX Design" },
                   ].map(({ href, icon, label }) => (
                     <Link href={href} key={label}  onClick={() => {
                           setIsOpen(false);

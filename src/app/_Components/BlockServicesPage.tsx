@@ -95,6 +95,7 @@ export default function BlockServicesPage() {
         backgroundBlendMode: 'overlay',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
+        opacity: 0.8
       }}
     >
       <div className="max-w-7xl mx-auto">
