@@ -58,23 +58,22 @@ const Navbar: React.FC = () => {
       `}</style>
 
       <header
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-          scrolled ? "backdrop-blur-lg bg-black/60 shadow-md" : "bg-black"
-        }`}
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "backdrop-blur-lg bg-black/60 shadow-md" : "bg-black"
+          }`}
         style={{ minHeight: "100px" }}
       >
-        <div className="max-w-7xl mx-auto px-3 sm:px-8 flex items-center justify-between min-h-[70px]">
-          <Link href="/"  className="flex items-center mt-2" >
-        
-              <Image src="/images/Group 95.svg" alt="Logo" width={64} height={64} />
+        <div className="max-w-7xl mx-auto px-3 sm:px-8 flex items-center justify-between md:min-h-[70px] min-h-[50px]">
+          <Link href="/" className="flex items-center md:mt-2 mt-5" >
+
+            <img src="/images/Group 95.svg" alt="Logo" className="md:w-20 md:h-20 w-15 h-15" />
           </Link>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex gap-x-8 items-center text-white font-semibold text-lg">
-            <Link href="/"  className="hover:text-blue-400">
-             Home
+            <Link href="/" className="hover:text-blue-400">
+              Home
             </Link>
-            <Link href="/AboutUs"  className="hover:text-blue-400" >
+            <Link href="/AboutUs" className="hover:text-blue-400" >
               About Us
             </Link>
 
@@ -83,10 +82,8 @@ const Navbar: React.FC = () => {
               className="relative"
               onMouseEnter={() => setDropdownOpen(true)}
             >
-              <button
-                onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="hover:text-blue-400 flex items-center gap-1 focus:outline-none"
-              >
+
+              <Link href="/Services" className="hover:text-blue-400 flex items-center gap-1 focus:outline-none" >
                 Services
                 <svg
                   className="w-3 h-3 mt-1"
@@ -97,8 +94,7 @@ const Navbar: React.FC = () => {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                 </svg>
-              </button>
-
+              </Link>
               {dropdownOpen && (
                 <div className="absolute left-[-250px] mt-4 flex bg-white text-black rounded-lg shadow-xl p-4 w-[750px] z-50">
                   <div className="w-1/3">
@@ -118,12 +114,12 @@ const Navbar: React.FC = () => {
                       { href: "/WebsiteDevelopment", icon: "/images/Group 608.svg", label: "Website Development" },
                       { href: "/UXDesign", icon: "/images/Group 610.svg", label: "UI/UX Design" },
                     ].map(({ href, icon, label }) => (
-                      <Link href={href} key={label}  className="flex items-center gap-3 hover:bg-gray-100 p-2 rounded-md" onClick={() => setDropdownOpen(false)} >
-                    
-                      
-                          <Image src={icon} alt={label} width={32} height={32} />
-                          <p className="text-[14px]">{label}</p>
-                     
+                      <Link href={href} key={label} className="flex items-center gap-3 hover:bg-gray-100 p-2 rounded-md" onClick={() => setDropdownOpen(false)} >
+
+
+                        <Image src={icon} alt={label} width={32} height={32} />
+                        <p className="text-[14px]">{label}</p>
+
                       </Link>
                     ))}
                   </div>
@@ -180,28 +176,28 @@ const Navbar: React.FC = () => {
         {isOpen && (
           <nav className="lg:hidden bg-black text-white px-5 py-6 space-y-4">
             <Link href="/" onClick={() => setIsOpen(false)}
-                className="block hover:text-blue-400 font-semibold text-lg" >
-            
-                Home
-             
+              className="block hover:text-blue-400 font-semibold text-lg" >
+
+              Home
+
             </Link>
-            <Link href="/about"onClick={() => setIsOpen(false)}
-                className="block hover:text-blue-400 font-semibold text-lg" >
-             
-                About Us
+            <Link href="/about" onClick={() => setIsOpen(false)}
+              className="block hover:text-blue-400 font-semibold text-lg" >
+
+              About Us
             </Link>
 
             {/* Mobile Services dropdown */}
             <div>
+
               <button
                 onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
-                className="w-full flex justify-between items-center hover:text-blue-400 font-semibold text-lg focus:outline-none"
+                className="w-full flex md:justify-between  justify-center  items-center hover:text-blue-400 font-semibold text-lg focus:outline-none"
               >
                 Services
                 <svg
-                  className={`w-4 h-4 transition-transform ${
-                    mobileDropdownOpen ? "rotate-180" : "rotate-0"
-                  }`}
+                  className={`w-4 h-4 transition-transform ${mobileDropdownOpen ? "rotate-180" : "rotate-0"
+                    }`}
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="2"
@@ -222,24 +218,24 @@ const Navbar: React.FC = () => {
                     { href: "/WebsiteDevelopment", icon: "/images/Group 608.svg", label: "Website Development" },
                     { href: "/UXDesign", icon: "/images/Group 610.svg", label: "UI/UX Design" },
                   ].map(({ href, icon, label }) => (
-                    <Link href={href} key={label}  onClick={() => {
-                          setIsOpen(false);
-                          setMobileDropdownOpen(false);
-                        }}
-                        className="flex items-center gap-3 hover:text-blue-400 p-2 rounded-md" >
-                    
-                        <Image src={icon} alt={label} width={24} height={24} />
-                        {label}
+                    <Link href={href} key={label} onClick={() => {
+                      setIsOpen(false);
+                      setMobileDropdownOpen(false);
+                    }}
+                      className="flex items-center gap-3 hover:text-blue-400 p-2 rounded-md" >
+
+                      <Image src={icon} alt={label} width={24} height={24} />
+                      {label}
                     </Link>
                   ))}
                 </div>
               )}
             </div>
 
-            <Link href="/contact-us"  onClick={() => setIsOpen(false)}
-                className="block hover:text-blue-400 font-semibold text-lg" >
-            
-                Contact Us
+            <Link href="/contact-us" onClick={() => setIsOpen(false)}
+              className="block hover:text-blue-400 font-semibold text-lg" >
+
+              Contact Us
             </Link>
 
             <button

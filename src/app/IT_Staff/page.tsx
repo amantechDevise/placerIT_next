@@ -1,6 +1,7 @@
 import Layout from "../_common/Layout";
 import IT_Roles from "../_Components/It_roles";
 import ProfessionalStaff from "../_Components/ProfessionalStaff";
+import TechGapPage from "../_Components/Techgap";
 import TrustedBy from "../_Components/TrustdBy";
 
 function IT_Staff() {
@@ -46,6 +47,7 @@ function IT_Staff() {
                 <TrustedBy />
                 <IT_Roles />
                 <ProfessionalStaff />
+                <TechGapPage />
             </main>
         </Layout>
     );
