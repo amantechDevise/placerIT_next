@@ -90,26 +90,27 @@ function Homepage() {
               ahead of the competition.
             </p>
           </div>
-   <div className="absolute bottom-[-42px] 2xl:bottom-[-222px] xl:bottom-[-155px] lg:bottom-[-133px] md:bottom-[-105px] left-0 w-full z-10">
-          <img src="/images/Shape_4_.svg" alt="" className="w-full object-cover" />
-        </div>
+          <div className="absolute bottom-[-42px] 2xl:bottom-[-222px] xl:bottom-[-155px] lg:bottom-[-133px] md:bottom-[-105px] left-0 w-full z-10">
+            <img src="/images/Shape_4_.svg" alt="" className="w-full object-cover" />
+          </div>
 
         </div>
-          <div>
+        <div>
           <Services />
         </div>
         <div className="bg-[#F7F7F7] py-10">
           <Development />
-          <div
-  className="bg-cover bg-center bg-no-repeat py-20 
+        </div>
+        <div
+          className="bg-cover bg-center bg-no-repeat py-20 
              before:absolute before:inset-0 before:bg-gradient-to-r 
              before:from-[#5D3DAF]/90 before:to-[#5598F7]/90 before:z-0 relative"
-  style={{ backgroundImage: `url(/images/contact.svg)` }}
->
-  <Contact_Us showBorder={false} />
-</div>
-          <Process />
+          style={{ backgroundImage: `url(/images/contact.svg)` }}
+        >
+          <Contact_Us showBorder={false} />
         </div>
+        <Process />
+
         <div>
           <Fqa />
         </div>
