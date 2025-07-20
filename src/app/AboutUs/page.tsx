@@ -29,7 +29,7 @@ const AboutUs = () => {
 
 
 
-            <p className="text-gray-300 text-base md:text-lg lg:text-[16px]  md:mb-44  mb-25 max-w-5xl leading-relaxed">
+            <p className="text-gray-300 text-[12px] lg:text-[16px]  md:mb-44  mb-25 max-w-5xl leading-relaxed">
               Welcome to PlacerIT, a leading provider of innovative IT solutions. Founded with the vision to empower businesses and organizations through technology, we specialize in delivering cutting-edge solutions that drive growth, efficiency, and transformation.
             </p>
           </div>
@@ -37,16 +37,16 @@ const AboutUs = () => {
             <img src="/images/Shape_4_.svg" alt="" className="w-full object-cover" />
           </div>
         </div>
-        
+
         <ITprofessionals />
         <div>
-          <OurMission/>
+          <OurMission />
         </div>
         <div>
-          <ChooseUs/>
+          <ChooseUs />
         </div>
         <div>
-           <OurValues/>
+          <OurValues />
         </div>
       </main>
     </Layout>

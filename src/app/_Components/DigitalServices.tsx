@@ -6,7 +6,7 @@ export default function DigitalServices() {
   return (
     <section className="bg-white px-4 sm:px-6 lg:px-8 py-12">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center md:gap-20">
-        
+
         {/* Images */}
         <div className="relative mb-8 md:mb-0 w-fit">
           {/* Background Image (Second) */}

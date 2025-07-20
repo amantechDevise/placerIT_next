@@ -7,19 +7,19 @@ const QualityServices = () => {
             <div className="max-w-7xl flex flex-col md:flex-row items-center gap-8 w-full">
                 {/* Left Side - Image and Overlay Graphics */}
                 <div className="w-full md:w-1/2 text-center md:text-left">
-                    <h2 className="text-5xl md:text-[80px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] font-raleway">
-                       Quality {" "}
+                    <h2 className="text-[40px] md:text-[80px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] font-raleway">
+                        Quality {" "}
                     </h2>
 
-                    <h2 className="text-black  md:text-[42px] text:3xl mb-6 font-extrabold font-raleway">
+                    <h2 className="text-black  md:text-[42px] text:[30px] mb-6 font-extrabold font-raleway">
                         Assurance Services
                     </h2>
                     <p className="text-gray-700 mb-6 font-regular font-raleway md:text-[16px] text-[12px]">
-                        At <span className="font-semibold"> PlacerIT</span>, 
+                        At <span className="font-semibold"> PlacerIT</span>,
                         we understand that delivering a seamless and error-free product is essential to your business success. Our Quality Assurance (QA) services ensure that your products, software, or systems meet the highest standards of quality before they reach the market.
                     </p>
                     <p className="text-gray-700 font-regular font-raleway md:text-[16px] text-[12px]">
-                       Whether you’re developing a mobile app, a website, or enterprise software, our QA experts are here to help you eliminate defects and optimize your product for the best user experience.
+                        Whether you’re developing a mobile app, a website, or enterprise software, our QA experts are here to help you eliminate defects and optimize your product for the best user experience.
                     </p>
                 </div>
 

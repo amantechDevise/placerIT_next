@@ -45,14 +45,14 @@ const SoftwareChoose: React.FC = () => {
   return (
     <section className="bg-[#F7F7F7] px-6 py-10 md:py-20">
       {/* Top Title Section */}
-      <div className="max-w-4xl mx-auto text-center mb-16">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-800 mb-4 font-raleway">
+      <div className="max-w-4xl mx-auto text-center md:mb-16">
+        <h2 className="text-[30px] md:text-[42px] font-bold text-gray-800 mb-4 font-raleway">
           Why Choose{" "}
           <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
             Software Consultancy?
           </span>
         </h2>
-        <p className="text-gray-600 text-[16px] font-raleway ">
+        <p className="text-gray-600 text-[12px] md:text-[16px] font-raleway ">
           In today’s fast-paced, technology-driven world, businesses need to stay ahead of
           the curve to remain competitive. Our software consultancy services can help you.
         </p>
@@ -60,7 +60,7 @@ const SoftwareChoose: React.FC = () => {
 
       {/* Bottom Section with Image and List */}
       <div
-        className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12 md:pl-10"
+        className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-0 md:gap-12 md:pl-10"
         data-aos="zoom-out-up"
       >
         {/* Left Image */}
@@ -68,7 +68,7 @@ const SoftwareChoose: React.FC = () => {
           <img
             src="/images/SoftMask group.svg"
             alt="Software Consultancy"
-            className="object-contain w-[90%] h-[90%]"
+            className="object-contain w-full h-[90%]"
           />
         </div>
 
@@ -76,7 +76,7 @@ const SoftwareChoose: React.FC = () => {
         <div className="flex-1 space-y-8 pt-6  max-w-2xl">
           {services.map((item, index) => (
             <div key={index} className="flex items-start space-x-4">
-              <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] font-bold text-2xl font-extrabold font-raleway">
+              <div className="text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]  text-2xl font-extrabold font-raleway">
                 {String(index + 1).padStart(2, "0")}
               </div>
               <div>

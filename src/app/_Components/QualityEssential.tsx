@@ -14,22 +14,22 @@ const QualityEssential = () => {
 
             <div className="w-full lg:w-[65%] flex items-center bg-[#F7F7F7]/90">
                 <div className="container mx-auto px-4 py-10 2xl:pr-80 xl:pr-20">
-                    <h2 className="text-[32px] lg:text-[42px] font-extrabold font-raleway mb-4 text-center md:text-start">
+                    <h2 className="text-[30px] lg:text-[42px] font-extrabold font-raleway mb-4 text-center md:text-start">
                         Why{" "}
                         <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] font-raleway">
                             Quality Assurance
                         </span>{" "}
                         is <span className="text-gray-900">Essential?</span>
                     </h2>
-                    <p className="text-gray-600 text-[16px] mb-6 text-start">
+                    <p className="text-gray-600  text-[12px] md:text-[16px] mb-6 text-start">
                         Quality Assurance is the process of ensuring that a product or service meets specific
                         requirements and is free from defects. For your business, QA helps to:
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
                         <div className="bg-white p-6 rounded-3xl shadow-md border border-gray-200 md:text-start text-center">
-                            <img src="/images/Group 323.svg" alt=""  />
-                            <h3 className="text-[18px] font-bold font-raleway text-black">
+                            <img src="/images/Group 323.svg" alt="" />
+                            <h3 className="md:text-[18px] font-bold font-raleway text-black">
                                 Enhance Product <br /> Reliability
                             </h3>
                             <p className="text-gray-700 text-[16px] mt-2">

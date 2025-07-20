@@ -56,50 +56,50 @@ export default function DevelopmentChoose() {
   }, []);
 
   return (
-<div className="relative min-h-screen text-black px-6 py-12 md:pt-40 bg-[#F7F7F7] overflow-hidden">
-  <div className="max-w-6xl mx-auto relative z-10">
-    {/* Heading */}
-    <h2 className="font-extrabold text-gray-900 mb-12 font-raleway text-3xl sm:text-4xl md:text-[42px] text-left">
-      Why{" "}
-      <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
-        Choose Us?
-      </span>
-    </h2>
+    <div className="relative min-h-screen text-black px-6 py-12 md:pt-40 bg-[#F7F7F7] overflow-hidden">
+      <div className="max-w-6xl mx-auto relative z-10">
+        {/* Heading */}
+        <h2 className="font-extrabold text-gray-900 mb-12 font-raleway text-[30px] md:text-[42px] md:text-left text-center">
+          Why{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
+            Choose Us?
+          </span>
+        </h2>
 
-    {/* Service Cards */}
-    <div
-      className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"
-      data-aos="fade-up"
-      data-aos-duration="1000"
-    >
-      {services.map((service, index) => (
+        {/* Service Cards */}
         <div
-          key={index}
-          className="bg-white text-gray-800 rounded-3xl p-6 shadow-xl duration-400"
+          className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"
+          data-aos="fade-up"
+          data-aos-duration="1000"
         >
-          <div className="text-3xl mb-3">
-            {service.icon && (
-              <img src={service.icon} alt={service.title} />
-            )}
-          </div>
-          <h3 className="font-extrabold mb-2 text-start md:text-[22px] text-[16px]">
-            {service.title}
-          </h3>
-          <p className="md:text-[16px] text-[12px] text-start">
-            {service.description}
-          </p>
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-white text-gray-800 rounded-3xl p-6 shadow-xl duration-400"
+            >
+              <div className="text-3xl mb-3">
+                {service.icon && (
+                  <img src={service.icon} alt={service.title} />
+                )}
+              </div>
+              <h3 className="font-extrabold mb-2 text-center md:text-start md:text-[22px] text-[16px]">
+                {service.title}
+              </h3>
+              <p className="md:text-[16px] text-[12px] text-center md:text-start">
+                {service.description}
+              </p>
+            </div>
+          ))}
         </div>
-      ))}
-    </div>
-  </div>
+      </div>
 
-  {/* Background Image on Right */}
- <img
-  src="/images/4332393_18941 1.svg"
-  alt="Decorative Background"
-  className="absolute md:-top-5 md:left-180 lg:left-190 xl:left-210 2xl:left-270 w-[400px] md:w-[480px] lg:w-[520px] opacity-90 z-0 pointer-events-none select-none"
-/>
-</div>
+      {/* Background Image on Right */}
+      <img
+        src="/images/4332393_18941 1.svg"
+        alt="Decorative Background"
+        className="absolute md:-top-5 md:left-180 lg:left-190 xl:left-210 2xl:left-270 w-[400px] md:w-[480px] lg:w-[520px] opacity-90 z-0 pointer-events-none select-none"
+      />
+    </div>
 
   );
 }

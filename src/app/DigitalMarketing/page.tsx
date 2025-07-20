@@ -19,7 +19,7 @@ function DigitalMarketing() {
 
 
                     <div className="relative z-10 h-full flex flex-col justify-center items-center text-center">
-                        <h1 className="text-3xl md:text-[73px] font-regular font-raleway text-white leading-tight md:mb-[100px] mb-0 ">
+                        <h1 className="text-[40px] md:text-[73px] font-regular font-raleway text-white leading-tight md:mb-[100px] mb-0 ">
                             Digital <span className="font-semibold ">Marketing</span>
                         </h1>
                     </div>
@@ -35,21 +35,21 @@ function DigitalMarketing() {
                 </div>
 
                 <div>
-                    <SeoServices/>
-                </div>
-                
-                <div>
-                    <Advertising/>
+                    <SeoServices />
                 </div>
 
                 <div>
-                    <SocialMedia/>
-                </div>
-                 <div>
-                    <DigitalChoose/>
+                    <Advertising />
                 </div>
 
-            <BusinessTogether/>
+                <div>
+                    <SocialMedia />
+                </div>
+                <div>
+                    <DigitalChoose />
+                </div>
+
+                <BusinessTogether />
             </main>
         </Layout>
     );

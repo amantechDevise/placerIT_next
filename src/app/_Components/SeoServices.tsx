@@ -21,7 +21,7 @@ const SeoServices: React.FC = () => {
       </div>
 
       {/* SEO Icon with bounce animation */}
-      <div className="w-[100px] mb-6 text-center md:left-10 lg:left-30 xl:left-60 absolute z-10 animate-[bounce_4s_infinite]">
+      <div className="w-[100px] mb-6 text-center left-0 md:left-10 lg:left-30 xl:left-60 absolute z-10 animate-[bounce_4s_infinite]">
         <Image
           src="/images/seoIcon.svg"
           alt="SEO Icon"
@@ -32,7 +32,7 @@ const SeoServices: React.FC = () => {
       </div>
 
       {/* Heading and description */}
-      <div className="max-w-5xl mx-auto text-center mb-16">
+      <div className="max-w-5xl mx-auto text-center md:mb-16 mt-5">
         <h2 className="text-2xl md:text-[42px] font-bold text-gray-800 mb-4 font-raleway">
           <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
             Search Engine
@@ -49,7 +49,7 @@ const SeoServices: React.FC = () => {
       </div>
 
       {/* Bottom section */}
-      <div className="max-w-6xl mx-auto relative flex flex-col items-start gap-12 md:flex-row md:items-start">
+      <div className="max-w-6xl mx-auto relative flex flex-col items-start md:gap-12 md:flex-row md:items-start">
         {/* Left big image */}
         <div className="w-full md:w-auto flex-shrink-0">
           <Image

@@ -1,26 +1,26 @@
 "use client"
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import AOS, { AosOptions } from "aos";
 import "aos/dist/aos.css";
 const QAServices = () => {
-     useEffect(() => {
-    const aosConfig: AosOptions = {
-      duration: 1000,
-      once: true,
-      offset: 120,
-      easing: "ease-in-out",
-    };
+    useEffect(() => {
+        const aosConfig: AosOptions = {
+            duration: 1000,
+            once: true,
+            offset: 120,
+            easing: "ease-in-out",
+        };
 
-    AOS.init(aosConfig);
-  }, []);
+        AOS.init(aosConfig);
+    }, []);
     return (
         <section className="py-16 px-4 bg-white text-gray-800">
             <div className="max-w-7xl mx-auto text-center">
-               <h2 className="text-[40px] font-extrabold mb-4">
-  Our <span className="bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] bg-clip-text text-transparent">QA Services</span>
-</h2> 
+                <h2 className="md:text-[42px] text-[30px] font-extrabold mb-4">
+                    Our <span className="bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] bg-clip-text text-transparent">QA Services</span>
+                </h2>
                 <p className="text-gray-600 max-w-2xl mx-auto mb-12">
-                   We offer a comprehensive range of QA services tailored to your project needs. Our services include:
+                    We offer a comprehensive range of QA services tailored to your project needs. Our services include:
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto " data-aos="zoom-in-down">
@@ -42,10 +42,10 @@ const QAServices = () => {
 
                                 {/* Right side content */}
                                 <div>
-                                    <h3 className="text-[22px] font-semibold text-raleway">
+                                    <h3 className="md:text-[22px] text-[18px] font-semibold text-raleway">
                                         {service.title}
                                     </h3>
-                                    <p className="text-[16px] text-gray-600 font-normal text-raleway mt-1">
+                                    <p className="md:text-[16px] text-[12px] text-gray-600 font-normal text-raleway mt-1">
                                         {service.description}
                                     </p>
                                 </div>
@@ -57,11 +57,11 @@ const QAServices = () => {
                     ))}
                 </div>
 
-               <button
-  className="mt-10 px-6 py-2 text-white bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] hover:opacity-90 rounded-md text-sm font-medium"
->
-  Load More
-</button>
+                <button
+                    className="mt-10 px-6 py-2 text-white bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] hover:opacity-90 rounded-md text-sm font-medium"
+                >
+                    Load More
+                </button>
             </div>
         </section>
     );

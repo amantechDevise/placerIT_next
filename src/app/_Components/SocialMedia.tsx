@@ -1,19 +1,19 @@
 
- "use client";
-import React ,{useEffect} from "react";
+"use client";
+import React, { useEffect } from "react";
 import AOS, { AosOptions } from "aos";
 import "aos/dist/aos.css";
 const SocialMedia: React.FC = () => {
   const services = [
-      <>
-    Platform-specific strategy (Facebook, Instagram, <br /> Twitter, LinkedIn, etc.)
-  </>,
+    <>
+      Platform-specific strategy (Facebook, Instagram, <br /> Twitter, LinkedIn, etc.)
+    </>,
     "Content creation and management",
     "Paid social campaigns",
     "Community engagement and growth",
     "Analytics and performance tracking",
   ];
-    useEffect(() => {
+  useEffect(() => {
     const aosConfig: AosOptions = {
       duration: 1000,
       once: true,
@@ -25,23 +25,23 @@ const SocialMedia: React.FC = () => {
   }, []);
   return (
     <section className="bg-[#f3f7ff] px-6  py-10">
-      <div className="max-w-5xl mx-auto text-center mb-16">
-       
+      <div className="max-w-5xl mx-auto text-center mb-4 md:mb-16">
 
-        <h2 className="text-2xl md:text-[42px] font-bold text-gray-800 mb-4 font-raleway">
-         Social Media 
-           <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
+
+        <h2 className="text-[30px] md:text-[42px] font-bold text-gray-800 mb-4 font-raleway">
+          Social Media{" "}
+          <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
             Marketing
           </span>{" "}
-        </h2> 
+        </h2>
 
-        <p className="text-gray-600 text-[16px] font-raleway max-w-5xl mx-auto">
-         Build a strong social presence that boosts engagement and drives traffic. We craft strategies tailored to your brand’s voice, helping you foster meaningful connections with your audience. Our social media services include:
+        <p className="text-gray-600 md:text-[16px] text-[12px] font-raleway max-w-5xl mx-auto">
+          Build a strong social presence that boosts engagement and drives traffic. We craft strategies tailored to your brand’s voice, helping you foster meaningful connections with your audience. Our social media services include:
         </p>
       </div>
 
       {/* Bottom section with left image and right services */}
-      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12" data-aos="zoom-out-up">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-4 md:gap-12" data-aos="zoom-out-up">
         {/* Left big image */}
         <div className="flex-shrink-0">
           <img

@@ -73,23 +73,21 @@ export default function DigitalChoose() {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`bg-white text-gray-800 rounded-3xl p-6 transition-shadow duration-400 ${
-                index !== 0 ? "border-1 border-[#CDCDCD]" : ""
-              }`}
+              className={`bg-white text-gray-800 rounded-3xl p-6 transition-shadow duration-400 ${index !== 0 ? "border-1 border-[#CDCDCD]" : ""
+                }`}
             >
               <div className="text-3xl mb-3">
                 {service.icon && <img src={service.icon} alt="icon" />}
               </div>
               <h3
-                className={` mb-2 text-start ${
-                  index === 0
+                className={` mb-2 md:text-start text-center ${index === 0
                     ? "md:text-[57px] text-[32px] mt-[-40px]  font-extrabold"
                     : "md:text-[22px] text-[16px] font-semibold"
-                }`}
+                  }`}
               >
                 {service.title}
               </h3>
-              <p className="md:text-[16px] text-[12px] text-start">
+              <p className="md:text-[16px] text-[12px] md:text-start text-center">
                 {service.description}
               </p>
             </div>

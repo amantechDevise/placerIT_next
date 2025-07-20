@@ -3,7 +3,7 @@ import React from "react";
 export default function BlockchainInfo() {
   return (
     <div className="bg-[#F9FAFB] py-16 px-4 md:px-8 lg:px-20 relative overflow-hidden">
-        <div className="absolute md:top-[63%] md:left-[35px] left-[35px] transform -translate-y-1/2 rotate-[-90deg]  z-10">
+      <div className="absolute md:top-[63%] md:left-[35px] left-[35px] transform -translate-y-1/2 rotate-[-90deg]  z-10">
         <p className="text-[#DBDBDB] md:text-[32px] text-raleway  font-bold uppercase">
           Key Features of Blockchain
         </p>
@@ -28,13 +28,13 @@ export default function BlockchainInfo() {
           {/* Left: Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {/* Decentralization */}
-            <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-start gap-4">
+            <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center md:items-start gap-4">
               <img
                 src="images/Group 323.svg"
                 alt="Decentralization"
                 className="w-15 h-15"
               />
-              <div className="text-start">
+              <div className="text-center md:text-start">
                 <h3 className="md:text-[22px] text-[16px] font-bold font-raleway mb-1">
                   Decentralization
                 </h3>
@@ -46,13 +46,13 @@ export default function BlockchainInfo() {
             </div>
 
             {/* Security */}
-            <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-start gap-4 md:mb-5">
+            <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center md:items-start gap-4 md:mb-5">
               <img
                 src="images/Group 324.svg"
                 alt="Security"
                 className="w-15 h-15"
               />
-              <div className="text-start">
+              <div className="md:text-start text-center">
                 <h3 className="md:text-[22px] text-[16px] font-bold font-raleway mb-1">
                   Security
                 </h3>
@@ -64,13 +64,13 @@ export default function BlockchainInfo() {
             </div>
 
             {/* Immutability */}
-            <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-start gap-4 md:mt-5">
+            <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center md:items-start gap-4 md:mt-5">
               <img
                 src="images/Group 325.svg"
                 alt="Immutability"
                 className="w-15 h-15"
               />
-              <div className="text-start">
+              <div className="md:text-start text-center">
                 <h3 className="md:text-[22px] text-[16px] font-bold font-raleway mb-1">
                   Immutability
                 </h3>
@@ -82,13 +82,13 @@ export default function BlockchainInfo() {
             </div>
 
             {/* Transparency */}
-            <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-start gap-4 relative z-10">
+            <div className="bg-white p-6 rounded-2xl shadow-md flex flex-col items-center md:items-start gap-4 relative z-10">
               <img
                 src="images/Group 326.svg"
                 alt="Transparency"
                 className="w-15 h-15"
               />
-              <div className="text-start">
+              <div className="md:text-start text-center">
                 <h3 className="md:text-[22px] text-[16px] font-bold font-raleway mb-1">
                   Transparency
                 </h3>

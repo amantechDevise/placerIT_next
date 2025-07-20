@@ -76,18 +76,18 @@ export default function Technologies() {
                             className={`bg-white text-gray-800 rounded-3xl p-4 transition-shadow duration-400 ${index !== 0 ? "border-1 border-[#CDCDCD]" : ""
                                 }`}
                         >
-                            <div className="text-3xl mb-4">
+                            <div className="text-3xl md:mb-4">
                                 {service.icon && <img src={service.icon} alt="icon" />}
                             </div>
                             <h3
-                                className={` mb-8 text-start ${index === 0
-                                        ? "md:text-[50px] text-[32px]   font-extrabold"
-                                        : "md:text-[22px] text-[16px] font-semibold"
+                                className={`mb-4 md:mb-8 text-center md:text-start ${index === 0
+                                    ? "md:text-[50px] text-[32px]   font-extrabold"
+                                    : "md:text-[22px] text-[16px] font-semibold"
                                     }`}
                             >
                                 {service.title}
                             </h3>
-                            <p className="md:text-[16px] text-[12px] text-start">
+                            <p className="md:text-[16px] text-[12px] text-center md:text-start">
                                 {service.description}
                             </p>
                         </div>

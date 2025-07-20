@@ -13,14 +13,14 @@ const OurValues = () => {
       {/* Right Section - Inside Container */}
       <div className="w-full lg:w-1/2 flex items-center">
         <div className="container mx-auto px-4 py-10 2xl:pr-80 xl:pr-20">
-          <h2 className="text-[32px] lg:text-[42px] font-extrabold font-raleway text-blue-600 mb-6">
+          <h2 className="text-[32px] lg:text-[42px] font-extrabold font-raleway text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] mb-6">
             Our Values
           </h2>
 
           <div className="space-y-6">
             {/* Integrity Card */}
             <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-              <h3 className="text-[18px] font-bold font-raleway text-blue-600">
+              <h3 className="text-[18px] font-bold font-raleway text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
                 Integrity
               </h3>
               <p className="text-gray-700 text-[16px] mt-2">
@@ -31,7 +31,7 @@ const OurValues = () => {
 
             {/* Collaboration Card */}
             <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-              <h3 className="text-[18px] font-bold font-raleway text-blue-600">
+              <h3 className="text-[18px] font-bold font-raleway text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
                 Collaboration
               </h3>
               <p className="text-gray-700 text-[16px] mt-2">
@@ -42,7 +42,7 @@ const OurValues = () => {
 
             {/* Innovation Card */}
             <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-              <h3 className="text-[18px] font-bold font-raleway text-blue-600">
+              <h3 className="text-[18px] font-bold font-raleway text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
                 Innovation
               </h3>
               <p className="text-gray-700 text-[16px] mt-2">
@@ -53,7 +53,7 @@ const OurValues = () => {
 
             {/* Excellence Card */}
             <div className="bg-white p-6 rounded-lg shadow-md border border-gray-200">
-              <h3 className="text-[18px] font-bold font-raleway text-blue-600">
+              <h3 className="text-[18px] font-bold font-raleway text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
                 Excellence
               </h3>
               <p className="text-gray-700 text-[16px] mt-2">

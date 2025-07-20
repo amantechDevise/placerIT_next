@@ -21,14 +21,14 @@ const OurMission: React.FC = () => {
       style={{ backgroundImage: `url(/images/bg-h4-2 1.svg)` }}
     >
       <h2
-        className="text-3xl md:text-[42px] font-extrabold mb-4"
+        className="text-[30px] md:text-[42px] font-extrabold mb-4"
         data-aos="fade-up"
       >
-        Our <span className="text-indigo-600">Mission</span>
+        Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">Mission</span>
       </h2>
 
       <p
-        className="max-w-3xl mx-auto text-gray-600 mb-12 text-base md:text-[16px]"
+        className="max-w-3xl mx-auto text-gray-600 mb-12 text-[12px] md:text-[16px]"
         data-aos="fade-up"
         data-aos-delay="100"
       >

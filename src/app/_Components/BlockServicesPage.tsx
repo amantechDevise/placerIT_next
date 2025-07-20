@@ -1,19 +1,19 @@
 "use client"
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import AOS, { AosOptions } from "aos";
 import "aos/dist/aos.css";
 const services = [
   {
-    title: 
-     (
-      <>
-        Our
-        <br />
-        Blockchain
-        <br/>
-        Services
-      </>
-    ),
+    title:
+      (
+        <>
+          Our
+          <br />
+          Blockchain
+          <br />
+          Services
+        </>
+      ),
     description:
       'Blockchain has the potential to revolutionize various sectors. We provide blockchain solutions tailored to meet the specific needs of the following industries.',
     bgColor: 'bg-transparent text-white md:text-[53px] text-[32px] ',
@@ -77,16 +77,16 @@ const services = [
 ];
 
 export default function BlockServicesPage() {
-         useEffect(() => {
-        const aosConfig: AosOptions = {
-          duration: 1000,
-          once: true,
-          offset: 120,
-          easing: "ease-in-out",
-        };
-    
-        AOS.init(aosConfig);
-      }, []);
+  useEffect(() => {
+    const aosConfig: AosOptions = {
+      duration: 1000,
+      once: true,
+      offset: 120,
+      easing: "ease-in-out",
+    };
+
+    AOS.init(aosConfig);
+  }, []);
   return (
     <div
       className="min-h-screen text-white px-6 py-12"
@@ -106,17 +106,16 @@ export default function BlockServicesPage() {
               key={index}
               className={`${service.bgColor ?? 'bg-white text-gray-800'} rounded-3xl  p-6  transition-shadow duration-400`}
             >
-              <div className="text-3xl mb-3">
+              <div className="text-3xl mb-3 md:text-start text-center">
                 {service.icon && <img src={service.icon} alt={service.title} />}
               </div>
-               <h3
-                className={`font-extrabold mb-2 text-start ${
-                  index === 0
-                    ? 'md:text-[40px] text-[32px] mt-[-65px]'
-                    : 'md:text-[22px] text-[16px]'
-                }`}
+              <h3
+                className={`font-extrabold mb-2 md:text-start text-center ${index === 0
+                  ? 'md:text-[40px] text-[32px] mt-[-65px]'
+                  : 'md:text-[22px] text-[16px]'
+                  }`}
               >{service.title}</h3>
-              <p className="md:text-[16px] text-[12px]  text-start">{service.description}</p>
+              <p className="md:text-[16px] text-[12px]  md:text-start text-center">{service.description}</p>
             </div>
           ))}
         </div>

@@ -181,7 +181,7 @@ const Navbar: React.FC = () => {
               Home
 
             </Link>
-            <Link href="/about" onClick={() => setIsOpen(false)}
+            <Link href="/AboutUs" onClick={() => setIsOpen(false)}
               className="block hover:text-blue-400 font-semibold text-lg" >
 
               About Us
