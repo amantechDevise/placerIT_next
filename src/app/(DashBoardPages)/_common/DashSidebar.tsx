@@ -20,11 +20,7 @@ export default function DashSidebar() {
            Request Hireing
           </Link>
         </li>
-         <li>
-          <Link href="/contact" className="hover:text-blue-400 transition">
-         Contact Us
-          </Link>
-        </li>
+      
          <li>
           <Link href="/contact" className="hover:text-blue-400 transition">
             Request a Quote

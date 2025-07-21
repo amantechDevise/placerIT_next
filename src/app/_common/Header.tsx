@@ -142,12 +142,7 @@ const Navbar: React.FC = () => {
               Request A Quote
             </button>
 
-            {/* <button
-              onClick={handleLogout}
-              className="ml-4 bg-red-600 text-white py-2 px-5 rounded-md hover:bg-red-700"
-            >
-              Logout
-            </button> */}
+          
           </nav>
 
           {/* Mobile hamburger */}
