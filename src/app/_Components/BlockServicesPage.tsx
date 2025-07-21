@@ -98,28 +98,33 @@ export default function BlockServicesPage() {
         opacity: 0.8
       }}
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3" data-aos="fade-up"
-          data-aos-duration="1000">
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className={`${service.bgColor ?? 'bg-white text-gray-800'} rounded-3xl  p-6  transition-shadow duration-400`}
-            >
-              <div className="text-3xl mb-3 md:text-start text-center">
-                {service.icon && <img src={service.icon} alt={service.title} />}
-              </div>
-              <h3
-                className={`font-extrabold mb-2 md:text-start text-center ${index === 0
-                  ? 'md:text-[40px] text-[32px] mt-[-65px]'
-                  : 'md:text-[22px] text-[16px]'
-                  }`}
-              >{service.title}</h3>
-              <p className="md:text-[16px] text-[12px]  md:text-start text-center">{service.description}</p>
-            </div>
-          ))}
+     <div className="max-w-7xl mx-auto">
+  <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3" data-aos="fade-up" data-aos-duration="1000">
+    {services.map((service, index) => (
+      <div
+        key={index}
+        className={`${service.bgColor ?? 'bg-white text-gray-800'} rounded-3xl p-6 transition-shadow duration-400`}
+      >
+        <div className="text-3xl mb-3 text-center md:text-start">
+          {service.icon && (
+            <img
+              src={service.icon}
+              alt={service.title}
+              className="mx-auto md:mx-0 inline-block"
+            />
+          )}
         </div>
+        <h3
+          className={`font-extrabold mb-2 text-center md:text-start ${index === 0 ? 'md:text-[40px] text-[32px] mt-[-65px]' : 'md:text-[22px] text-[16px]'}`}
+        >
+          {service.title}
+        </h3>
+        <p className="text-center md:text-start md:text-[16px] text-[12px]">{service.description}</p>
       </div>
+    ))}
+  </div>
+</div>
+
     </div>
   );
 }

@@ -1,4 +1,7 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import axios from "axios";
+import Swal from "sweetalert2";
 
 interface QuoteModalProps {
   isOpen: boolean;
@@ -6,7 +9,61 @@ interface QuoteModalProps {
 }
 
 const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [service, setService] = useState<number | "">("");
+  const [loading, setLoading] = useState(false);
+
   if (!isOpen) return null;
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!name || !email || !service) {
+      Swal.fire({
+        icon: "warning",
+        title: "Missing Fields",
+        text: "Please fill out all fields before submitting.",
+        confirmButtonColor: "#f59e0b",
+      });
+      return;
+    }
+
+    setLoading(true);
+
+    try {
+      const res = await axios.post("/api/quoteReq", {
+        email,
+        name,
+        ServiceRequired: service,
+      });
+
+      // Reset form
+      setEmail("");
+      setName("");
+      setService("");
+
+      Swal.fire({
+        icon: "success",
+        title: "Request Submitted!",
+        text: "We’ll get back to you shortly.",
+        confirmButtonColor: "#6366f1",
+      });
+
+      onClose(); // Close modal after success
+    } catch (error: any) {
+      Swal.fire({
+        icon: "error",
+        title: "Submission Failed",
+        text:
+          error?.response?.data?.message ||
+          "Something went wrong. Please try again.",
+        confirmButtonColor: "#ef4444",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className="fixed inset-0 bg-[#0000002e] bg-opacity-50 flex justify-center items-center z-50 p-6">
@@ -36,18 +93,17 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
             Feel the quality by using this full featured quoting tool!
           </p>
 
-          <form className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name */}
             <div>
-              <label
-                className="block text-gray-700 font-semibold mb-1"
-                htmlFor="name"
-              >
+              <label className="block text-gray-700 font-semibold mb-1" htmlFor="name">
                 Name
               </label>
               <input
                 id="name"
                 type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 placeholder="Enter Name"
                 className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
@@ -55,15 +111,14 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
 
             {/* Email */}
             <div>
-              <label
-                className="block text-gray-700 font-semibold mb-1"
-                htmlFor="email"
-              >
+              <label className="block text-gray-700 font-semibold mb-1" htmlFor="email">
                 Email Address
               </label>
               <input
                 id="email"
                 type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter Email Address"
                 className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
@@ -71,35 +126,35 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
 
             {/* Service */}
             <div>
-              <label
-                className="block text-gray-700 font-semibold mb-1"
-                htmlFor="service"
-              >
+              <label className="block text-gray-700 font-semibold mb-1" htmlFor="service">
                 Service Required
               </label>
               <select
                 id="service"
+                value={service}
+                onChange={(e) => setService(Number(e.target.value))}
                 className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                defaultValue=""
               >
                 <option value="" disabled>
                   Select
                 </option>
-                <option value="0">Software Consultancy</option>
-                <option value="1">Website Development</option>
-                <option value="2">QA / Testing</option>
-                <option value="3">Digital Marketing</option>
-                <option value="4">Blockchain Development</option>
-                <option value="5">UI / UX Design</option>
-                <option value="6">Others</option>
+                <option value={0}>Software Consultancy</option>
+                <option value={1}>Website Development</option>
+                <option value={2}>QA / Testing</option>
+                <option value={3}>Digital Marketing</option>
+                <option value={4}>Blockchain Development</option>
+                <option value={5}>UI / UX Design</option>
+                <option value={6}>Others</option>
+                <option value={7}>Other 7</option> {/* If you want to allow 7 */}
               </select>
             </div>
 
             <button
               type="submit"
               className="bg-gradient-to-r from-purple-600 to-blue-500 text-white py-3 px-8 rounded hover:opacity-90 transition"
+              disabled={loading}
             >
-              Send Now
+              {loading ? "Sending..." : "Send Now"}
             </button>
           </form>
         </div>

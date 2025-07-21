@@ -25,7 +25,7 @@ const ITprofessionals = () => {
           <img
             src="/images/Group 171.svg"
             alt="Company Icon"
-            className="absolute md:-bottom-8 -bottom-4  md:-left-15 -left-4 w-26 sm:w-[10rem] md:w-40 lg:w-42 h-auto z-20 animate-[spin_6s_linear_infinite]"
+            className="absolute md:-bottom-8 -bottom-4  md:-left-15 -left-4 w-26 sm:w-[8rem] md:w-40 lg:w-42 h-auto z-20 animate-[spin_6s_linear_infinite]"
             style={{ transformOrigin: "center center" }}
           />
         </div>

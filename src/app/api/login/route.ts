@@ -1,9 +1,8 @@
-// src/app/api/login/route.ts
 import { NextRequest, NextResponse } from "next/server";
 import { connectToDatabase } from "../../../lib/mongoose";
 import { User } from "@/app/models/User";
 import bcrypt from "bcryptjs";
-import jwt from "jsonwebtoken"
+import jwt from "jsonwebtoken";
 
 export async function POST(req: NextRequest) {
   try {
@@ -26,9 +25,21 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ message: "Invalid credentials" }, { status: 400 });
     }
 
-    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET!, { expiresIn: '1h' });
+    // Generate JWT token
+    const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET!, { expiresIn: "1h" });
 
-    return NextResponse.json({ token, email: user.email }, { status: 200 });
+    const response = NextResponse.json({ email: user.email, message: "Login successful" });
+
+    response.cookies.set("token", token, {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      maxAge: 60 * 60, // 1 hour in 
+      path: "/",
+      sameSite: "strict",
+    });
+
+    return response;
+
   } catch (error) {
     console.error("Error during login:", error);
     return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });

@@ -89,32 +89,34 @@ const DesignProcess = () => {
       </div>
 
       <div
-        className="flex  md:flex-2 gap-8 max-w-6xl mx-auto"
-        data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom"
-      >
-        {/* Left card */}
-        <div className="flex bg-white rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] p-6 hover:shadow-lg transition-shadow">
-          <div className="flex flex-col md:w-80 md:items-start md:text-start text-center items-center">
-            <img src={uiuxSteps[3].icon} alt={uiuxSteps[3].title} className="w-16 h-16 mb-4" />
-            <h3 className="font-semibold md:text-[22px] text-[16px] mb-2">{uiuxSteps[3].title}</h3>
-            <p className="text-gray-600 md:text-[16px] text-[12px]">{uiuxSteps[3].description}</p>
-          </div>
-        </div>
-        <div className="md:flex-grow  flex flex-col items-start">
-          <div className="bg-white w-full rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] p-6 hover:shadow-lg transition-shadow">
-            <div className="flex flex-col md:items-start md:text-start text-center items-center">
-              <img src={uiuxSteps[4].icon} alt={uiuxSteps[4].title} className="w-16 h-16 mb-4" />
-              <h3 className="font-semibold md:text-[22px] text-[16px] mb-2">{uiuxSteps[4].title}</h3>
-              <p className="text-gray-600 md:text-[16px] text-[12px]">{uiuxSteps[4].description}</p>
-            </div>
-          </div>
+  className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto"
+  data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom"
+>
+  {/* Left card */}
+  <div className="flex bg-white rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] p-6 hover:shadow-lg transition-shadow">
+    <div className="flex flex-col md:w-80 md:items-start md:text-start text-center items-center">
+      <img src={uiuxSteps[3].icon} alt={uiuxSteps[3].title} className="w-16 h-16 mb-4" />
+      <h3 className="font-semibold md:text-[22px] text-[16px] mb-2">{uiuxSteps[3].title}</h3>
+      <p className="text-gray-600 md:text-[16px] text-[12px]">{uiuxSteps[3].description}</p>
+    </div>
+  </div>
 
-          <div className="mt-8 text-center text-[#C3C8D1] md:text-[40px] text-auto tracking-[0.3em] font-semibold opacity-40 select-none">
-            U I / U X &nbsp; P l a c e r I T
-          </div>
-        </div>
+  <div className="md:flex-grow flex flex-col items-start">
+    <div className="bg-white w-full rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] p-6 hover:shadow-lg transition-shadow">
+      <div className="flex flex-col md:items-start md:text-start text-center items-center">
+        <img src={uiuxSteps[4].icon} alt={uiuxSteps[4].title} className="w-16 h-16 mb-4" />
+        <h3 className="font-semibold md:text-[22px] text-[16px] mb-2">{uiuxSteps[4].title}</h3>
+        <p className="text-gray-600 md:text-[16px] text-[12px]">{uiuxSteps[4].description}</p>
       </div>
+    </div>
+
+    <div className="mt-8 text-center text-[#C3C8D1] md:text-[40px] text-auto tracking-[0.3em] font-semibold opacity-40 select-none">
+      U I / U X &nbsp; P l a c e r I T
+    </div>
+  </div>
+</div>
+
 
 
     </section>
