@@ -74,7 +74,7 @@ const pathname = usePathname();
           }`}
         style={{ minHeight: "100px" }}
       >
-        <div className="max-w-7xl mx-auto px-3 sm:px-8 flex items-center justify-between md:min-h-[70px] min-h-[50px]">
+        <div className="max-w-7xl mx-auto px-3 md:px-8 flex items-center justify-between md:min-h-[70px] min-h-[50px]">
           <Link href="/"   onClick={() => navigateWithLoader("/")} className="flex items-center md:mt-2 mt-5" >
 
             <img src="/images/Group 95.svg" alt="Logo" className="md:w-20 md:h-20 w-15 h-15" />
