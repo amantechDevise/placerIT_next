@@ -117,7 +117,23 @@ const Request_Hireing = () => {
                   <td className="px-4 py-4 text-sm text-slate-600 font-medium">{item.phone}</td>
                   <td className="px-4 py-4 text-sm text-slate-600 font-medium">{item.help}</td>
                   <td className="px-4 py-4 text-sm text-slate-600 font-medium">
-                    <img src={item.image} alt="profile" className="w-15 h-15 rounded-full object-cover" />
+                    {item.image?.endsWith(".pdf") ? (
+                      <a
+                        href={item.image}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 underline"
+                      >
+                        View PDF
+                      </a>
+                    ) : (
+                      <img
+                        src={item.image}
+                        alt="profile"
+                        className="w-15 h-15 rounded-full object-cover"
+                      />
+                    )}
+
                   </td>
                   <td className="px-4 py-4 text-sm">
                     <button

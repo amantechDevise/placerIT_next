@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
 import QuoteModal from "../_Components/QuoteModal";
 
@@ -13,9 +13,9 @@ const Navbar: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
-
+const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
-
+const pathname = usePathname();
   const serviceImages: string[] = [
     "/images/Mask group(1).jpg",
     "/images/Mask group(2).jpg",
@@ -43,10 +43,25 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    setIsLoading(false); 
+  }, [pathname]);
+
+  const navigateWithLoader = (href: string) => {
+    setIsLoading(true);
+    router.push(href);
+  };
+
 
 
   return (
     <div>
+  {isLoading && (
+  <div className="fixed inset-0 bg-black-300 bg-opacity-60 backdrop-blur-sm z-[9999] flex items-center justify-center">
+    <div className="loader border-4 border-blue-500 border-t-transparent rounded-full w-12 h-12 animate-spin"></div>
+  </div>
+)}
+
       <style>{`
         @keyframes scaleUpDown {
           0%, 100% { transform: scale(1); }
@@ -60,17 +75,17 @@ const Navbar: React.FC = () => {
         style={{ minHeight: "100px" }}
       >
         <div className="max-w-7xl mx-auto px-3 sm:px-8 flex items-center justify-between md:min-h-[70px] min-h-[50px]">
-          <Link href="/" className="flex items-center md:mt-2 mt-5" >
+          <Link href="/"   onClick={() => navigateWithLoader("/")} className="flex items-center md:mt-2 mt-5" >
 
             <img src="/images/Group 95.svg" alt="Logo" className="md:w-20 md:h-20 w-15 h-15" />
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex gap-x-8 items-center text-white font-bold text-[15px]">
-            <Link href="/" className="hover:text-blue-400">
+          <nav  className="hidden lg:flex gap-x-8 items-center text-white font-bold text-[15px]">
+            <Link  onClick={() => navigateWithLoader("/")} href="/" className="hover:text-blue-400">
               Home
             </Link>
-            <Link href="/AboutUs" className="hover:text-blue-400" >
+            <Link onClick={() => navigateWithLoader("/AboutUs")} href="/AboutUs" className="hover:text-blue-400" >
               About Us
             </Link>
 
@@ -111,7 +126,10 @@ const Navbar: React.FC = () => {
                       { href: "/WebsiteDevelopment", icon: "/images/Group 608.svg", label: "Website Development" },
                       { href: "/UXDesign", icon: "/images/Group 610.svg", label: "UI/UX Design" },
                     ].map(({ href, icon, label }) => (
-                      <Link href={href} key={label} className="flex items-center gap-3 hover:bg-gray-100 p-2 rounded-md" onClick={() => setDropdownOpen(false)} >
+                      <Link href={href} key={label} className="flex items-center gap-3 hover:bg-gray-100 p-2 rounded-md"  onClick={() => {
+                          setDropdownOpen(false);
+                          navigateWithLoader(href);
+                        }}  >
 
 
                         <Image src={icon} alt={label} width={32} height={32} />
@@ -124,7 +142,7 @@ const Navbar: React.FC = () => {
               )}
             </div>
 
-            <Link href="/ContactUs" className="hover:text-blue-400" >
+            <Link onClick={() => navigateWithLoader("/ContactUs")} href="/ContactUs" className="hover:text-blue-400" >
               Contact Us
             </Link>
 

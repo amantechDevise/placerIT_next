@@ -63,14 +63,29 @@ export default function HireRoleDetailsPage() {
   value={positionMap[hireRole.position as keyof typeof positionMap] || "Unknown"}
 />
         <TableRow label="Status" value={hireRole.status === 1 ? "Active" : "Inactive"} />
-        {hireRole.image && (
-          <tr>
-            <td className="p-4 font-medium text-gray-700">Image</td>
-            <td className="p-4">
-              <img src={hireRole.image} alt="Hire Role" className="w-40 rounded border" />
-            </td>
-          </tr>
-        )}
+    {hireRole.image && (
+  <tr>
+    <td className="p-4 font-medium text-gray-700">Document</td>
+    <td className="p-4">
+      {hireRole.image.endsWith(".pdf") ? (
+        <a
+          href={hireRole.image}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block text-blue-600 hover:underline"
+        >
+          {/* Simple thumbnail icon or embedded PDF preview */}
+          <div className="w-40 h-52 border rounded flex items-center justify-center bg-gray-100 text-gray-700 text-sm">
+            PDF Preview
+          </div>
+        </a>
+      ) : (
+        <img src={hireRole.image} alt="Hire Role" className="w-40 rounded border" />
+      )}
+    </td>
+  </tr>
+)}
+
       </tbody>
     </table>
   </div>

@@ -324,7 +324,7 @@ const ModalForm = ({
                   type="file"
                   onChange={handleImageChange}
                   className="border border-gray-300 p-2 rounded-xl w-full resize-none focus:outline-none focus:ring-2 focus:ring-[#5598F7]"
-                  accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"
+                  accept=".pdf,.doc,.docx,"
                 />
               </div>
 

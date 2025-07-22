@@ -21,18 +21,23 @@ export async function POST(req: NextRequest) {
     const imageFile = formData.get('image') as File | null;
     
     if (imageFile && imageFile.size > 0) {
-      const bytes = await imageFile.arrayBuffer();
-      const buffer = Buffer.from(bytes);
-      
-      const uploadDir = path.join(process.cwd(), 'public', 'uploads');
-      await fs.mkdir(uploadDir, { recursive: true });
-      
-      const newFilename = `${Date.now()}-${imageFile.name}`;
-      const newPath = path.join(uploadDir, newFilename);
-      
-      await fs.writeFile(newPath, buffer);
-      imagePath = `/uploads/${newFilename}`;
-    }
+  if (imageFile.type !== 'application/pdf') {
+    return NextResponse.json({ message: "Only PDF files are allowed." }, { status: 400 });
+  }
+
+  const bytes = await imageFile.arrayBuffer();
+  const buffer = Buffer.from(bytes);
+
+  const uploadDir = path.join(process.cwd(), 'public', 'uploads');
+  await fs.mkdir(uploadDir, { recursive: true });
+
+  const newFilename = `${Date.now()}-${imageFile.name}`;
+  const newPath = path.join(uploadDir, newFilename);
+
+  await fs.writeFile(newPath, buffer);
+  imagePath = `/uploads/${newFilename}`;
+}
+
 
     const newHireRole = new Hire_roles({
       It_role_id: formData.get('It_role_id') as string,
