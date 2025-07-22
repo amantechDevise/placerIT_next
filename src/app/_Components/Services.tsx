@@ -9,7 +9,7 @@ const services = [
         Consultancy
       </>
     ),
-    image: "/images/Group 595.svg",
+    image: "/images/Group 595.jpg",
     message:
       "We offer everything from planning to building a first product implementation through complex, multi-product IT transformation. We offer you technological advice that is pragmatic as well as futuristic that gives your business a strong advantage.",
   },
@@ -21,7 +21,7 @@ const services = [
         Development
       </>
     ),
-    image: "/images/Group 597.svg",
+    image: "/images/Group 597.jpg",
     message:
       "Looking to launch your own business website? If yes, our expert team of web developers and designers will surely provide you with a website of your dreams. Our designing and development is done on the basis of our client requirement, and we ensure that our out of the box website will surely impress your customers.",
   },
@@ -33,7 +33,7 @@ const services = [
         Testing
       </>
     ),
-    image: "/images/Group 596.svg",
+    image: "/images/Group 596.jpg",
     message:
       "We offer a comprehensive package of Software Quality Assurance (QA) and Testing services. We maximize quality and performance while reducing costs and risks.",
   },
@@ -45,7 +45,7 @@ const services = [
         Marketing
       </>
     ),
-    image: "/images/Group 602.svg",
+    image: "/images/Group 602.jpg",
     message:
       "Opt for our result-oriented digital marketing strategies to give your business a strong online presence and visibility boost.",
   },
@@ -57,7 +57,7 @@ const services = [
         Development
       </>
     ),
-    image: "/images/Group 601.svg",
+    image: "/images/Group 601.jpg",
     message:
       "Capitalize on Blockchain to achieve transparency and automation in business processes. We tailor solutions to combat risks.",
   },
@@ -69,7 +69,7 @@ const services = [
         Design
       </>
     ),
-    image: "/images/Group 600.svg",
+    image: "/images/Group 600.jpg",
     message:
       "Build products with a design team that meets deadlines and delivers top UI/UX with clear processes and expert design thinking.",
   },
