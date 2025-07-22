@@ -12,7 +12,7 @@ export default function DashHeader() {
     <nav className="w-full h-16 bg-gray-900 flex justify-end items-center px-6 shadow-md">
       <div className="w-10 h-10 rounded-full overflow-hidden ">
         <Image
-          src="/Group 95.svg"
+          src="/Group 637.svg"
           alt="User"
           width={40}
           height={40}
