@@ -107,36 +107,34 @@ const Services = () => {
         <div className="flex flex-wrap justify-center -mx-4">
           {services.map((service, index) => (
             <div key={index} className="w-full sm:w-1/2 lg:w-1/3 p-4">
-              <div className="relative w-full h-[380px] [perspective:1000px] group">
-                <div className="relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
-
-                  {/* Front */}
+              <div className="relative w-full h-[380px] [perspective:800px] group">
+                <div className="relative w-full h-full transition-transform duration-[1500ms] [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                  {/* Front Side */}
                   <div className="absolute w-full h-full rounded-xl overflow-hidden shadow-lg [backface-visibility:hidden] bg-gradient-to-b from-purple-800 to-blue-900 flex items-center justify-center">
                     <img
                       src={service.image}
-                      alt="Service"
+                      // alt={service.title}
                       className="w-full h-full object-cover opacity-90"
                     />
-                  
-                       <div className="absolute inset-0 flex flex-col  items-center justify-center px-4 py-4">
-                      <p className="text-white md:text-[28px] text-[20px] font-bold text-center font-Raleway drop-shadow-[0_2px_3px_rgba(0,0,0,0.5)]">
+
+                    <div className="absolute inset-0 flex flex-col items-center justify-center px-4 py-4 [transform-style:preserve-3d]">
+                      <p className="text-white md:text-[28px] text-[20px] font-bold text-center font-Raleway drop-shadow-[0_2px_3px_rgba(0,0,0,0.5)] transition-transform duration-[1500ms] group-hover:[transform:rotateY(180deg) translateZ(40px)]">
                         {service.title}
                       </p>
-                      <p className="text-white text-sm text-center font-Raleway leading-6 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] md:hidden mt-10">
+                      <p className="text-white text-sm text-center font-Raleway leading-6 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] md:hidden mt-10 transition-transform duration-[1500ms] delay-100 group-hover:[transform:rotateY(180deg) translateZ(25px)]">
                         {service.message}
                       </p>
                     </div>
                   </div>
 
-                  {/* Back */}
+                  {/* Back Side */}
                   <div className="absolute w-full h-full rounded-xl overflow-hidden shadow-lg [backface-visibility:hidden] [transform:rotateY(180deg)] bg-gradient-to-br from-[#281165] to-[#1F5196] flex items-center justify-center">
-                    <div className="p-6 flex items-center justify-center h-full">
-                      <p className="text-white text-sm text-center font-Raleway leading-6 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]">
+                    <div className="p-6 flex items-center justify-center h-full [transform-style:preserve-3d]">
+                      <p className="text-white text-sm text-center font-Raleway leading-6 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] transition-transform duration-[1500ms] delay-200 group-hover:[transform:rotateY(360deg) translateZ(10px)]">
                         {service.message}
                       </p>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
