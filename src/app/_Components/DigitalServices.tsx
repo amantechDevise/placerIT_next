@@ -10,14 +10,7 @@ export default function DigitalServices() {
         {/* Images */}
         <div className="relative mb-8 md:mb-0 w-fit">
           {/* Background Image (Second) */}
-          <div className="absolute md:left-12 md:top-6 md:w-[350px] md:h-[440px] rounded-2xl overflow-hidden shadow-md z-0">
-            <Image
-              src="/images/Digimage (1).webp"
-              alt="Marketing Visual 2"
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
+     
 
           <div className="relative z-10 absolute md:-left-40">
             {/* Icon */}
@@ -31,9 +24,9 @@ export default function DigitalServices() {
             </div>
 
             {/* First Main Image */}
-            <div className="md:w-[370px] md:h-[490px] rounded-2xl overflow-hidden shadow-lg relative">
+            <div className="md:w-[560px] md:h-[490px] rounded-2xl  relative">
               <Image
-                src="/images/Digimage.svg"
+                src="/images/Digimage.png"
                 alt="Marketing Visual 1"
                 layout="fill"
                 objectFit="cover"
