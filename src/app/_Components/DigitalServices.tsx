@@ -12,7 +12,7 @@ export default function DigitalServices() {
           {/* Background Image (Second) */}
      
 
-          <div className="relative z-10 absolute md:-left-40">
+          <div className="relative z-10 absolute md:left-0">
             {/* Icon */}
             <div className="absolute md:-top-6 md:-left-6 w-22 h-22 z-20 animate-[spin_6s_linear_infinite]">
               <Image
