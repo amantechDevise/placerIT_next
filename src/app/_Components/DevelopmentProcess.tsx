@@ -39,7 +39,7 @@ const DevelopmentProcess = () => {
         <div className="relative w-full lg:w-1/2">
           <div className="relative z-10">
             <img
-              src="/images/Group 643.svg"
+              src="/images/Group 643.jpg"
               alt="Team of professionals"
               className="rounded-lg  w-full h-auto object-cover "
             />

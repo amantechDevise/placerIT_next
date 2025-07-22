@@ -14,7 +14,7 @@ function SoftwareConsultancy() {
                     {/* Background Image */}
                     <img
                         className="absolute inset-0 w-full h-full object-cover opacity-90"
-                        src="/images/Group 433.svg"
+                        src="/images/Group 433.jpg"
                     />
 
 

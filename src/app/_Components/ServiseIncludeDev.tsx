@@ -10,7 +10,7 @@ const ServiseIncludeDev = () => {
         <div className="relative w-full lg:w-1/2">
           <div className="relative z-10">
             <img
-              src="/images/Group 642.svg"
+              src="/images/Group 642.png"
               alt="Team of professionals"
               className="rounded-lg  w-full h-auto object-cover "
             />

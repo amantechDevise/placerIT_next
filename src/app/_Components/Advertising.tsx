@@ -55,7 +55,7 @@ const Advertising: React.FC = () => {
         {/* Image */}
         <div className="flex-shrink-0 md:w-[320px] md:h-[100px] relative">
           <img
-            src="/images/AddMask group.svg"
+            src="/images/AddMask group.jpg"
             className="object-contain w-full h-auto"
           />
         </div>

@@ -14,7 +14,7 @@ function UXDesign() {
                     {/* Background Image */}
                     <img
                         className="absolute inset-0 w-full h-full object-cover opacity-90"
-                        src="/images/Group 436.svg"
+                        src="/images/Group 436.jpg"
                     />
 
 

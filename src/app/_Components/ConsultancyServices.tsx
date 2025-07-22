@@ -7,7 +7,7 @@ const ConsultancyServices = () => {
         {/* Left Side - Image and Overlay Graphics */}
         <div className="relative w-full md:w-1/2">
           <img
-            src="/images/Group 648.svg"
+            src="/images/Group 648.jpg"
             alt="User working on blockchain"
             className="w-full rounded-xl "
           />

@@ -14,7 +14,7 @@ function Blockchain() {
                 {/* Background Video */}
                 <img
                     className="absolute inset-0 w-full h-full object-cover opacity-90"
-                    src="/images/Group 431.webp"
+                    src="/images/Group 431.jpg"
                 />
 
 

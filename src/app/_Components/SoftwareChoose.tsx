@@ -66,7 +66,7 @@ const SoftwareChoose: React.FC = () => {
         {/* Left Image */}
         <div className="flex-shrink-0">
           <img
-            src="/images/SoftMask group.svg"
+            src="/images/SoftMask group.jpg"
             alt="Software Consultancy"
             className="object-contain w-full h-[90%]"
           />

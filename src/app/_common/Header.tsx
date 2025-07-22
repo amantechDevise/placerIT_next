@@ -17,13 +17,13 @@ const Navbar: React.FC = () => {
   const router = useRouter();
 
   const serviceImages: string[] = [
-    "/images/Mask group (1).svg",
-    "/images/Mask group (2).svg",
-    "/images/Mask group (3).svg",
-    "/images/Mask group (4).svg",
-    "/images/Mask group (5).svg",
-    "/images/Mask group (6).svg",
-    "/images/Mask group (7).svg",
+    "/images/Mask group(1).jpg",
+    "/images/Mask group(2).jpg",
+    "/images/Mask group(3).jpg",
+    "/images/Mask group(4).jpg",
+    "/images/Mask group(5).jpg",
+    "/images/Mask group(6).jpg",
+    "/images/Mask group(7).jpg",
   ];
 
   useEffect(() => {

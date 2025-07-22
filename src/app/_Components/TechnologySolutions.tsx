@@ -8,7 +8,7 @@ const TechnologySolutions = () => {
         {/* Left Side - Image and Overlay Graphics */}
         <div className="relative w-full md:w-1/2">
           <img
-            src="/images/image.svg"
+            src="/images/image.jpg"
             alt="User working on blockchain"
             className="w-full rounded-xl "
           />

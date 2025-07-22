@@ -6,7 +6,7 @@ const QualityEssential = () => {
         >
             <div className="w-full lg:w-[35%] md:h-[900px] h-[500px]">
                 <img
-                    src="/images/focused.svg"
+                    src="/images/focused.jpg"
                     alt="Quality Assurance Illustration"
                     className="w-full h-full object-cover"
                 />

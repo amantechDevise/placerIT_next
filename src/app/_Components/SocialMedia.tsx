@@ -45,7 +45,7 @@ const SocialMedia: React.FC = () => {
         {/* Left big image */}
         <div className="flex-shrink-0">
           <img
-            src="/images/SocalMask group.svg"
+            src="/images/SocalMask group.jpg"
             alt="SEO Expert"
             width={330}
             height={300}

@@ -15,7 +15,7 @@ function WebsiteDevelopment() {
                     {/* Background Video */}
                     <img
                         className="absolute inset-0 w-full h-full object-cover opacity-90"
-                        src="/images/WebGroup 434.svg"
+                        src="/images/Group 433.jpg"
                     />
 
 

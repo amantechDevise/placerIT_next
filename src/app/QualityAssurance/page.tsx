@@ -14,7 +14,7 @@ function QualityAssurance() {
                     {/* Background Video */}
                     <img
                         className="absolute inset-0 w-full h-full object-cover opacity-90"
-                        src="/images/Group 432.svg"
+                        src="/images/Group 432.jpg"
                     />
 
 
