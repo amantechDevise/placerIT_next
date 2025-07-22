@@ -145,7 +145,6 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                 <option value={4}>Blockchain Development</option>
                 <option value={5}>UI / UX Design</option>
                 <option value={6}>Others</option>
-                <option value={7}>Other 7</option> {/* If you want to allow 7 */}
               </select>
             </div>
 

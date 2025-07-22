@@ -76,9 +76,9 @@ const Development = () => {
       {/* Header and Image */}
       <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between gap-6 md:gap-10 mb-12">
         <div className="max-w-xl" data-aos="zoom-in-down">
-          <h2 className=" text-[30px] md:text-[56px] font-Raleway font-extrabold text-gray-900 mb-2 leading-tight">
+          <h2 className="text-[30px] lg:text-[20px] md:text-[36px] xl:text-[56px] font-Raleway font-extrabold text-gray-900 mb-2 leading-tight">
             Our Design and <br /> Develop
-            <span className="text-blue-600"> Approach</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]"> Approach</span>
           </h2>
           <p className="md:text-[16px] text-[12px] text-gray-500">
             At PlaceIT, we follow a streamlined, customer-focused approach to

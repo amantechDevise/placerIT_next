@@ -1,6 +1,7 @@
 import React from "react";
 import Contact_Us from "../_Components/ContactUs";
 import Layout from "../_common/Layout";
+import Faq from "../_Components/Fqa";
 
 function ContactUs() {
   return (
@@ -37,6 +38,7 @@ function ContactUs() {
       <div className="bg-white py-10">
         <Contact_Us showBorder={true} />
       </div>
+       <Faq />
     </main>
     </Layout>
   );

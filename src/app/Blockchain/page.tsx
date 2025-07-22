@@ -3,6 +3,7 @@ import BlockchainInfo from "../_Components/BlockchainInfo";
 import BlockchainServices from "../_Components/BlockchainServices";
 import BlockchainTechnology from "../_Components/BlockchainTechnology";
 import BlockServicesPage from "../_Components/BlockServicesPage";
+import Faq from "../_Components/Fqa";
 import TechnologySolutions from "../_Components/TechnologySolutions";
 
 function Blockchain() {
@@ -43,6 +44,7 @@ function Blockchain() {
           <div>
             <BlockchainTechnology/>
           </div>
+            <Faq />
         </main>
         </Layout>
     );

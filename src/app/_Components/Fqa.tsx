@@ -61,7 +61,7 @@ const Faq: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative font-inter antialiased bg-[#F7F7F7] min-h-screen flex flex-col justify-center overflow-hidden md:py-24 py-4 md:px-4">
+    <div className="relative font-inter antialiased bg-[#F7F7F7] min-h-full flex flex-col justify-center overflow-hidden md:py-24 py-4 md:px-4">
       <div className="w-full max-w-7xl mx-auto px-3 sm:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Title and Description */}

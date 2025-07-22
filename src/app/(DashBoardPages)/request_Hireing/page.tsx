@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 import DashBoardLayout from "@/app/(DashBoardPages)/_common/DashBoardLayout";
+import Swal from "sweetalert2";
 
 interface HireRole {
   _id: string;
@@ -21,6 +23,7 @@ interface HireRole {
 const Request_Hireing = () => {
   const [hire_roles, setHire_roles] = useState<HireRole[]>([]);
   const [loading, setLoading] = useState(true);
+  const router = useRouter();
 
   useEffect(() => {
     async function fetchContacts() {
@@ -36,6 +39,29 @@ const Request_Hireing = () => {
 
     fetchContacts();
   }, []);
+
+  const handleDelete = async (id: string) => {
+    const result = await Swal.fire({
+      title: "Are you sure?",
+      text: "This role will be permanently deleted.",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
+      confirmButtonText: "Yes, delete it!",
+    });
+
+    if (result.isConfirmed) {
+      try {
+        await axios.delete(`/api/hire_roles?id=${id}`);
+        setHire_roles((prevRoles) => prevRoles.filter((role) => role._id !== id));
+        Swal.fire("Deleted!", "The role has been deleted.", "success");
+      } catch (error) {
+        console.error("Error deleting role:", error);
+        Swal.fire("Error", "Failed to delete the role.", "error");
+      }
+    }
+  };
 
   if (loading) return <div>Loading...</div>;
 
@@ -94,8 +120,18 @@ const Request_Hireing = () => {
                     <img src={item.image} alt="profile" className="w-15 h-15 rounded-full object-cover" />
                   </td>
                   <td className="px-4 py-4 text-sm">
-                    <button className="cursor-pointer text-blue-600 font-medium mr-4">View</button>
-                    <button className="cursor-pointer text-red-600 font-medium">Delete</button>
+                    <button
+                      className="text-blue-600 mr-4"
+                      onClick={() => router.push(`/request_Hireing/${item._id}`)}
+                    >
+                      View
+                    </button>
+                    <button
+                      className="cursor-pointer text-red-600 font-medium"
+                      onClick={() => handleDelete(item._id)}
+                    >
+                      Delete
+                    </button>
                   </td>
                 </tr>
               ))

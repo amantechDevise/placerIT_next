@@ -2,6 +2,7 @@
 
 import Layout from "../_common/Layout";
 import Contact_Us from "../_Components/ContactUs";
+import Faq from "../_Components/Fqa";
 import Process from "../_Components/Process";
 import Services from "../_Components/Services";
 
@@ -47,6 +48,7 @@ const ServicesPage = () => {
                     <Contact_Us showBorder={false} />
                 </div>
                 <Process />
+                 <Faq />
             </main>
         </Layout>
     );

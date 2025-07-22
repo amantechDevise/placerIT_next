@@ -3,6 +3,7 @@ import DesignMatters from "../_Components/DesignMatters";
 import DesignProcess from "../_Components/DesignProcess";
 import DesignServices from "../_Components/DesignServices";
 import ExperienceTogether from "../_Components/ExperienceTogether";
+import Faq from "../_Components/Fqa";
 import UI_UXServicesInclude from "../_Components/UI_UXServicesInclude";
 
 function UXDesign() {
@@ -34,6 +35,7 @@ function UXDesign() {
 <UI_UXServicesInclude/>
 <DesignMatters/>
 <ExperienceTogether/>
+ <Faq/>
             </main>
         </Layout>
     );

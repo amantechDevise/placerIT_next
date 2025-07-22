@@ -43,10 +43,7 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    router.push("/Login");
-  };
+
 
   return (
     <div>
@@ -69,7 +66,7 @@ const Navbar: React.FC = () => {
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex gap-x-8 items-center text-white font-semibold text-lg">
+          <nav className="hidden lg:flex gap-x-8 items-center text-white font-bold text-[15px]">
             <Link href="/" className="hover:text-blue-400">
               Home
             </Link>
@@ -118,7 +115,7 @@ const Navbar: React.FC = () => {
 
 
                         <Image src={icon} alt={label} width={32} height={32} />
-                        <p className="text-[14px]">{label}</p>
+                        <p className="text-[14px] font-bold font-raleway">{label}</p>
 
                       </Link>
                     ))}
@@ -227,7 +224,7 @@ const Navbar: React.FC = () => {
               )}
             </div>
 
-            <Link href="/contact-us" onClick={() => setIsOpen(false)}
+            <Link href="/ContactUs" onClick={() => setIsOpen(false)}
               className="block hover:text-blue-400 font-semibold text-lg" >
 
               Contact Us
@@ -247,15 +244,7 @@ const Navbar: React.FC = () => {
               Request A Quote
             </button>
 
-            {/* <button
-              onClick={() => {
-                handleLogout();
-                setIsOpen(false);
-              }}
-              className="w-full mt-2 bg-red-600 text-white py-2 px-5 rounded-md hover:bg-red-700"
-            >
-              Logout
-            </button> */}
+         
           </nav>
         )}
       </header>

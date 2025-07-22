@@ -2,6 +2,7 @@ import Layout from "../_common/Layout";
 import DevelopmentChoose from "../_Components/DevelopmentChoose";
 import DevelopmentProcess from "../_Components/DevelopmentProcess";
 import DevelopmentServices from "../_Components/DevelopmentServices";
+import Faq from "../_Components/Fqa";
 import OnlinePresence from "../_Components/OnlinePresence";
 import ServiseIncludeDev from "../_Components/ServiseIncludeDev";
 import Technologies from "../_Components/Technologies";
@@ -38,6 +39,7 @@ function WebsiteDevelopment() {
      <ServiseIncludeDev/>
      <Technologies/>
      <OnlinePresence/>
+      <Faq />
             </main>
         </Layout>
     );

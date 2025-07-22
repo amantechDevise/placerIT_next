@@ -83,6 +83,37 @@ const ItRole = () => {
             }
         }
     };
+    const handleToggleStatus = async (id: string, currentStatus: boolean) => {
+  const result = await Swal.fire({
+    title: `Are you sure you want to ${currentStatus ? "deactivate" : "activate"} this role?`,
+    icon: "question",
+    showCancelButton: true,
+    confirmButtonText: `Yes, ${currentStatus ? "deactivate" : "activate"}`,
+    cancelButtonText: "Cancel",
+  });
+
+  if (result.isConfirmed) {
+    try {
+      const response = await axios.patch("/api/itstaff", {
+        id,
+        status: !currentStatus,
+      });
+
+      // Update local state
+      setRoles((prevRoles) =>
+        prevRoles.map((role) =>
+          role._id === id ? { ...role, status: !currentStatus } : role
+        )
+      );
+
+      Swal.fire("Success!", "Role status updated successfully.", "success");
+    } catch (error) {
+      console.error("Error updating status:", error);
+      Swal.fire("Error", "Failed to update the role status.", "error");
+    }
+  }
+};
+
 
     if (loading) return <div>Loading...</div>;
 
@@ -127,11 +158,18 @@ const ItRole = () => {
                                 <tr key={_id}>
                                     <td className="px-4 py-4 text-sm text-slate-900 font-medium">{index + 1}</td>
                                     <td className="px-4 py-4 text-sm text-slate-900 font-medium">{name}</td>
-                                    <td className="px-4 py-4 text-sm text-slate-600 font-medium">
-                                        {status ? "Active" : "Inactive"}
-                                    </td>
+                                   <td className="px-4 py-4 text-sm text-slate-600 font-medium">
+  <button
+    onClick={() => handleToggleStatus(_id, status)}
+    className={`px-3 py-1 rounded ${
+      status ? "bg-green-500 text-white" : "bg-gray-400 text-white"
+    } hover:opacity-80 transition`}
+  >
+    {status ? "Active" : "Inactive"}
+  </button>
+</td>
                                     <td className="px-4 py-4 text-sm">
-                                        <button className="cursor-pointer text-blue-600 font-medium mr-4">View</button>
+                                        {/* <button className="cursor-pointer text-blue-600 font-medium mr-4">View</button> */}
                                         <button
                                             className="cursor-pointer text-red-600 font-medium"
                                             onClick={() => handleDelete(_id)}

@@ -33,7 +33,6 @@ export async function GET() {
   }
 }
 
-// ✅ DELETE: Delete a quote request by ID (use ?id=...)
 export async function DELETE(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);

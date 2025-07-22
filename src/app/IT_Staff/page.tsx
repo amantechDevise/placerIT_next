@@ -1,5 +1,6 @@
 import Layout from "../_common/Layout";
 import CompanyRecognition from "../_Components/CompanyRecognition";
+import Faq from "../_Components/Fqa";
 import IT_Roles from "../_Components/It_roles";
 import ProfessionalStaff from "../_Components/ProfessionalStaff";
 import TechGapPage from "../_Components/Techgap";
@@ -50,6 +51,7 @@ function IT_Staff() {
                 <ProfessionalStaff />
                 <TechGapPage />
                 <CompanyRecognition/>
+                 <Faq />
             </main>
         </Layout>
     );

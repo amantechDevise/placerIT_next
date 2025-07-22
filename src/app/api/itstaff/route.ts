@@ -57,3 +57,33 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });
     }
   }
+  export async function PATCH(req: NextRequest) {
+  try {
+    const { id, status } = await req.json();
+
+    if (!id) {
+      return NextResponse.json({ message: "Missing ID" }, { status: 400 });
+    }
+
+    if (typeof status !== "boolean") {
+      return NextResponse.json({ message: "Status must be boolean" }, { status: 400 });
+    }
+
+    await connectToDatabase();
+
+    const updatedRole = await It_Role.findByIdAndUpdate(
+      id,
+      { status },
+      { new: true }  // updated document return karega
+    );
+
+    if (!updatedRole) {
+      return NextResponse.json({ message: "Role not found" }, { status: 404 });
+    }
+
+    return NextResponse.json({ data: updatedRole }, { status: 200 });
+  } catch (error) {
+    console.error("Error updating status:", error);
+    return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });
+  }
+}

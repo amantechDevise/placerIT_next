@@ -56,45 +56,49 @@ function Homepage() {
   return (
     <Layout>
       <main className="relative w-full h-full">
-        <div className="relative w-full h-[600px] md:h-[750px] pt-[90px] overflow-hidden">
-          {/* ✅ Video from public/videos */}
-          <video
-            className="absolute inset-0 w-full h-full object-cover opacity-90"
-            src="/videos/Homecustom.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
+      <div className="relative w-full h-[600px] md:h-[750px] pt-[90px] overflow-hidden">
+  {/* ✅ Full-screen background video */}
+  <video
+    className="absolute inset-0 w-full h-full object-cover opacity-90"
+    src="/videos/Homecustom.mp4"
+    autoPlay
+    muted
+    loop
+    playsInline
+  />
 
-          <div className="absolute inset-0 bg-[#1B1140] opacity-[0.72]"></div>
+  {/* ✅ Overlay layer */}
+  <div className="absolute inset-0 bg-[#1B1140] opacity-[0.72]"></div>
 
-          <div className="relative z-10 h-full flex flex-col justify-center items-start text-left px-4 sm:px-10 md:px-[35px] lg:px-[40px] 2xl:px-[336px] xl:px-[160px]">
-            <h1 className="text-3xl md:text-[73px] font-semibold font-Raleway text-white leading-tight">
-              Accelerating
-            </h1>
+  {/* ✅ Content wrapper with max-w-7xl */}
+  <div className="relative z-10 h-full flex flex-col justify-center items-start text-left px-4  mx-auto max-w-7xl">
+    <h1 className="text-3xl md:text-[73px] font-semibold font-Raleway text-white leading-tight">
+      Accelerating
+    </h1>
 
-            <h2
-              ref={textRef}
-              className="text-blue-500 text-3xl md:text-[73px] font-semibold font-Raleway h-[45px] md:h-[60px]"
-            />
+    <h2
+      ref={textRef}
+      className="text-blue-500 text-3xl md:text-[73px] font-semibold font-Raleway h-[45px] md:h-[60px]"
+    />
 
-            <h1 className="text-3xl md:text-[73px] text-white mt-4 font-semibold font-Raleway ">
-              Innovation
-            </h1>
+    <h1 className="text-3xl md:text-[73px] text-white mt-4 font-semibold font-Raleway ">
+      Innovation
+    </h1>
 
-            <p className="text-gray-300 text-base md:text-lg lg:text-[20px] mt-6 max-w-2xl leading-relaxed">
-              Leveraging cutting-edge technologies and creative solutions to drive
-              business success. By embracing new ideas and innovative strategies,
-              businesses can enhance efficiency, improve operations, and stay
-              ahead of the competition.
-            </p>
-          </div>
-          <div className="absolute bottom-[-42px] 2xl:bottom-[-202px] xl:bottom-[-155px] lg:bottom-[-133px] md:bottom-[-105px] left-0 w-full z-10">
-            <img src="/images/Shape_4_.svg" alt="" className="w-full object-cover" />
-          </div>
+    <p className="text-gray-300 text-base md:text-lg lg:text-[20px] mt-6 max-w-2xl leading-relaxed">
+      Leveraging cutting-edge technologies and creative solutions to drive
+      business success. By embracing new ideas and innovative strategies,
+      businesses can enhance efficiency, improve operations, and stay
+      ahead of the competition.
+    </p>
+  </div>
 
-        </div>
+  {/* ✅ Bottom shape image */}
+  <div className="absolute bottom-[-42px] 2xl:bottom-[-202px] xl:bottom-[-155px] lg:bottom-[-133px] md:bottom-[-105px] left-0 w-full z-10">
+    <img src="/images/Shape_4_.svg" alt="" className="w-full object-cover" />
+  </div>
+</div>
+
         <div>
           <Services />
         </div>

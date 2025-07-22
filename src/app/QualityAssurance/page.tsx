@@ -1,4 +1,5 @@
 import Layout from "../_common/Layout";
+import Faq from "../_Components/Fqa";
 import GetQuality from "../_Components/GetQuality";
 import QAProcess from "../_Components/QAProcess";
 import QAServices from "../_Components/QAServices";
@@ -35,6 +36,7 @@ function QualityAssurance() {
                 <QAServices/>
                 <QAProcess/>
                 <GetQuality/>
+                 <Faq />
             </main>
         </Layout>
     );

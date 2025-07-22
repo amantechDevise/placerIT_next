@@ -1,5 +1,6 @@
 import Layout from "../_common/Layout";
 import ConsultancyServices from "../_Components/ConsultancyServices";
+import Faq from "../_Components/Fqa";
 import SoftServices from "../_Components/SoftServices";
 import SoftwareChoose from "../_Components/SoftwareChoose";
 import SoftwareExpert from "../_Components/SoftwareExpert";
@@ -33,6 +34,7 @@ function SoftwareConsultancy() {
                 <SoftServices/>
                 <SoftwereWork/>
                 <SoftwareExpert />
+                 <Faq />
 
 
             </main>

@@ -3,6 +3,7 @@ import Advertising from "../_Components/Advertising";
 import BusinessTogether from "../_Components/BusinessTogether";
 import DigitalChoose from "../_Components/DigitalChoose";
 import DigitalServices from "../_Components/DigitalServices";
+import Faq from "../_Components/Fqa";
 import SeoServices from "../_Components/SeoServices";
 import SocialMedia from "../_Components/SocialMedia";
 
@@ -50,6 +51,7 @@ function DigitalMarketing() {
                 </div>
 
                 <BusinessTogether />
+                 <Faq/>
             </main>
         </Layout>
     );

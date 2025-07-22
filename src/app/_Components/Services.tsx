@@ -97,7 +97,7 @@ const Services = () => {
       {/* Heading */}
       <div className="relative z-10 text-center mb-12">
         <h2 className="text-3xl md:text-[40px] font-extrabold text-black font-Raleway">
-          <span className="text-purple-700 font-bold">Services</span> we offer
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] font-bold">Services</span> we offer
           for you
         </h2>
       </div>
@@ -117,9 +117,13 @@ const Services = () => {
                       alt="Service"
                       className="w-full h-full object-cover opacity-90"
                     />
-                    <div className="absolute inset-0 flex items-center justify-center px-4">
-                      <p className="text-white text-[28px] font-bold text-center font-Raleway drop-shadow-[0_2px_3px_rgba(0,0,0,0.5)]">
+                  
+                       <div className="absolute inset-0 flex flex-col  items-center justify-center px-4 py-4">
+                      <p className="text-white md:text-[28px] text-[20px] font-bold text-center font-Raleway drop-shadow-[0_2px_3px_rgba(0,0,0,0.5)]">
                         {service.title}
+                      </p>
+                      <p className="text-white text-sm text-center font-Raleway leading-6 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] md:hidden mt-10">
+                        {service.message}
                       </p>
                     </div>
                   </div>

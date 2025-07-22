@@ -16,7 +16,7 @@ const logos = [
 export default function BlockchainTechnology() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
-      <div className="flex flex-col md:flex-row justify-between items-center mb-12">
+      <div className="flex flex-col md:flex-row justify-between items-center md:mb-12">
         <div className="max-w-4xl text-center md:text-left">
           <h1 className="text-[30px] md:text-[42px] font-extrabold mb-4 font-raleway">
             Get Started with

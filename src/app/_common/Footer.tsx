@@ -158,7 +158,7 @@ const Footer: FC = () => {
           Placer IT
         </h1>
       </div>
-      <div className="text-center text-white/70 text-xs z-20 relative md:mt-40">
+      <div className="text-center text-white/70 text-xs z-20 relative  sm:mt-10 md:mt-25 lg:mt-30 xl:mt-40 2xl:mt-54">
         <p>Privacy Policy &nbsp; | &nbsp; Terms & Conditions</p>
         <p className="mt-1">© 2025 TechDevise. All rights reserved.</p>
       </div>
