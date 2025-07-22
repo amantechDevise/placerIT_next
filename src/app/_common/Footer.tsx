@@ -16,7 +16,7 @@ const Footer: FC = () => {
         {/* Newsletter */}
         <div className="flex flex-col md:flex-row justify-between items-center border-b border-white/20 pb-8 mb-8">
           <img
-            src="/images/logo.png"
+            src="/images/logo.svg"
             alt="TechDevise Logo"
             className="h-15 mb-4 md:mb-0"
           />
