@@ -22,13 +22,7 @@ const DashboardPage = () => {
     }
   }, [router]);
 
-  if (loading) {
-    return (
-      <div style={{ textAlign: "center", marginTop: "50px" }}>
-        <h2>Loading dashboard...</h2>
-      </div>
-    );
-  }
+ 
 
   if (!isAuthenticated) {
     return null; // Redirecting...

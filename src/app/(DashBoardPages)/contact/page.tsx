@@ -3,11 +3,16 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import DashBoardLayout from "@/app/(DashBoardPages)/_common/DashBoardLayout";
-
+import Swal from "sweetalert2";
+interface Contacts {
+  _id: string;
+  name: string;
+  email: string;
+  message: string;
+  phone: number;
+}
 const Contact = () => {
-  const [contacts, setContacts] = useState([]);
-  const [loading, setLoading] = useState(true);
-
+  const [contacts, setContacts] = useState<Contacts[]>([]);
   useEffect(() => {
     async function fetchContacts() {
       try {
@@ -16,14 +21,34 @@ const Contact = () => {
       } catch (error) {
         console.error("Error fetching contacts:", error);
       } finally {
-        setLoading(false);
       }
     }
 
     fetchContacts();
   }, []);
+  const handleDelete = async (id: string) => {
+    const result = await Swal.fire({
+      title: "Are you sure?",
+      text: "This Contect will be permanently deleted.",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#d33",
+      cancelButtonColor: "#3085d6",
+      confirmButtonText: "Yes, delete it!",
+    });
 
-  if (loading) return <div>Loading...</div>;
+    if (result.isConfirmed) {
+      try {
+        await axios.delete(`/api/contact?id=${id}`);
+        setContacts((prevRoles) => prevRoles.filter((contacts) => contacts._id !== id));
+
+        Swal.fire("Deleted!", "The role has been deleted.", "success");
+      } catch (error) {
+        console.error("Error deleting role:", error);
+        Swal.fire("Error", "Failed to delete the role.", "error");
+      }
+    }
+  };
 
   return (
     <DashBoardLayout>
@@ -47,9 +72,9 @@ const Contact = () => {
               <th className="px-4 py-4 text-left text-xs font-semibold text-slate-900 uppercase tracking-wider">
                 Message
               </th>
-              {/* <th className="px-4 py-4 text-left text-xs font-semibold text-slate-900 uppercase tracking-wider">
+              <th className="px-4 py-4 text-left text-xs font-semibold text-slate-900 uppercase tracking-wider">
                 Actions
-              </th> */}
+              </th>
             </tr>
           </thead>
           <tbody className="bg-white divide-y divide-gray-200 whitespace-nowrap">
@@ -67,14 +92,17 @@ const Contact = () => {
                   <td className="px-4 py-4 text-sm text-slate-600 font-medium">{email}</td>
                   <td className="px-4 py-4 text-sm text-slate-600 font-medium">{phone}</td>
                   <td className="px-4 py-4 text-sm text-slate-600 font-medium">{message}</td>
-                  {/* <td className="px-4 py-4 text-sm">
-                    <button className="cursor-pointer text-blue-600 font-medium mr-4">
+                  <td className="px-4 py-4 text-sm">
+                    {/* <button className="cursor-pointer text-blue-600 font-medium mr-4">
                       View
-                    </button>
-                    <button className="cursor-pointer text-red-600 font-medium">
+                    </button> */}
+                     <button
+                      onClick={() => handleDelete(_id)}
+                      className="cursor-pointer text-red-600 font-medium"
+                    >
                       Delete
                     </button>
-                  </td> */}
+                  </td>
                 </tr>
               ))
             )}

@@ -63,7 +63,6 @@ const Request_Hireing = () => {
     }
   };
 
-  if (loading) return <div>Loading...</div>;
 
   return (
     <DashBoardLayout>

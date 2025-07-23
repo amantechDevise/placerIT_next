@@ -12,7 +12,7 @@ const Footer: FC = () => {
     >
       {/* ===== Bottom Part: Newsletter + Main Content ===== */}
 
-      <div className="w-full px-6 py-12 max-w-7xl mx-auto mt-8">
+      <div className="w-full px-6 py-12 max-w-7xl mx-auto md:mt-8">
         {/* Newsletter */}
         <div className="flex flex-col md:flex-row justify-between items-center border-b border-white/20 pb-8 mb-8">
           <img
@@ -20,32 +20,44 @@ const Footer: FC = () => {
             alt="TechDevise Logo"
             className="h-15 mb-4 md:mb-0"
           />
-          <div className="flex flex-col md:flex-row items-center w-full max-w-md gap-4 md:gap-6">
-            {" "}
-            {/* Added flex-col for small screens */}
-            <p className="text-white font-semibold whitespace-nowrap mr-2 mb-2 md:mb-0">
-              {" "}
-              {/* Added mb-2 for small screens */}
-              Newsletter!
-            </p>
-            <div className="flex flex-grow">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="flex-grow px-4 w-40 md:w-full py-3 text-black rounded-l-md placeholder-black bg-white"
-              />
-              <button className="bg-[#157B6C] px-6 py-3 text-white rounded-r-md font-semibold">
-                Submit
-              </button>
-            </div>
-          </div>
+   <div className="flex flex-col md:flex-row items-center w-full max-w-lg gap-6 md:gap-8 px-4 md:px-0">
+  {/* Label */}
+  <p className="text-white font-semibold whitespace-nowrap mb-3 md:mb-0 text-lg md:text-xl">
+    Newsletter!
+  </p>
+
+  {/* Input + Button */}
+  <div className="flex flex-col sm:flex-row items-center w-full gap-4 sm:gap-6">
+    {/* Input with icon */}
+    <div className="flex items-center bg-white rounded-2xl px-6 py-4 w-full sm:flex-grow">
+      <img
+        src="/images/env.png"
+        alt="email icon"
+        className="mr-4 h-6 w-6 object-contain"
+      />
+      <input
+        type="email"
+        placeholder="Enter Email"
+        className="flex-grow outline-none text-black placeholder-black bg-white text-lg"
+      />
+    </div>
+
+    {/* Submit Button */}
+    <button className="bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] text-white px-8 py-4 border border-white rounded-2xl font-semibold text-lg hover:opacity-90 transition w-full sm:w-auto">
+      Submit
+    </button>
+  </div>
+</div>
+
+
+
         </div>
 
         {/* Main content */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
           {/* About */}
           <div>
-             <h3 className="text-white text-lg font-semibold mb-3 md:text-[18px] text-[14px] text-start">About Company</h3>
+            <h3 className="text-white text-lg font-semibold mb-3 md:text-[18px] text-[14px] text-start">About Company</h3>
             <p className="mb-4 text-white/80 md:text-[14px] text-[12px] text-start">
               Ewebot have much planned for the future, working with great
               clients and continued software development.
@@ -94,22 +106,22 @@ const Footer: FC = () => {
               Quick Links
             </h3>
             <ul className="space-y-2 text-white/80 md:text-[14px] text-[12px]  text-start">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/about">About Us</Link>
-            </li>
-            <li>
-              <Link href="/services">Our Services</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact Us</Link>
-            </li>
-            <li>
-              <Link href="/blog">Blog</Link>
-            </li>
-          </ul>
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/about">About Us</Link>
+              </li>
+              <li>
+                <Link href="/services">Our Services</Link>
+              </li>
+              <li>
+                <Link href="/contact">Contact Us</Link>
+              </li>
+              <li>
+                <Link href="/blog">Blog</Link>
+              </li>
+            </ul>
           </div>
 
           {/* Contact */}

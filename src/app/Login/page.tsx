@@ -40,7 +40,7 @@ const LoginPage = () => {
             <div className="flex flex-col gap-2 mt-20">
               <div className="mb-8 text-center">
                 <a className="flex justify-center">
-                  <img src="/Group 95.svg" alt="logo" className="h-15" />
+                  <img src="/images/Group 95.svg" alt="logo" className="h-25" />
                 </a>
               </div>
 

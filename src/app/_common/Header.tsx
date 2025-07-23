@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect,useRef } from "react";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import Image from "next/image";
@@ -14,6 +14,7 @@ const Navbar: React.FC = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
 const [isLoading, setIsLoading] = useState(false);
+const dropdownRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 const pathname = usePathname();
   const serviceImages: string[] = [
@@ -25,7 +26,18 @@ const pathname = usePathname();
     "/images/Mask group(6).jpg",
     "/images/Mask group(7).jpg",
   ];
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setDropdownOpen(false);
+      }
+    };
 
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) =>
@@ -93,6 +105,7 @@ const pathname = usePathname();
             <div
               className="relative"
               onMouseEnter={() => setDropdownOpen(true)}
+              ref={dropdownRef}
             >
 
               <Link href="/Services" className="hover:text-blue-400 flex items-center gap-1 focus:outline-none" >

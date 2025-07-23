@@ -32,3 +32,26 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });
     }
   }
+
+  export async function DELETE(req: NextRequest) {
+    try {
+      const { searchParams } = new URL(req.url);
+      const id = searchParams.get("id");
+  
+      if (!id) {
+        return NextResponse.json({ message: "Missing ID" }, { status: 400 });
+      }
+  
+      await connectToDatabase();
+      const deleted = await Contact.findByIdAndDelete(id);
+  
+      if (!deleted) {
+        return NextResponse.json({ message: "Contact not found" }, { status: 404 });
+      }
+  
+      return NextResponse.json({ message: "Contact deleted", deleted }, { status: 200 });
+    } catch (error) {
+      console.error("Error deleting contact request:", error);
+      return NextResponse.json({ message: "Internal Server Error" }, { status: 500 });
+    }
+  }

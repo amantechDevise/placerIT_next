@@ -96,7 +96,7 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name */}
             <div>
-              <label className="block text-gray-700 font-semibold mb-1" htmlFor="name">
+              <label className="block text-gray-700 text-start font-semibold mb-1" htmlFor="name">
                 Name
               </label>
               <input
@@ -105,13 +105,13 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 placeholder="Enter Name"
-                className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
 
             {/* Email */}
             <div>
-              <label className="block text-gray-700 font-semibold mb-1" htmlFor="email">
+              <label className="block text-gray-700 font-semibold mb-1 text-start" htmlFor="email">
                 Email Address
               </label>
               <input
@@ -120,20 +120,20 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter Email Address"
-                className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
             </div>
 
             {/* Service */}
             <div>
-              <label className="block text-gray-700 font-semibold mb-1" htmlFor="service">
+              <label className="block text-gray-700 font-semibold mb-1 text-start" htmlFor="service">
                 Service Required
               </label>
               <select
                 id="service"
                 value={service}
                 onChange={(e) => setService(Number(e.target.value))}
-                className="w-full border border-gray-300 rounded px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
               >
                 <option value="" disabled>
                   Select
@@ -148,13 +148,16 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
               </select>
             </div>
 
-            <button
-              type="submit"
-              className="bg-gradient-to-r from-purple-600 to-blue-500 text-white py-3 px-8 rounded hover:opacity-90 transition"
-              disabled={loading}
-            >
-              {loading ? "Sending..." : "Send Now"}
-            </button>
+         <div className="flex justify-start">
+  <button
+    type="submit"
+    className="bg-gradient-to-r from-[#5D3DAF] to-[#5598F7] text-white py-3 px-8 rounded-xl hover:opacity-90 transition"
+    disabled={loading}
+  >
+    {loading ? "Sending..." : "Send Now"}
+  </button>
+</div>
+
           </form>
         </div>
       </div>
