@@ -49,7 +49,7 @@ const SocialMedia: React.FC = () => {
             alt="SEO Expert"
             width={330}
             height={300}
-            className="object-contain"
+            className="object-contain  rounded-xl"
           />
         </div>
 

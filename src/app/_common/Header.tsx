@@ -202,7 +202,7 @@ const pathname = usePathname();
 
               <button
                 onClick={() => setMobileDropdownOpen(!mobileDropdownOpen)}
-                className="w-full flex md:justify-between  justify-center  items-center hover:text-blue-400 font-semibold text-lg focus:outline-none"
+                className="w-full flex md:justify-center lg:justify-between sm:justify-center  justify-center  items-center hover:text-blue-400 font-semibold text-lg focus:outline-none"
               >
                 Services
                 <svg

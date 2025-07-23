@@ -3,11 +3,11 @@ import React from "react";
 export default function BlockchainInfo() {
   return (
     <div className="bg-[#F9FAFB] py-16 px-4 md:px-8 lg:px-20 relative overflow-hidden">
-      <div className="absolute md:top-[63%] md:left-[35px] left-[35px] transform -translate-y-1/2 rotate-[-90deg]  z-10">
-        <p className="text-[#DBDBDB] md:text-[32px] text-raleway  font-bold uppercase">
-          Key Features of Blockchain
-        </p>
-      </div>
+     <div className="hidden xl:block absolute md:top-[63%] xl:left-[-189px] 2xl:left-[35px] transform -translate-y-1/2 rotate-[-90deg] z-10">
+  <p className="text-[#DBDBDB] md:text-[32px] text-raleway font-bold uppercase">
+    Key Features of Blockchain
+  </p>
+</div>
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Heading */}
         <div className="text-center mb-12 max-w-3xl mx-auto">

@@ -20,7 +20,7 @@ const ChooseUs = () => {
 
                 <div className="w-full lg:w-[40%] flex flex-col items-center lg:items-center" data-aos="fade-right">
                     <h2 className="text-[42px] font-extrabold text-Raleway mb-4 text-center lg:text-center">
-                        Why <span className="text-blue-600">Choose Us</span>
+                        Why <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] font-raleway">Choose Us</span>
                     </h2>
                     <img src="/images/Group 225.svg" alt="Why Choose Us" className="w-[60%] max-w-md" />
                 </div>

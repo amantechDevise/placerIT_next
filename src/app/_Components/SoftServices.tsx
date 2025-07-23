@@ -88,21 +88,20 @@ const SoftServices: React.FC = () => {
         </div>
 
         {/* Right Content */}
-        <div className="w-full md:w-[60%] p-8 flex flex-col justify-center md:text-start text-center">
-          <div className="text-4xl text-[#6D70F5]">
-            <img src={services[selected].icon} alt="" />
-          </div>
-          <div className="flex md:items-center gap-4 mb-4">
+       <div className="w-full md:w-[60%] p-8 flex flex-col justify-center md:text-start text-center mx-auto md:mx-0">
+  <div className="text-4xl text-[#6D70F5]">
+    <img src={services[selected].icon} alt="" />
+  </div>
+  <div className="flex items-center gap-4 mb-4">
+    <h3 className="text-[20px] md:text-[30px] font-bold text-gray-800 font-raleway">
+      {services[selected].title}
+    </h3>
+  </div>
+  <p className="text-gray-700 text-[12px] md:text-[16px] leading-relaxed text-start">
+    {services[selected].description}
+  </p>
+</div>
 
-
-            <h3 className="text-[20px] md:text-[30px] font-bold text-gray-800 font-raleway">
-              {services[selected].title}
-            </h3>
-          </div>
-          <p className="text-gray-700 text-[12px] md:text-[16px] leading-relaxed">
-            {services[selected].description}
-          </p>
-        </div>
       </div>
     </section>
   );

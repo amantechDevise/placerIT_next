@@ -71,9 +71,8 @@ const Contact_Us = ({ showBorder }: ContactUsProps) => {
   return (
     <section className="relative w-full px-2">
       <div
-        className={`relative z-10 max-w-7xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden grid grid-cols-1 md:grid-cols-2 px-6 py-4 md:px-10 md:py-16 ${
-          showBorder ? "border border-gray-300" : ""
-        }`}
+        className={`relative z-10 max-w-7xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden grid grid-cols-1 md:grid-cols-2 px-6 py-4 md:px-10 md:py-16 ${showBorder ? "border border-gray-300" : ""
+          }`}
       >
         {/* Left Side */}
         <div className="flex flex-col justify-center items-start p-4 md:p-8">
@@ -87,9 +86,7 @@ const Contact_Us = ({ showBorder }: ContactUsProps) => {
             Hey! Let’s Talk
           </h2>
           <p className="text-gray-600 text-[12px] md:text-[16px] mb-4 text-start">
-            Is your business finding it difficult to flourish in the online
-            world? Without proper digital marketing, your website won’t get the
-            attention it deserves. Try our results-driven strategies to grow.
+            Is your business finding it difficult to flourish in the online world? Well, it is no surprise because if proper digital marketing is not done then your website will not be able to gain the desired notice from the audience. Hence, opt for our result oriented digital marketing strategies to give your business a boost.
           </p>
           <img
             src="/images/formImage.png"

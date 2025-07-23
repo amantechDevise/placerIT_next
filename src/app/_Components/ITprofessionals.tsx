@@ -7,7 +7,7 @@ const ITprofessionals = () => {
       <img
         src="/images/hero-arrow-1 2.svg"
         alt="Decorative Arrow"
-        className="absolute top-4 right-4 md:right-[1.5rem]  2xl:right-75 w-20 sm:w-16 md:w-30 lg:w-[12rem] xl:w-55 h-auto animate-[bounce_3s_infinite]"
+        className="absolute top-4 right-4 md:right-[1.5rem]  2xl:right-75 w-20 sm:w-16 md:w-30 lg:w-[12rem] xl:w-45 h-auto animate-[bounce_3s_infinite]"
       />
 
       <div className="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
@@ -25,7 +25,7 @@ const ITprofessionals = () => {
           <img
             src="/images/Group 171.svg"
             alt="Company Icon"
-            className="absolute md:-bottom-8 -bottom-4  md:-left-15 -left-4 w-26 sm:w-[8rem] md:w-40 lg:w-42 h-auto z-20 animate-[spin_6s_linear_infinite]"
+            className="absolute md:-bottom-8 -bottom-4  md:-left-15 -left-4 w-20 sm:w-[8rem] md:w-40 lg:w-30 h-auto z-20 animate-[spin_6s_linear_infinite]"
             style={{ transformOrigin: "center center" }}
           />
         </div>

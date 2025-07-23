@@ -13,7 +13,7 @@ const QualityEssential = () => {
             </div>
 
             <div className="w-full lg:w-[65%] flex items-center bg-[#F7F7F7]/90">
-                <div className="container mx-auto px-4 py-10 2xl:pr-80 xl:pr-20">
+               <div className="container mx-auto px-4 py-10 2xl:pr-80 xl:pr-20">
                     <h2 className="text-[30px] lg:text-[42px] font-extrabold font-raleway mb-4 text-center md:text-start">
                         Why{" "}
                         <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] font-raleway">
@@ -27,17 +27,17 @@ const QualityEssential = () => {
                     </p>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
-                        <div className="bg-white p-6 rounded-3xl shadow-md border border-gray-200 md:text-start text-center">
-                            <img src="/images/Group 323.svg" alt="" />
-                            <h3 className="md:text-[18px] font-bold font-raleway text-black">
-                                Enhance Product <br /> Reliability
-                            </h3>
-                            <p className="text-gray-700 text-[16px] mt-2">
-                                Ensure your product works consistently, meeting the expectations of users.
-                            </p>
-                        </div>
+                      <div className="bg-white p-6 rounded-3xl shadow-md border border-gray-200 flex flex-col items-center text-center md:items-start md:text-left">
+  <img src="/images/Group 323.svg" alt="" className="mb-4" />
+  <h3 className="text-[18px] font-bold font-raleway text-black">
+    Enhance Product <br /> Reliability
+  </h3>
+  <p className="text-gray-700 text-[16px] mt-2">
+    Ensure your product works consistently, meeting the expectations of users.
+  </p>
+</div>
 
-                        <div className="bg-white p-6 rounded-3xl shadow-md border border-gray-200 md:text-start text-center">
+                        <div className="bg-white p-6 rounded-3xl shadow-md border border-gray-200 flex flex-col items-center text-center md:items-start md:text-left">
                             <img src="/images/Group 324.svg" alt="" />
                             <h3 className="text-[18px] font-bold font-raleway text-black">
                                 Boost Customer <br />Satisfaction
@@ -47,7 +47,7 @@ const QualityEssential = () => {
                             </p>
                         </div>
 
-                        <div className="bg-white p-6 rounded-3xl shadow-md border border-gray-200 md:text-start text-center">
+                        <div className="bg-white p-6 rounded-3xl shadow-md border border-gray-200 flex flex-col items-center text-center md:items-start md:text-left">
                             <img src="/images/Group 325.svg" alt="" />
                             <h3 className="text-[18px] font-bold font-raleway text-black">
                                 Optimize Business <br /> Efficiency
@@ -58,7 +58,7 @@ const QualityEssential = () => {
                             </p>
                         </div>
 
-                        <div className="bg-white p-6 rounded-3xl shadow-md border border-gray-200 md:text-start text-center">
+                        <div className="bg-white p-6 rounded-3xl shadow-md border border-gray-200 flex flex-col items-center text-center md:items-start md:text-left">
                             <img src="/images/Group 326.svg" alt="" className="mb-4" />
                             <h3 className="text-[18px] font-bold font-raleway text-black">
                                 Ensure <br /> Compliance

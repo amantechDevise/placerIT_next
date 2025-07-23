@@ -15,13 +15,13 @@ const ConsultancyServices = () => {
           <img
             src="/images/Group 375.png"
             alt="Top graphic"
-            className="absolute left-6 top-6 w-15 h-15 md:w-33 md:h-33 animate-[spin_8s_linear_infinite]"
+            className="absolute left-6 top-6 sm:w-35 w-15 h-15 sm:h-35 md:w-33 md:h-33 animate-[spin_8s_linear_infinite]"
             style={{ transformOrigin: "center center" }}
           />
           <img
             src="/images/Group 368.svg"
             alt="Bottom graphic"
-            className="absolute -bottom-3 left-5 md:-bottom-20 md:left-40 w-72 h-20 md:w-80 md:h-80 "
+            className="absolute -bottom-3 left-5 sm:left-50 md:-bottom-20 md:left-40 w-72 h-20 sm:h-35 md:w-80 md:h-80 "
           />
         </div>
 

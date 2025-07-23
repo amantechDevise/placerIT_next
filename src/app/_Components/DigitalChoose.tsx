@@ -63,37 +63,45 @@ export default function DigitalChoose() {
   }, []);
 
   return (
-    <div className="min-h-screen text-white px-6 py-16 bg-white">
-      <div className="max-w-6xl mx-auto">
-        <div
-          className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className={`bg-white text-gray-800 rounded-3xl p-6 transition-shadow duration-400 ${index !== 0 ? "border-1 border-[#CDCDCD]" : ""
-                }`}
-            >
-              <div className="text-3xl mb-3">
-                {service.icon && <img src={service.icon} alt="icon" />}
-              </div>
-              <h3
-                className={` mb-2 md:text-start text-center ${index === 0
-                    ? "md:text-[57px] text-[32px] mt-[-40px]  font-extrabold"
-                    : "md:text-[22px] text-[16px] font-semibold"
-                  }`}
-              >
-                {service.title}
-              </h3>
-              <p className="md:text-[16px] text-[12px] md:text-start text-center">
-                {service.description}
-              </p>
-            </div>
-          ))}
+    <div className="min-h-full text-white px-6 py-16 bg-white">
+     <div className="max-w-6xl mx-auto">
+  <div
+    className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
+    {services.map((service, index) => (
+      <div
+        key={index}
+        className={`bg-white text-gray-800 rounded-3xl p-6 transition-shadow duration-400 ${
+          index !== 0 ? "border-1 border-[#CDCDCD]" : ""
+        }`}
+      >
+        {/* Center icon on mobile */}
+        <div className="text-3xl mb-3 flex justify-center md:justify-start">
+          {service.icon && <img src={service.icon} alt="icon" />}
         </div>
+
+        {/* Responsive heading */}
+        <h3
+          className={`mb-2 ${
+            index === 0
+              ? "md:text-start text-center md:text-[57px] text-[32px] mt-[-40px] font-extrabold"
+              : "md:text-start text-center md:text-[22px] text-[16px] font-semibold"
+          }`}
+        >
+          {service.title}
+        </h3>
+
+        {/* Responsive description */}
+        <p className="md:text-[16px] text-[12px] md:text-start text-center">
+          {service.description}
+        </p>
       </div>
+    ))}
+  </div>
+</div>
+
     </div>
   );
 }

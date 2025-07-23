@@ -67,30 +67,31 @@ export default function DevelopmentChoose() {
         </h2>
 
         {/* Service Cards */}
-        <div
-          className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-        >
-          {services.map((service, index) => (
-            <div
-              key={index}
-              className="bg-white text-gray-800 rounded-3xl p-6 shadow-xl duration-400"
-            >
-              <div className="text-3xl mb-3">
-                {service.icon && (
-                  <img src={service.icon} alt={service.title} />
-                )}
-              </div>
-              <h3 className="font-extrabold mb-2 text-center md:text-start md:text-[22px] text-[16px]">
-                {service.title}
-              </h3>
-              <p className="md:text-[16px] text-[12px] text-center md:text-start">
-                {service.description}
-              </p>
-            </div>
-          ))}
-        </div>
+       <div
+  className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center "
+  data-aos="fade-up"
+  data-aos-duration="1000"
+>
+  {services.map((service, index) => (
+    <div
+      key={index}
+      className="bg-white text-gray-800 rounded-3xl p-6 shadow-xl duration-400 w-full sm:max-w-md mx-auto"
+    >
+      <div className="text-3xl mb-3 text-center md:text-start">
+  {service.icon && (
+    <img src={service.icon} alt={service.title} className="inline-block" />
+  )}
+</div>
+      <h3 className="font-extrabold mb-2 text-center md:text-start md:text-[22px] text-[16px]">
+        {service.title}
+      </h3>
+      <p className="md:text-[16px] text-[12px] text-center md:text-start">
+        {service.description}
+      </p>
+    </div>
+  ))}
+</div>
+
       </div>
 
       {/* Background Image on Right */}

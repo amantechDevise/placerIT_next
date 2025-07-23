@@ -64,13 +64,14 @@ const SoftwareChoose: React.FC = () => {
         data-aos="zoom-out-up"
       >
         {/* Left Image */}
-        <div className="flex-shrink-0">
-          <img
-            src="/images/SoftMask group.jpg"
-            alt="Software Consultancy"
-            className="object-contain w-full h-[90%]"
-          />
-        </div>
+       <div className="flex-shrink-0 mt-5 md:mx-0 mx-auto w-full max-w-[500px]">
+  <img
+    src="/images/SoftMask group.jpg"
+    alt="Software Consultancy"
+    className="object-contain w-full h-[90%] rounded-2xl"
+  />
+</div>
+
 
         {/* Right Services */}
         <div className="flex-1 space-y-8 pt-6  max-w-2xl">
@@ -80,7 +81,7 @@ const SoftwareChoose: React.FC = () => {
                 {String(index + 1).padStart(2, "0")}
               </div>
               <div>
-                <h4 className="text-gray-800 font-bold text-lg font-raleway text-start md:text-[26px]text-[16px] ">
+                <h4 className="text-gray-800 font-bold text-lg font-raleway text-start md:text-[26px] text-[16px] ">
                   {item.title}
                 </h4>
                 <p className="text-gray-600 text-sm mt-1 md:text-[16px]text-[12px] text-start">{item.description}</p>

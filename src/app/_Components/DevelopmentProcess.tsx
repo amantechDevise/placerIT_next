@@ -14,22 +14,22 @@ const DevelopmentProcess = () => {
             Our Website<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] ">Development Process</span>
           </h2>
-          <p className="text-gray-600 text-base md:text-[16px] leading-relaxed font-raleway">
+          <p className="text-gray-600 text-[12px] md:text-[16px] leading-relaxed font-raleway">
             <span className=" font-bold"> Discovery & Planning</span> : We start by understanding your business objectives, target audience, and design preferences to create a clear plan.
           </p><br />
-          <p className="text-gray-600 text-base md:text-[16px] leading-relaxed font-raleway">
+          <p className="text-gray-600 text-[12px] md:text-[16px] leading-relaxed font-raleway">
             <span className=" font-bold"> Design</span> : Our designers craft mockups and wireframes, ensuring the site is visually appealing and easy to navigate.
           </p>
           <br />
-          <p className="text-gray-600 text-base md:text-[16px] leading-relaxed font-raleway">
+          <p className="text-gray-600 text-[12px] md:text-[16px] leading-relaxed font-raleway">
             <span className=" font-bold">Development</span>: Our developers turn the designs into a fully functional website, using the latest technologies and best practices.
           </p>
           <br />
-          <p className="text-gray-600 text-base md:text-[16px] leading-relaxed font-raleway">
+          <p className="text-gray-600 text-[12px] md:text-[16px] leading-relaxed font-raleway">
             <span className=" font-bold">Testing</span> : Rigorous testing ensures your site is bug-free, optimized for speed, and performs well across all devices.
           </p>
           <br />
-          <p className="text-gray-600 text-base md:text-[16px] leading-relaxed font-raleway">
+          <p className="text-gray-600 text-[12px] md:text-[16px] leading-relaxed font-raleway">
             <span className=" font-bold"> Launch & Support</span>: We launch your website and provide ongoing support to ensure everything runs smoothly post-launch.
           </p>
         </div>

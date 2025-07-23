@@ -76,9 +76,10 @@ export default function Technologies() {
                             className={`bg-white text-gray-800 rounded-3xl p-4 transition-shadow duration-400 ${index !== 0 ? "border-1 border-[#CDCDCD]" : ""
                                 }`}
                         >
-                            <div className="text-3xl md:mb-4">
-                                {service.icon && <img src={service.icon} alt="icon" />}
-                            </div>
+                           <div className="text-3xl md:mb-4 flex justify-center md:justify-start">
+  {service.icon && <img src={service.icon} alt="icon" />}
+</div>
+
                             <h3
                                 className={`mb-4 md:mb-8 text-center md:text-start ${index === 0
                                     ? "md:text-[50px] text-[32px]   font-extrabold"

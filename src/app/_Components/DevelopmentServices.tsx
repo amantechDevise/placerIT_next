@@ -36,13 +36,13 @@ const DevelopmentServices = () => {
           <img
             src="/images/Group 405.png"
             alt="Company Icon"
-            className="absolute md:-top-8 -top-4  md:-left-15 -left-4 w-26 sm:w-[10rem] md:w-30 lg:w-32 h-auto z-20 animate-[spin_6s_linear_infinite]"
+            className="absolute md:-top-8 -top-4  md:-left-15 -left-4 w-20 sm:w-[10rem] md:w-30 lg:w-32 h-auto z-20 animate-[spin_6s_linear_infinite]"
             style={{ transformOrigin: "center center" }}
           />
            <img
             src="/images/4674328 1.png"
             alt="Company Icon"
-            className="absolute md:-bottom-8 -bottom-4  md:-right-15 -right-4 w-26 sm:w-[10rem] md:w-30 lg:w-32 h-auto z-20 animate-[bounce_3s_infinite]"
+            className="absolute md:-bottom-8 -bottom-4  md:-right-15 -right-4 w-20 sm:w-[10rem] md:w-30 lg:w-32 h-auto z-20 animate-[bounce_3s_infinite]"
             style={{ transformOrigin: "center center" }}
           />
         </div>
