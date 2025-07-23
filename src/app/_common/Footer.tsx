@@ -14,7 +14,7 @@ const Footer: FC = () => {
 
       <div className="w-full px-6 py-12 max-w-7xl mx-auto md:mt-8">
         {/* Newsletter */}
-    <div className="flex flex-col md:flex-row justify-between items-center border-b border-white/20 pb-6 mb-8 px-4  w-full">
+    <div className="flex flex-col md:flex-row justify-between items-center border-b border-white/20 pb-6 mb-8   w-full">
   {/* Logo */}
   <img
     src="/images/logo.svg"

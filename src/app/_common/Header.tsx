@@ -133,11 +133,11 @@ const pathname = usePathname();
                     {[
                       { href: "/Blockchain", icon: "/images/Group 612.svg", label: "Blockchain" },
                       { href: "/SoftwareConsultancy", icon: "/images/Group 607.svg", label: "Software Consultancy" },
-                      { href: "/DigitalMarketing", icon: "/images/Group 609.svg", label: "Digital Marketing" },
-                      { href: "/IT_Staff", icon: "/images/Group 615.svg", label: "IT Staffing" },
-                      { href: "/QualityAssurance", icon: "/images/Group 606.svg", label: "Quality Assurance" },
                       { href: "/WebsiteDevelopment", icon: "/images/Group 608.svg", label: "Website Development" },
+                      { href: "/DigitalMarketing", icon: "/images/Group 609.svg", label: "Digital Marketing" },
+                      { href: "/QualityAssurance", icon: "/images/Group 606.svg", label: "Quality Assurance" },
                       { href: "/UXDesign", icon: "/images/Group 610.svg", label: "UI/UX Design" },
+                      { href: "/IT_Staff", icon: "/images/Group 615.svg", label: "IT Staffing" },
                     ].map(({ href, icon, label }) => (
                       <Link href={href} key={label} className="flex items-center gap-3 hover:bg-gray-100 p-2 rounded-md"  onClick={() => {
                           setDropdownOpen(false);
