@@ -3,7 +3,7 @@ import React from "react";
 
 const QualityServices = () => {
     return (
-        <section className="flex flex-col-reverse md:flex-row items-center justify-center px-6 py-12 md:py-20 bg-white">
+        <section className="flex flex-col-reverse md:flex-row items-center justify-center px-6 py-8 md:py-14 bg-white">
             <div className="max-w-7xl flex flex-col md:flex-row items-center gap-8 w-full">
                 {/* Left Side - Image and Overlay Graphics */}
                 <div className="w-full md:w-1/2 text-center md:text-left">

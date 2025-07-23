@@ -2,7 +2,7 @@ import React from "react";
 
 const Process = () => {
   return (
-    <section className="bg-white px-4 py-12 md:py-20 lg:py-24">
+    <section className="bg-white px-4 py-8 md:py-14">
       {/* Title */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">

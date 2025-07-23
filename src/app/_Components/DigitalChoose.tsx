@@ -63,7 +63,7 @@ export default function DigitalChoose() {
   }, []);
 
   return (
-    <div className="min-h-full text-white px-6 py-16 bg-white">
+    <div className="min-h-full text-white px-6 py-8 md:py-14 bg-white">
      <div className="max-w-6xl mx-auto">
   <div
     className="grid gap-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3"

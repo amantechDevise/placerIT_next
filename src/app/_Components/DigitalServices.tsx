@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function DigitalServices() {
   return (
-    <section className="bg-white px-4 sm:px-6 lg:px-8 py-12">
+    <section className="bg-white px-4 sm:px-6 lg:px-8 py-8 md:py-14">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center md:gap-20">
  <div className="relative w-full md:w-1/2">
           <img

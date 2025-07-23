@@ -42,7 +42,7 @@ const IT_Roles = () => {
   const visibleRoles = roles.slice(0, visibleCount);
 
   return (
-    <section className="py-16 px-6 md:px-20 bg-white text-center">
+    <section className="py-8 md:py-14 px-6 md:px-20 bg-white text-center">
       <h2 className="text-3xl md:text-[40px] font-extrabold text-gray-900 font-raleway">
         We Staff IT Roles Across
       </h2>

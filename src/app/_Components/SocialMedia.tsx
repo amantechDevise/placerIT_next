@@ -24,7 +24,7 @@ const SocialMedia: React.FC = () => {
     AOS.init(aosConfig);
   }, []);
   return (
-    <section className="bg-[#f3f7ff] px-6  py-10">
+    <section className="bg-[#f3f7ff] px-6  py-8 md:py-14">
       <div className="max-w-5xl mx-auto text-center mb-4 md:mb-16">
 
 

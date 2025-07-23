@@ -77,7 +77,7 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="relative w-full py-16 px-4 flex flex-col items-center justify-center bg-white overflow-hidden">
+    <div className="relative w-full py-8 md:py-14 px-4 flex flex-col items-center justify-center bg-white overflow-hidden">
       {/* Background */}
       <img
         src="images/GroupImage.svg"

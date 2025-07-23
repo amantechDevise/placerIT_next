@@ -21,7 +21,7 @@ export default function TechGapPage() {
     }, []);
     return (
 
-        <div className="min-h-full bg-white text-gray-800 py-12 px-6 md:px-20">
+        <div className="min-h-full bg-white text-gray-800 py-8 md:py-14 px-6 md:px-20">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center" data-aos="fade-up"
             >
 

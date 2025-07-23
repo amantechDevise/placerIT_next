@@ -59,7 +59,7 @@ const QAProcess = () => {
     AOS.init(aosConfig);
   }, []);
   return (
-    <section className="bg-[#F1F6FF] py-16 px-6 text-center">
+    <section className="bg-[#F1F6FF] py-8 md:py-14 px-6 text-center">
       <h2 className="text-[30px] font-bold mb-4 md:text-[42px] font-raleway">
         Our <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">QA Process</span>
       </h2>

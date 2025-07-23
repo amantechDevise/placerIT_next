@@ -22,7 +22,7 @@ const Advertising: React.FC = () => {
     AOS.init(aosConfig);
   }, []);
   return (
-    <section className="bg-white px-6 py-12 md:py-20">
+    <section className="bg-white px-6 py-8 md:py-14">
       {/* Header Section */}
       <div className="max-w-5xl mx-auto text-center mb-4 md:mb-16">
         <h2 className="text-[30px] md:text-[42px] font-bold text-gray-800 mb-4 font-raleway">

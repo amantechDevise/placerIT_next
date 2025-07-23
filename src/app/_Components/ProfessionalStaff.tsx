@@ -2,7 +2,7 @@ import React from "react";
 
 const ProfessionalStaff = () => {
     return (
-        <section className="relative bg-[#F1F6FF] px-4 py-12 md:py-20 lg:py-24 overflow-hidden">
+        <section className="relative bg-[#F1F6FF] px-4 py-8 md:py-14  overflow-hidden">
 
             {/* Centered Top Heading and Paragraph */}
             <div className="max-w-5xl mx-auto text-center mb-8">

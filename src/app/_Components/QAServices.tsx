@@ -14,7 +14,7 @@ const QAServices = () => {
         AOS.init(aosConfig);
     }, []);
     return (
-        <section className="py-16 px-4 bg-white text-gray-800">
+        <section className="py-8 md:py-14 px-4 bg-white text-gray-800">
             <div className="max-w-7xl mx-auto text-center">
                 <h2 className="md:text-[42px] text-[30px] font-extrabold mb-4 font-raleway">
                     Our <span className="bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] bg-clip-text text-transparent">QA Services</span>

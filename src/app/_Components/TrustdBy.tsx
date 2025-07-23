@@ -42,7 +42,7 @@ const TrustedBy: React.FC = () => {
                         {[...brands, ...brands].map((brand, index) => (
                             <div
                                 key={index}
-                                className="flex-shrink-0 opacity-80 hover:opacity-100 transition-opacity duration-300"
+                                className="flex-shrink-0 opacity-60 hover:opacity-100 transition-opacity duration-300"
                             >
                                 <img
                                     src={brand.src}

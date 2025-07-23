@@ -49,7 +49,7 @@ const DesignProcess = () => {
   }, []);
 
   return (
-    <section className="bg-[#F1F6FF] py-16 px-6 text-center">
+    <section className="bg-[#F1F6FF] py-8 md:py-14 px-6 text-center">
       <div className="relative w-full text-center mb-8">
         <h2 className="text-3xl font-bold md:text-[42px] font-raleway">
           Our <span className="text-black">UI/UX</span>{" "}

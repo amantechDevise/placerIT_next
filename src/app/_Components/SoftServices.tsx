@@ -57,7 +57,7 @@ const SoftServices: React.FC = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className="bg-white px-6 py-10 md:py-20">
+    <section className="bg-white px-6 py-8 md:py-14">
       {/* Header */}
       <div className="text-center mb-10 max-w-3xl mx-auto">
         <h2 className="text-[30px] md:text-[40px] font-extrabold text-gray-800 mb-4 font-raleway">

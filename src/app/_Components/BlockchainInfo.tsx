@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BlockchainInfo() {
   return (
-    <div className="bg-[#F9FAFB] py-16 px-4 md:px-8 lg:px-20 relative overflow-hidden">
+    <div className="bg-[#F9FAFB] py-8 md:py-14 px-4 md:px-8 lg:px-20 relative overflow-hidden">
      <div className="hidden xl:block absolute md:top-[63%] xl:left-[-189px] 2xl:left-[35px] transform -translate-y-1/2 rotate-[-90deg] z-10">
   <p className="text-[#DBDBDB] md:text-[32px] text-raleway font-bold uppercase">
     Key Features of Blockchain

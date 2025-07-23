@@ -11,7 +11,7 @@ const logos = [
 ];
 export default function CompanyRecognition() {
   return (
-    <div className="relative bg-[#f9f9f9] py-16 overflow-hidden">
+    <div className="relative bg-[#f9f9f9] py-8 md:py-14 overflow-hidden">
       {/* Left-side Image (Out of Container) */}
       <div className="absolute left-23 top-[36%] -translate-y-1/2 -ml-20 hidden md:block">
         <div className="relative w-88 h-72">

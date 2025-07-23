@@ -2,7 +2,7 @@ import React from "react";
 
 const DevelopmentProcess = () => {
   return (
-    <section className="relative bg-white px-4 py-12 md:py-20 lg:py-24 overflow-hidden">
+    <section className="relative bg-white px-4 py-8 md:py-14 overflow-hidden">
 
 
       <div className="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">

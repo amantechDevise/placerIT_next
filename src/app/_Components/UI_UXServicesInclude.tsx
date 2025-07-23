@@ -57,7 +57,7 @@ const UI_UXServicesInclude: React.FC = () => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className="px-6 py-10 md:py-20" style={{
+    <section className="px-6 py-8 md:py-14" style={{
         backgroundImage: ` url(/images/top_view.svg)`,
         backgroundBlendMode: 'overlay',
         backgroundSize: 'cover',

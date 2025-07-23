@@ -2,7 +2,7 @@ import React from "react";
 
 const ConsultancyServices = () => {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center justify-center px-6 py-12 md:py-20 bg-white">
+    <section className="flex flex-col-reverse md:flex-row items-center justify-center px-6 py-8 md:py-14 bg-white">
       <div className="max-w-7xl flex flex-col md:flex-row items-center gap-6 w-full">
         {/* Left Side - Image and Overlay Graphics */}
         <div className="relative w-full md:w-1/2">

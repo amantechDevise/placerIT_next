@@ -2,7 +2,7 @@ import React from "react";
 
 const ITprofessionals = () => {
   return (
-    <section className="relative bg-white px-4 py-12 md:py-20 lg:py-24 overflow-hidden">
+    <section className="relative bg-white px-4 py-8 md:py-14 overflow-hidden">
       {/* Arrow in top-right corner */}
       <img
         src="/images/hero-arrow-1 2.svg"

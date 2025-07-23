@@ -56,7 +56,7 @@ export default function DevelopmentChoose() {
   }, []);
 
   return (
-    <div className="relative min-h-screen text-black px-6 py-12 md:pt-40 bg-[#F7F7F7] overflow-hidden">
+    <div className="relative min-h-screen text-black px-6 py-8 md:py-14 md:pt-40 bg-[#F7F7F7] overflow-hidden">
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Heading */}
         <h2 className="font-extrabold text-gray-900 mb-12 font-raleway text-[30px] md:text-[42px] md:text-left text-center">

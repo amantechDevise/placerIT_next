@@ -17,7 +17,7 @@ const OurMission: React.FC = () => {
 
   return (
     <section
-      className="bg-cover bg-no-repeat py-16 px-4 text-center"
+      className="bg-cover bg-no-repeat py-8 md:py-14 px-4 text-center"
       style={{ backgroundImage: `url(/images/bg-h4-21.svg)` }}
     >
       <h2

@@ -43,7 +43,7 @@ const SoftwareChoose: React.FC = () => {
   }, []);
 
   return (
-    <section className="bg-[#F7F7F7] px-6 py-10 md:py-20">
+    <section className="bg-[#F7F7F7] px-6 py-8 md:py-14">
       {/* Top Title Section */}
       <div className="max-w-4xl mx-auto text-center md:mb-16">
         <h2 className="text-[30px] md:text-[42px] font-bold text-gray-800 mb-4 font-raleway">

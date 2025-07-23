@@ -45,7 +45,7 @@ const DesignMatters = () => {
     AOS.init(aosConfig);
   }, []);
   return (
-    <section className="bg-[#F7F7F7] py-16 px-6 text-center">
+    <section className="bg-[#F7F7F7] py-8 md:py-14 px-6 text-center">
       <h2 className="text-3xl font-bold mb-4 md:text-[42px]">
         Why UI/UX  <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] font-raleway">Design Matters</span>
       </h2>
