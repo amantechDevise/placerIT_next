@@ -71,12 +71,12 @@ const DesignMatters = () => {
       </div>
 
 {/* Rocket + Horizontal Card Section */}
-<div className="flex flex-col md:flex-row items-center justify-end  mt-8 max-w-6xl mx-auto px-4 md:px-0"  data-aos="fade-up"
+<div className="flex flex-col md:flex-row  items-center justify-end  mt-8 max-w-6xl mx-auto px-4 md:px-0"  data-aos="fade-up"
      data-aos-anchor-placement="top-bottom">
   {/* Rocket on the left */}
 
   {/* Horizontal "Support & Optimization" Card */}
-  <div className="bg-white rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.15)] p-6 flex flex-col md:flex-row items-center text-left hover:shadow-lg transition-shadow w-full ">
+  <div className="bg-white rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.15)] p-6 flex flex-col md:flex-row md:basis-2/3 items-center text-start hover:shadow-lg transition-shadow w-full ">
     <div className="mb-4 md:mb-0 md:mr-6 flex-shrink-0">
       <img src={lastStep.icon} alt={lastStep.title} className="w-25 h-25" />
     </div>
@@ -85,8 +85,8 @@ const DesignMatters = () => {
       <p className="text-gray-600 text-sm">{lastStep.description}</p>
     </div>
   </div>
-    <div className="flex-shrink-0">
-    <img src="/images/s1.png" alt="Rocket path" className="w-20 md:w-50 h-auto  z-10" />
+    <div className="flex-shrink-0 md:basis-1/3">
+    <img src="/images/s1.png" alt="Rocket path" className="w-40 md:w-60 h-auto  z-10" />
   </div>
 
 </div>
