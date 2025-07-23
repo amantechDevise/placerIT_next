@@ -94,12 +94,10 @@ const pathname = usePathname();
 
           {/* Desktop Nav */}
           <nav  className="hidden lg:flex gap-x-8 items-center text-white font-bold text-[15px]">
-            <Link  onClick={() => navigateWithLoader("/")} href="/" className="hover:text-blue-400">
+            <Link  href="/" onClick={() => navigateWithLoader("/")} className="hover:text-blue-400">
               Home
             </Link>
-            <Link onClick={() => navigateWithLoader("/AboutUs")} href="/AboutUs" className="hover:text-blue-400" >
-              About Us
-            </Link>
+           <Link href="/AboutUs" onClick={() => navigateWithLoader("/AboutUs")} className="hover:text-blue-400">About Us</Link>
 
             {/* Services Dropdown Desktop */}
             <div
@@ -136,8 +134,8 @@ const pathname = usePathname();
                       { href: "/WebsiteDevelopment", icon: "/images/Group 608.svg", label: "Website Development" },
                       { href: "/DigitalMarketing", icon: "/images/Group 609.svg", label: "Digital Marketing" },
                       { href: "/QualityAssurance", icon: "/images/Group 606.svg", label: "Quality Assurance" },
-                      { href: "/UXDesign", icon: "/images/Group 610.svg", label: "UI/UX Design" },
                       { href: "/IT_Staff", icon: "/images/Group 615.svg", label: "IT Staffing" },
+                      { href: "/UXDesign", icon: "/images/Group 610.svg", label: "UI/UX Design" },
                     ].map(({ href, icon, label }) => (
                       <Link href={href} key={label} className="flex items-center gap-3 hover:bg-gray-100 p-2 rounded-md"  onClick={() => {
                           setDropdownOpen(false);

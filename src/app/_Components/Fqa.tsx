@@ -28,13 +28,13 @@ const faqs = [
   {
     title: "What modern technologies and frameworks do you use?",
     content:
-      "We work with the leading frameworks React, Vue, Angular and keep an eye on rising ones like Svelte. We’re experts in using WebAssembly for performance-critical tasks and embrace new approaches like “vibe coding” to accelerate prototyping.",
+      "We work with the leading frameworks React, Vue, Angular and keep an eye on rising ones like Svelte. We're experts in using WebAssembly for performance-critical tasks and embrace new approaches like 'vibe coding' to accelerate prototyping.",
   },
- 
 ];
 
 const Faq: React.FC = () => {
-  const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  // Initialize with only the first FAQ (index 0) open
+  const [expandedIndex, setExpandedIndex] = useState<number | null>(0);
 
   const toggle = (index: number) => {
     setExpandedIndex(prev => (prev === index ? null : index));
@@ -52,7 +52,7 @@ const Faq: React.FC = () => {
   }, []);
 
   return (
-    <div className="relative font-inter antialiased bg-[#F7F7F7] min-h-full flex flex-col justify-center overflow-hidden md:py-24 py-4 md:px-4">
+    <div className="relative font-inter antialiased bg-[#F7F7F7] min-h-full flex flex-col justify-center overflow-hidden md:pb-24 py-4 md:px-4">
       <div className="w-full max-w-7xl mx-auto px-3 sm:px-8">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {/* Title and Description */}
@@ -89,7 +89,7 @@ const Faq: React.FC = () => {
         </div>
 
         {/* FAQ List */}
-        <div className="space-y-2 mt-10">
+        <div className="space-y-4 mt-10">
           {faqs.map((faq, index) => {
             const isOpen = expandedIndex === index;
 
@@ -141,7 +141,7 @@ const Faq: React.FC = () => {
                       isOpen ? "max-h-[500px] opacity-100 pb-4" : "max-h-0 opacity-0"
                     }`}
                   >
-                    <p className="text-start font-raleway">{faq.content}</p>
+                    <p className="text-start font-raleway md:pr-10">{faq.content}</p>
                   </div>
                 </div>
               </div>
