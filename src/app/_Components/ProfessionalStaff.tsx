@@ -12,9 +12,8 @@ const ProfessionalStaff = () => {
                 </h2>
 
                 <p className="text-gray-600 text-base md:text-[16px] leading-relaxed font-raleway">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s, when an unknown printer took a galley.
+                    With customized advice, digital transformation, and scalable tech solutions, Placerit provides
+professional services that go beyond traditional IT staffing to help your business reach its changing goals.
                 </p>
             </div>
 
@@ -32,21 +31,11 @@ const ProfessionalStaff = () => {
                 {/* Right Side - Text Content */}
                 <div className="w-full lg:w-1/2 text-center lg:text-left">
                     <p className="text-gray-700 text-base md:text-[16px] leading-relaxed font-raleway mb-4">
-                        <strong className="font-semibold text-gray-900">PlaceIT</strong> goes beyond staffing. As a
-                        true tech and talent partner, we go above and beyond to deliver IT
-                        services that power innovation and transformation. When you partner
-                        with Insight Global, you get the engine of a leading IT staffing
-                        company as well as extensive technical solutions through our
-                        Evergreen professional services division.
+                        <strong className="font-semibold text-gray-900">PlaceIT</strong> transcends mere staffing. Being real tech and talent partners, we go above and beyond to provide IT solutions enabling innovation and transformation. Working with Insight Global provides you access to comprehensive technical solutions via our Evergreen professional services section as well as the engine of a top IT staffing firm.
                     </p>
 
                     <p className="text-gray-700 text-base md:text-[16px] leading-relaxed font-raleway">
-                        Evergreen pairs a forward-thinking tech approach with Insight
-                        Global’s powerhouse staffing capabilities. The result? An expert
-                        vision to transform your business with the skills to execute the
-                        strategy. From sourcing high-impact, built-for-purpose teams to
-                        helping you meet your technology goals, we design solutions that
-                        drive current success and long-term growth.
+                        A forward-thinking technological approach is combined with Insight Global’s formidable personnel capabilities in Evergreen. What follows? An expert vision to change your company using the knowledge to carry out the plan. From helping you reach your technological goals to sourcing high-impact, built-for-purpose teams, we provide solutions that propel both present success and long-term expansion.
                     </p>
                 </div>
             </div>

@@ -30,7 +30,7 @@ const SoftwareExpert = () => {
             </span>
           </h2>
           <p className="text-gray-600 text-[12px] md:text-[16px] leading-relaxed font-raleway  font-normal">
-            If you’re ready to take your business to the next level with tailored software solutions, PlacerIT is here to help. Our expert consultants provide actionable insights, practical strategies, and innovative solutions to drive your success.
+           If you’re ready to take your business to the next level with tailored software solutions, PlacerIT is here to help. Our expert consultants provide actionable insights, practical strategies, and innovative solutions to drive your success.
 
 
 

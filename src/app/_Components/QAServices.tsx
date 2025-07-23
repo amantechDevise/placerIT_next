@@ -16,10 +16,10 @@ const QAServices = () => {
     return (
         <section className="py-16 px-4 bg-white text-gray-800">
             <div className="max-w-7xl mx-auto text-center">
-                <h2 className="md:text-[42px] text-[30px] font-extrabold mb-4">
+                <h2 className="md:text-[42px] text-[30px] font-extrabold mb-4 font-raleway">
                     Our <span className="bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] bg-clip-text text-transparent">QA Services</span>
                 </h2>
-                <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+                <p className="text-gray-600 max-w-2xl mx-auto mb-12 font-raleway">
                     We offer a comprehensive range of QA services tailored to your project needs. Our services include:
                 </p>
 
@@ -71,32 +71,32 @@ const services = [
     {
         title: "Manual Testing",
         description:
-            "Manual testing involves a hands-on approach where our QA experts test the software from a user’s perspective, ensuring functionality, usability, and performance meet high standards.",
+            "Manual testing is a hands-on method used by our QA professionals to ensure that the software satisfies high criteria by means of a hands-on approach from the standpoint of a user.",
     },
     {
         title: "Functional Testing",
         description:
-            "Our team tests the functionality of your product to ensure all features work as intended and that the software performs correctly under different scenarios.",
+            "Our staff evaluates your product’s functionality to guarantee that all features operate as expected and that the software runs under many conditions.",
     },
     {
         title: "Security Testing",
         description:
-            "Security is critical for any software product. Our experts conduct vulnerability assessments and penetration testing to identify and eliminate security risks.",
+            "Any software product depends on security to be functional. Our professionals find and remove security vulnerabilities by means of vulnerability analyses and penetration testing.",
     },
     {
         title: "Automated Testing",
         description:
-            "We utilize advanced testing frameworks and tools to automate repetitive tasks, improve test coverage, and deliver faster results, ensuring quicker time-to-market.",
+            "We use cutting-edge testing tools and frameworks to automate tedious chores, increase test coverage, and provide faster results, therefore guaranteeing speedier time-to–market.",
     },
     {
         title: "Performance Testing",
         description:
-            "We evaluate how your application performs under stress, heavy load, and varying conditions to ensure scalability and responsiveness.",
+            "To guarantee scalability and responsiveness, we run your application under varied circumstances, heavy load, and stress.",
     },
     {
         title: "Usability Testing",
         description:
-            "We focus on the user experience, testing the product's ease of use and ensuring it provides a seamless interface for your customers.",
+            "We concentrate on the user experience of the product, so verifying that it offers a flawless interface for your clients.",
     },
 ];
 

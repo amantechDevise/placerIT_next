@@ -82,10 +82,10 @@ const Contact_Us = ({ showBorder }: ContactUsProps) => {
             className="w-10 md:w-14 mb-4 animate-bounce"
             data-aos="fade-down"
           />
-          <h2 className="text-2xl md:text-[36px] font-bold text-black mb-4">
+          <h2 className="text-2xl md:text-[36px] font-bold text-black mb-4 font-raleway">
             Hey! Let’s Talk
           </h2>
-          <p className="text-gray-600 text-[12px] md:text-[16px] mb-4 text-start">
+          <p className="text-gray-600 text-[12px] md:text-[16px] mb-4 text-start font-raleway">
             Is your business finding it difficult to flourish in the online world? Well, it is no surprise because if proper digital marketing is not done then your website will not be able to gain the desired notice from the audience. Hence, opt for our result oriented digital marketing strategies to give your business a boost.
           </p>
           <img
@@ -100,7 +100,7 @@ const Contact_Us = ({ showBorder }: ContactUsProps) => {
         <div className="bg-white p-4 md:p-8">
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
-              <label className="block text-[16px] font-bold text-gray-700 mb-1 text-start">
+              <label className="block text-[16px] font-bold text-gray-700 mb-1 text-start font-raleway">
                 Name
               </label>
               <input
@@ -113,7 +113,7 @@ const Contact_Us = ({ showBorder }: ContactUsProps) => {
             </div>
 
             <div>
-              <label className="block text-[16px] font-bold text-gray-700 mb-1 text-start">
+              <label className="block text-[16px] font-bold text-gray-700 mb-1 text-start font-raleway">
                 Email Address
               </label>
               <input
@@ -126,7 +126,7 @@ const Contact_Us = ({ showBorder }: ContactUsProps) => {
             </div>
 
             <div>
-              <label className="block text-[16px] font-bold text-gray-700 mb-1 text-start">
+              <label className="block text-[16px] font-bold text-gray-700 mb-1 text-start font-raleway">
                 Phone Number
               </label>
               <input
@@ -139,7 +139,7 @@ const Contact_Us = ({ showBorder }: ContactUsProps) => {
             </div>
 
             <div>
-              <label className="block text-[16px] font-bold text-gray-700 mb-1 text-start">
+              <label className="block text-[16px] font-bold text-gray-700 mb-1 text-start font-raleway">
                 Your Message
               </label>
               <textarea

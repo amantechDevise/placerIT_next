@@ -6,7 +6,7 @@ const Process = () => {
       {/* Title */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-          Why Choose <span className="text-blue-600">Our Process?</span>
+          Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">Our Process?</span>
         </h2>
       </div>
 
@@ -31,10 +31,10 @@ const Process = () => {
               className="w-16 h-16 mt-1"
             />
             <div>
-              <h3 className="text-lg md:text-[24px] font-semibold font-Raleway text-gray-800 text-start">
+              <h3 className="text-lg md:text-[24px] font-semibold font-raleway text-gray-800 text-start">
                 Transparency
               </h3>
-              <p className="text-sm md:text-[16px] font-regular font-Raleway text-gray-600 text-start md:text-center">
+              <p className="text-sm md:text-[16px] font-regular font-raleway text-gray-600 text-start">
                 You’ll always know where your project stands.
               </p>
             </div>
@@ -48,10 +48,10 @@ const Process = () => {
               className="w-16 h-16 mt-1"
             />
             <div>
-              <h3 className="text-lg md:text-[24px] font-semibold font-Raleway text-gray-800 text-start">
+              <h3 className="text-lg md:text-[24px] font-semibold font-raleway text-gray-800 text-start">
                 Collaboration
               </h3>
-              <p className="text-sm md:text-[16px] font-regular font-Raleway text-gray-600 text-start md:text-center">
+              <p className="text-sm md:text-[16px] font-regular font-raleway text-gray-600 text-start ">
                 We believe in working together to achieve the best outcomes.
               </p>
             </div>
@@ -65,10 +65,10 @@ const Process = () => {
               className="w-16 h-16 mt-1"
             />
             <div>
-              <h3 className="text-lg md:text-[24px] font-semibold font-Raleway text-gray-800 text-start">
+              <h3 className="text-lg md:text-[24px] font-semibold font-raleway text-gray-800 text-start">
                 Flexibility
               </h3>
-              <p className="text-sm md:text-[16px] font-regular font-Raleway text-gray-600 text-start md:text-center">
+              <p className="text-sm md:text-[16px] font-regular font-raleway text-gray-600 text-start">
                 We adapt to your needs, ensuring that our solutions evolve as
                 your business does.
               </p>
@@ -83,10 +83,10 @@ const Process = () => {
               className="w-16 h-16 mt-1"
             />
             <div>
-              <h3 className="text-lg md:text-[24px] font-semibold font-Raleway text-gray-800 text-start">
+              <h3 className="text-lg md:text-[24px] font-semibold font-raleway text-gray-800 text-start">
                 Customer Success
               </h3>
-              <p className="text-sm md:text-[16px] font-regular font-Raleway text-gray-600 text-start md:text-center">
+              <p className="text-sm md:text-[16px] font-regular font-raleway text-gray-600 text-start ">
                 We’re not happy until you’re fully satisfied with the results.
               </p>
             </div>

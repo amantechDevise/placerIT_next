@@ -38,11 +38,11 @@ const IT_Roles = () => {
 
   return (
     <section className="py-16 px-6 md:px-20 bg-white text-center">
-      <h2 className="text-3xl md:text-[40px] font-extrabold text-gray-900">
+      <h2 className="text-3xl md:text-[40px] font-extrabold text-gray-900 font-raleway">
         We Staff IT Roles Across
       </h2>
 
-      <h3 className="text-3xl md:text-[40px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] mt-1">
+      <h3 className="text-3xl md:text-[40px] font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] mt-1 font-raleway">
         Any Industry
       </h3>
 
@@ -53,13 +53,13 @@ const IT_Roles = () => {
             className="border-2 rounded-lg py-4 px-6 flex justify-between items-center hover:shadow-lg transition cursor-pointer"
             onClick={() => handleRoleClick(role)}
           >
-            <span className="md:text-[20px] text-[14px] font-bold">{role.name}</span>
+            <span className="md:text-[20px] text-[14px] font-bold font-raleway">{role.name}</span>
             <img src="/images/Arrow 1.png" alt="" />
           </div>
         ))}
       </div>
 
-      <button className="mt-10 bg-gradient-to-r from-[#5D3DAF] to-[#5598F7] text-white font-semibold py-2 px-6 rounded transition">
+      <button className="mt-10 bg-gradient-to-r from-[#5D3DAF] to-[#5598F7] text-white font-semibold py-2 px-6 rounded transition font-raleway">
         More Industries
       </button>
 

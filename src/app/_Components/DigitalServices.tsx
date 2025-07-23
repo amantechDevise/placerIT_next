@@ -32,10 +32,10 @@ export default function DigitalServices() {
             <span className="text-black">Services That Drive Results</span>
           </h2>
           <p className="text-gray-600 mt-4 text-sm md:text-[16px] leading-relaxed font-raleway">
-            In today’s digital-first world, your business needs more than just an online presence — it needs an effective, results-driven digital marketing strategy. <span className="font-semibold text-black">Ravent</span> specializes in crafting powerful marketing solutions that help you stand out, get found, and connect with the right audience.
+         Your business needs a digital marketing plan that produces not only an online presence but also outcomes in the digital-first climate of today. Here at PlacerIT, we are masters in creating original marketing plans to increase exposure, widen your clientele, and include your target market. Using the newest techniques and strategies, our staff of experts generates quantifiable outcomes with effect.
           </p>
-          <p className="text-gray-600 mt-4 text-sm">
-            Our team of experts uses battle-tested tools and strategies to deliver measurable results that make an impact.
+          <p className="text-gray-600 mt-4 text-sm font-raleway">
+          Our team of specialists uses the latest tools and tactics to create measurable results that make an impact.
           </p>
         </div>
       </div>

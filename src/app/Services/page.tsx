@@ -23,13 +23,13 @@ const ServicesPage = () => {
                     <div className="absolute inset-0 bg-[#1B1140] opacity-[0.72]"></div>
 
                     <div className="relative z-10 h-full flex flex-col justify-center items-center text-center">
-                        <h1 className="text-3xl md:text-[73px]  font-semibold font-Raleway text-white leading-tight ">
+                        <h1 className="text-3xl md:text-[73px]  font-semibold font-raleway text-white leading-tight ">
                             Services
                         </h1>
 
 
 
-                        <p className="text-gray-300 text-base md:text-lg lg:text-[16px]  md:mb-44  mb-25 max-w-5xl leading-relaxed">
+                        <p className="text-gray-300 text-base md:text-lg lg:text-[16px]  md:mb-44  mb-25 max-w-5xl leading-relaxed font-raleway">
                             At PlacerIT Services, we simplify the complex process of software development.
                         </p>
                     </div>

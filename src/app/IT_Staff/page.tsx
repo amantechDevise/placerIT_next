@@ -24,8 +24,9 @@ function IT_Staff() {
                             IT Staffing and Services
                         </h1>
                         <p className="text-white md:w-3xl mt-10 text-[12px] md:text-[16px] text-center">
-                            PlacerIT is a staffing agency that has the expertise, experience, and network to find you the most qualified candidates for any industry or function in as little as two days. Plus, we have access to top international talent and can source great people from 50+ countries.
-                            Questions?
+                           As a staffing agency, PlacerIT can find you the best candidates for any job or field in as little as two days thanks to its
+knowledge, experience, and network. We can also find great people from 50+ countries and
+access top international talent. queries?
 
 
 

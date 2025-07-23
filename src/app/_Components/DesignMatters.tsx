@@ -47,9 +47,9 @@ const DesignMatters = () => {
   return (
     <section className="bg-[#F7F7F7] py-16 px-6 text-center">
       <h2 className="text-3xl font-bold mb-4 md:text-[42px]">
-        Why UI/UX  <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">Design Matters</span>
+        Why UI/UX  <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] font-raleway">Design Matters</span>
       </h2>
-      <p className="text-gray-600 max-w-4xl mx-auto mb-12 md:text-[16px] text-[12px]">
+      <p className="text-gray-600 max-w-4xl mx-auto mb-12 md:text-[16px] text-[12px] font-raleway">
        Effective UI/UX design is the foundation of a great digital experience. It ensures that your users not only understand how to navigate your product but also enjoy interacting with it. A well-designed product can boost user engagement, increase retention rates, and drive business growth. By focusing on usability and aesthetics, we create designs that leave a lasting impression on your users and enhance your overall brand presence.
       </p>
 
@@ -63,8 +63,8 @@ const DesignMatters = () => {
           >
             <div className="flex flex-col md:items-start items-center text-center">
               <img src={step.icon} alt={step.title} className="mb-4" />
-              <h3 className="font-semibold text-lg mb-2">{step.title}</h3>
-              <p className="text-gray-600 text-sm">{step.description}</p>
+              <h3 className="font-semibold text-lg mb-2 font-raleway">{step.title}</h3>
+              <p className="text-gray-600 text-sm font-raleway">{step.description}</p>
             </div>
           </div>
         ))}
@@ -81,8 +81,8 @@ const DesignMatters = () => {
       <img src={lastStep.icon} alt={lastStep.title} className="w-25 h-25" />
     </div>
     <div>
-      <h3 className="font-semibold text-lg mb-1">{lastStep.title}</h3>
-      <p className="text-gray-600 text-sm">{lastStep.description}</p>
+      <h3 className="font-semibold text-lg mb-1 font-raleway">{lastStep.title}</h3>
+      <p className="text-gray-600 text-sm font-raleway">{lastStep.description}</p>
     </div>
   </div>
     <div className="flex-shrink-0 md:basis-1/3">

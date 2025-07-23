@@ -13,7 +13,7 @@ const BusinessTogether = () => {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">Business Together</span>
           </h2>
           <p className="text-gray-600 text-[12px] md:text-[16px] leading-relaxed font-raleway  font-normal">
-            Whether you’re just starting out or looking to take your digital marketing efforts to the next level, PlacerIT is here to help. Get in touch with us today for a free consultation and discover how we can help you achieve your digital marketing goals.
+           PlacerIT can assist you whether your digital marketing initiatives are wanting to be elevated or you are just starting off. Contact us now to arrange a free consultation and learn how we could support your digital marketing objectives.
           </p>
         </div>
 

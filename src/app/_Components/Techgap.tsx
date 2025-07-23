@@ -35,10 +35,9 @@ export default function TechGapPage() {
         Services Gap
     </h1>
 
-    <p className="md:text-[16px] text-[12px] text-gray-600 mb-6 md:text-start text-center">
+    <p className="md:text-[16px] text-[12px] text-gray-600 mb-6 md:text-start text-center font-raleway">
         <span className="font-semibold">Did you know... </span> <br />
-        that 75% of IT decision-makers see skill gaps within their teams?
-        Some of the top areas include:
+        That seventy-five percent of IT decision-makers believe their staff lack skills? Among the best places are some of:
     </p>
 
     {/* Services */}
@@ -60,20 +59,18 @@ export default function TechGapPage() {
         What impact does this have on business?
     </h3>
     <ul className="list-disc pl-6 md:text-[16px] text-[12px] text-gray-700 space-y-1 mb-6 text-start font-raleway">
-        <li>Reduced ability to meet business objectives</li>
-        <li>Higher operating costs</li>
-        <li>Longer project durations and decreased quality</li>
-        <li>Increased stress among IT employees</li>
+        <li>Less capacity to satisfy corporate goals</li>
+        <li>Increased operational expenses</li>
+        <li>longer project times and declining standards</li>
+        <li>Stress among IT workers rising</li>
     </ul>
 
     {/* Solutions */}
     <h3 className="font-extrabold md:text-[18px] text-[14px] mb-2 text-start  font-raleway">
         Get Access to the Right Solutions
     </h3>
-    <p className="text-[12px] text-gray-700 md:text-[16px] text-start  font-bold">
-        <span className="bold">Placent</span> delivers world-class technical talent services to IT clients around the globe through Evergreen, our professional services division.
-        With staffing experts in 70+ offices across North America, Europe, and Asia, as well as our state-of-the-art technology delivery center in Hyderabad, India,
-        we provide the solutions you need to achieve your company’s goals.
+    <p className="text-[12px] text-gray-700 md:text-[16px] text-start  font-bold font-raleway">
+      Through our professional services branch, Evergreen, PlacerIT provides advanced technical and talent services to IT companies all over the world. Having staffing professionals in more than 70+ offices in North America, Europe, and Asia as well as our state-of- the-art technology delivery center in Hyderabad, India, we offer the tools you need to meet the objectives of your business.
     </p>
 </div>
 

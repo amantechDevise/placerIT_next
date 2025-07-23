@@ -27,34 +27,32 @@ const ChooseUs = () => {
 
                 <div className="w-full lg:w-[60%]">
                     <p className="text-gray-700 mb-8 text-[16px] text-raleway font-normal-400 text-start">
-                        Our mission is to help businesses harness the power of technology to achieve their goals.
-                        We work closely with our clients to understand their needs and provide tailored IT solutions
-                        that drive productivity, improve operations, and create lasting value.
+                       Passionate IT professionals, developers, strategists, and designers committed to provide straightforward, efficient IT solutions for challenging problems abound at PlacerIT. Our dedication to quality and client satisfaction has helped us to be a reliable partner to companies of all kinds in all spheres.
                     </p>
                     <hr className="my-6 border-t-1 border-gray-300 w-full" />
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="text-start">
                             <h4 className="font-bold text-[18px] text-raleway  mb-2">Expertise</h4>
                             <p className="text-gray-600  text-[16px] text-raleway font-normal-400">
-                                Our team consists of seasoned professionals with vast experience across various industries and technology stacks.
+                              Our group consists of pro experts with good-sized rides throughout several industries and technological know-how stacks.
                             </p>
                         </div>
                         <div className="text-start">
                             <h4 className="font-bold text-[18px] mb-2 text-raleway">Innovation</h4>
                             <p className="text-gray-600 text-[16px] text-raleway font-normal-400">
-                                We stay ahead of the curve by continuously exploring the latest technological trends and implementing them to solve your challenges.
+                              We remain in advance of the curve with the aid of consistently exploring modern-day technological tendencies and enforcing them to resolve your challenges.
                             </p>
                         </div>
                         <div className="text-start">
                             <h4 className="font-bold text-[18px] text-raleway mb-2">Customer-Centric Approach</h4>
                             <p className="text-gray-600  text-[16px]">
-                                We put our clients first and are committed to delivering exceptional service and support, ensuring your business stays ahead of the competition.
+                               We put our consumers first and are dedicated to handing over incredible providers and support, making sure your enterprise stays ahead of the competition.
                             </p>
                         </div>
                         <div className="text-start">
                             <h4 className="font-bold text-[18px] mb-2  text-raleway">Proven Track Record</h4>
                             <p className="text-gray-600 text-[16px] text-raleway font-normal-400">
-                                Our successful projects and long-term partnerships with clients stand as a testament to our ability to deliver on promises.
+                                Our profitable initiatives and long-term partnerships with purchasers stand as a testament to our capability to supply on promises.
                             </p>
                         </div>
                     </div>

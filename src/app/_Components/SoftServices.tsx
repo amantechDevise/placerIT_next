@@ -6,49 +6,49 @@ const services = [
   {
     title: "Software Architecture & Design",
     description:
-      "Our consultants help design robust, scalable, and efficient software architectures that ensure your solutions are future-proof. We align technology choices with your business objectives to create a solid foundation for growth.",
+      "Our experts develop strong, scalable, and efficient software systems that guarantee your solutions are future-proof. We match technological decisions to your company goals to provide a strong basis for expansion.",
     icon: "/images/Group 376.png"
   },
   {
     title: "Custom Software Development",
     description:
-      "We provide end-to-end custom software development services to build solutions tailored to your unique business challenges. From ideation to deployment, our experts guide you through the entire process.",
+      "Our end-to- end custom software development services create solutions to fit your particular company needs. Our professionals walk you through the whole process from conception to execution.",
     icon: "/images/Group 442.png"
   },
   {
     title: "Technology Roadmap Development",
     description:
-      "Our consultants collaborate with your team to develop a strategic technology roadmap, identifying the best tools and frameworks to achieve your long-term goals. This helps in minimizing risks while maximizing efficiency.",
+      "Working with your team, our experts create a strategic technology roadmap finding the appropriate tools and frameworks to reach your long-term objectives. This reduces hazards and increases efficiency by means of maximum control.",
     icon: "/images/Group 449.png"
   },
   {
     title: "Cloud Strategy & Migration",
     description:
-      "Transition to the cloud with ease. We help you design cloud-based solutions and migrate your systems to cloud platforms such as AWS, Microsoft Azure, or Google Cloud. Our focus is on scalability, cost-efficiency, and security.",
+      "Easy shift to the cloud. We assist in your design of cloud-based solutions and system migration to AWS, Microsoft Azure, or Google Cloud. Security, economy, and scalability define our priorities.",
     icon: "/images/Group 450.png"
   },
   {
     title: "Digital Transformation Strategy",
     description:
-      "We guide businesses through the digital transformation process, helping them modernize legacy systems and integrate new technologies to enhance operations, customer experiences, and overall efficiency.",
+      "We assist companies upgrade historical systems and mix new technologies to improve operations, customer experiences, and general efficiency as they negotiate the digital transformation process.",
     icon: "/images/Group 451.png"
   },
   {
     title: "Agile & DevOps Consulting",
     description:
-      "Adopt Agile methodologies and DevOps practices to improve collaboration, accelerate delivery, and ensure continuous improvement in software development. We help you implement the right practices for faster time-to-market.",
+      "Using Agile approaches and DevOps techniques can help to guarantee ongoing software development improvement, speed delivery, and enhance teamwork. We assist you in putting correct techniques for speedier time-to----market into use.",
     icon: "/images/Group 452.png"
   },
   {
     title: "IT System Integration",
     description:
-      "Integrate disparate systems and applications to improve communication, data flow, and overall system efficiency. Our experts ensure that your IT infrastructure works cohesively to meet business needs.",
+      "Combine several systems and applications to increase general system efficiency, data flow, and communication quality. Our professionals make sure your IT setup cooperatively satisfies corporate needs.",
     icon: "/images/Group 453.png"
   },
   {
     title: "Software Testing & Quality Assurance",
     description:
-      "Our consultants ensure that the software developed is of the highest quality. From functional testing to performance evaluation, we help optimize software performance, security, and user experience.",
+      "Our consultants guarantee the best quality of the created software. From performance assessment to functional testing, we assist to maximize user experience, security, and software performance.",
     icon: "/images/Group 454.png"
   },
 ];
@@ -64,8 +64,8 @@ const SoftServices: React.FC = () => {
           Our <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">Software Consultancy Services</span>
         </h2>
         <p className="text-gray-600 text-[16px] font-raleway">
-          We offer a wide range of software consultancy services to meet your
-          needs at every stage of the software lifecycle.
+         We offer a wide range of software consultancy services to meet your
+ needs at every stage of the software lifecycle.
         </p>
       </div>
 
@@ -97,7 +97,7 @@ const SoftServices: React.FC = () => {
       {services[selected].title}
     </h3>
   </div>
-  <p className="text-gray-700 text-[12px] md:text-[16px] leading-relaxed text-start">
+  <p className="text-gray-700 text-[12px] md:text-[16px] leading-relaxed text-start font-raleway">
     {services[selected].description}
   </p>
 </div>

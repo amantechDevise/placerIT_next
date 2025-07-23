@@ -46,10 +46,10 @@ const SoftwereWork = () => {
   }, []);
   return (
     <section className="bg-[#F7F7F7] py-16 px-6 text-center">
-      <h2 className="text-3xl font-bold mb-4 md:text-[42px]">
+      <h2 className="text-3xl font-bold mb-4 md:text-[42px] font-raleway">
         How <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">We Work</span>
       </h2>
-      <p className="text-gray-600 max-w-xl mx-auto mb-12">
+      <p className="text-gray-600 max-w-xl mx-auto mb-12 font-raleway">
         Our approach to software consultancy is focused on collaboration, transparency, and delivering real value to your business. Here’s how we work.
       </p>
 
@@ -63,8 +63,8 @@ const SoftwereWork = () => {
           >
             <div className="flex flex-col items-center text-center">
               <img src={step.icon} alt={step.title} className="mb-4" />
-              <h3 className="font-semibold text-lg mb-2">{step.title}</h3>
-              <p className="text-gray-600 text-sm">{step.description}</p>
+              <h3 className="font-semibold text-lg mb-2 font-raleway">{step.title}</h3>
+              <p className="text-gray-600 text-sm font-raleway">{step.description}</p>
             </div>
           </div>
         ))}
@@ -84,8 +84,8 @@ const SoftwereWork = () => {
       <img src={lastStep.icon} alt={lastStep.title} className="w-40 h-40" />
     </div>
     <div>
-      <h3 className="font-semibold text-lg mb-1">{lastStep.title}</h3>
-      <p className="text-gray-600 text-sm">{lastStep.description}</p>
+      <h3 className="font-semibold text-lg mb-1 font-raleway">{lastStep.title}</h3>
+      <p className="text-gray-600 text-sm font-raleway">{lastStep.description}</p>
     </div>
   </div>
 </div>

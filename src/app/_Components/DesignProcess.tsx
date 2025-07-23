@@ -51,7 +51,7 @@ const DesignProcess = () => {
   return (
     <section className="bg-[#F1F6FF] py-16 px-6 text-center">
       <div className="relative w-full text-center mb-8">
-        <h2 className="text-3xl font-bold md:text-[42px]">
+        <h2 className="text-3xl font-bold md:text-[42px] font-raleway">
           Our <span className="text-black">UI/UX</span>{" "}
           <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
             Design Process
@@ -81,8 +81,8 @@ const DesignProcess = () => {
                 alt={step.title}
                 className="w-16 h-16 mb-4"
               />
-              <h3 className="font-semibold md:text-[22px] text-[16px]  mb-2">{step.title}</h3>
-              <p className="text-gray-600 md:text-[16px] text-[12px]">{step.description}</p>
+              <h3 className="font-semibold md:text-[22px] text-[16px]  mb-2 font-raleway">{step.title}</h3>
+              <p className="text-gray-600 md:text-[16px] text-[12px] font-raleway">{step.description}</p>
             </div>
           </div>
         ))}
@@ -97,8 +97,8 @@ const DesignProcess = () => {
   <div className="flex bg-white rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] p-6 hover:shadow-lg transition-shadow">
     <div className="flex flex-col md:w-80 md:items-start md:text-start text-center items-center">
       <img src={uiuxSteps[3].icon} alt={uiuxSteps[3].title} className="w-16 h-16 mb-4" />
-      <h3 className="font-semibold md:text-[22px] text-[16px] mb-2">{uiuxSteps[3].title}</h3>
-      <p className="text-gray-600 md:text-[16px] text-[12px]">{uiuxSteps[3].description}</p>
+      <h3 className="font-semibold md:text-[22px] text-[16px] mb-2 font-raleway">{uiuxSteps[3].title}</h3>
+      <p className="text-gray-600 md:text-[16px] text-[12px] font-raleway">{uiuxSteps[3].description}</p>
     </div>
   </div>
 
@@ -106,8 +106,8 @@ const DesignProcess = () => {
     <div className="bg-white w-full rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.1)] p-6 hover:shadow-lg transition-shadow">
       <div className="flex flex-col md:items-start md:text-start text-center items-center">
         <img src={uiuxSteps[4].icon} alt={uiuxSteps[4].title} className="w-16 h-16 mb-4" />
-        <h3 className="font-semibold md:text-[22px] text-[16px] mb-2">{uiuxSteps[4].title}</h3>
-        <p className="text-gray-600 md:text-[16px] text-[12px]">{uiuxSteps[4].description}</p>
+        <h3 className="font-semibold md:text-[22px] text-[16px] mb-2 font-raleway">{uiuxSteps[4].title}</h3>
+        <p className="text-gray-600 md:text-[16px] text-[12px] font-raleway">{uiuxSteps[4].description}</p>
       </div>
     </div>
 

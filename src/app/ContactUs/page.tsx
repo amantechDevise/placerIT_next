@@ -25,7 +25,7 @@ function ContactUs() {
             Contact Us
           </h1>
 
-          <p className="text-gray-300 text-base md:text-lg lg:text-[16px]  md:mb-44  mb-25 max-w-5xl leading-relaxed">
+          <p className="text-gray-300 text-base md:text-lg lg:text-[16px]  md:mb-44  mb-25 max-w-5xl leading-relaxed font-raleway">
             Have any questions? We’d love to hear from you.
           </p>
         </div>

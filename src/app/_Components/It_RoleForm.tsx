@@ -116,7 +116,7 @@ const ModalForm = ({
 
         <div className="flex flex-col md:flex-row items-center md:items-center justify-between gap-6 mb-8">
           <div className="w-full md:w-[70%]">
-            <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-start">
+            <h2 className="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-start font-raleway">
               Hire Top{' '}
               <span className="bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] bg-clip-text text-transparent font-bold">
                 {role?.name}
@@ -136,7 +136,7 @@ const ModalForm = ({
         <form className="grid grid-cols-1 md:grid-cols-2 gap-4" onSubmit={handleSubmit}>
           {/* First Name */}
           <div>
-            <label htmlFor="firstName" className="block font-bold mb-1 text-start text-[16px]">
+            <label htmlFor="firstName" className="block font-bold mb-1 text-start text-[16px] font-raleway">
               First Name
             </label>
             <input
@@ -152,7 +152,7 @@ const ModalForm = ({
 
           {/* Last Name */}
           <div>
-            <label htmlFor="lastName" className="block font-bold mb-1 text-start text-[16px]">
+            <label htmlFor="lastName" className="block font-bold mb-1 text-start text-[16px] font-raleway">
               Last Name
             </label>
             <input
@@ -167,7 +167,7 @@ const ModalForm = ({
 
           {/* Email */}
           <div>
-            <label htmlFor="email" className="block font-bold mb-1 text-start text-[16px]">
+            <label htmlFor="email" className="block font-bold mb-1 text-start text-[16px] font-raleway">
               Email Address
             </label>
             <input
@@ -183,7 +183,7 @@ const ModalForm = ({
 
           {/* Phone */}
           <div>
-            <label htmlFor="phone" className="block font-bold mb-1 text-start text-[16px]">
+            <label htmlFor="phone" className="block font-bold mb-1 text-start text-[16px] font-raleway">
               Phone Number
             </label>
             <input
@@ -198,7 +198,7 @@ const ModalForm = ({
 
           {/* User Type */}
           <div className="md:col-span-2">
-            <label className="block font-bold mb-2 text-start text-[16px]">
+            <label className="block font-bold mb-2 text-start text-[16px] font-raleway">
               Just to confirm, are you:
             </label>
             <div className="flex flex-col sm:flex-row gap-6">
@@ -243,7 +243,7 @@ const ModalForm = ({
           {userType === 'employer' && (
             <>
               <div>
-                <label htmlFor="company_name" className="block font-bold mb-1 text-start text-[16px]">
+                <label htmlFor="company_name" className="block font-bold mb-1 text-start text-[16px] font-raleway">
                   Company Name
                 </label>
                 <input
@@ -257,7 +257,7 @@ const ModalForm = ({
               </div>
 
               <div>
-                <label htmlFor="job_title" className="block font-bold mb-1 text-start text-[16px]">
+                <label htmlFor="job_title" className="block font-bold mb-1 text-start text-[16px] font-raleway">
                   Job Title
                 </label>
                 <input
@@ -271,7 +271,7 @@ const ModalForm = ({
               </div>
 
               <div>
-                <label htmlFor="type_of_hire" className="block font-bold mb-1 text-start text-[16px]">
+                <label htmlFor="type_of_hire" className="block font-bold mb-1 text-start text-[16px] font-raleway">
                   Type of Hire
                 </label>
                 <select
@@ -288,7 +288,7 @@ const ModalForm = ({
               </div>
 
               <div>
-                <label htmlFor="number_of_job" className="block font-bold mb-1 text-start text-[16px]">
+                <label htmlFor="number_of_job" className="block font-bold mb-1 text-start text-[16px] font-raleway">
                   Number of Openings
                 </label>
                 <input
@@ -302,7 +302,7 @@ const ModalForm = ({
               </div>
 
               <div className="md:col-span-2">
-                <label htmlFor="help" className="block font-bold mb-1 text-start text-[16px]">
+                <label htmlFor="help" className="block font-bold mb-1 text-start text-[16px] font-raleway">
                   How can we help?
                 </label>
                 <textarea
@@ -316,8 +316,8 @@ const ModalForm = ({
               </div>
 
               <div className="md:col-span-2">
-                <label htmlFor="image" className="block font-bold mb-1 text-start text-[16px]">
-                  Already Have a Job Description? <span className='text-red-500'> (Optional)</span>
+                <label htmlFor="image" className="block font-bold mb-1 text-start text-[16px] font-raleway">
+                  Already Have a Job Description? <span className='text-red-500 '> (Optional)</span>
                 </label>
                 <input
                   id="image"
@@ -329,7 +329,7 @@ const ModalForm = ({
               </div>
 
               <div className="md:col-span-2">
-                <label className="block font-bold mb-1 text-start text-[16px]">
+                <label className="block font-bold mb-1 text-start text-[16px] font-raleway">
                   Where is the position located?
                 </label>
                 <div className="flex flex-col gap-4">
@@ -353,7 +353,7 @@ const ModalForm = ({
         </form>
 
         <div className="mt-6 text-start">
-          <p className="text-[14px] text-gray-500 mb-4">
+          <p className="text-[14px] text-gray-500 mb-4 font-raleway">
             PlaceIT will process your personal information in accordance with its{' '}
             <a href="#" className="text-blue-600 underline">
               Privacy Policy

@@ -16,7 +16,7 @@ const services = [
       </>
     ),
     description:
-      "Our approach to software consultancy is focused on collaboration, transparency, and  delivering real value to your business. Here’s how we work.",
+      "Our method of approaching software consulting is based on openness, teamwork, and providing actual value for your company. We operate like this.",
   },
   {
     title: "Results-Driven Approach",
@@ -86,15 +86,15 @@ export default function DigitalChoose() {
         <h3
           className={`mb-2 ${
             index === 0
-              ? "md:text-start text-center md:text-[57px] text-[32px] mt-[-40px] font-extrabold"
-              : "md:text-start text-center md:text-[22px] text-[16px] font-semibold"
+              ? "md:text-start text-center md:text-[57px] text-[32px] mt-[-40px] font-extrabold font-raleway"
+              : "md:text-start text-center md:text-[22px] text-[16px] font-semibold font-raleway"
           }`}
         >
           {service.title}
         </h3>
 
         {/* Responsive description */}
-        <p className="md:text-[16px] text-[12px] md:text-start text-center">
+        <p className="md:text-[16px] text-[12px] md:text-start text-center font-raleway">
           {service.description}
         </p>
       </div>

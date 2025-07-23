@@ -5,41 +5,32 @@ import "aos/dist/aos.css";
 
 const faqs = [
   {
-    title: "What are the advantages of your service?",
+    title: "How do you leverage AI in web development?",
     content:
-      "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing...",
+      "We integrate AI tools like GitHub Copilot and Tabnine to speed up coding while maintaining high quality. Beyond development, we use AI‑powered chatbots, dynamic personalization, and smart search to enhance user experience and engagement.",
   },
   {
     title:
-      "Are there any fees or commissions in addition to the monthly subscription?",
+      "Will my website be fast and SEO‑optimized for Core Web Vitals?",
     content:
-      "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing...",
+      "Absolutely. We use techniques like lazy loading, tree‑shaking, and static-site generation (SSG, SSR, CSR) to enhance speed and performance. Plus, we monitor Core Web Vitals closely to ensure top search engine rankings.",
   },
   {
-    title: "You really don't charge per user? Why not?",
+    title: "Can you build a headless CMS solution?",
     content:
-      "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing...",
+      "Yes—we implement headless CMS architectures to decouple backend and frontend, offering flexibility, scalability, and seamless integration across platforms and devices.",
   },
   {
-    title: "What happens when I go over my monthly active limit?",
+    title: "Do you support low-code/no-code tools?",
     content:
-      "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing...",
+      "We do. We utilize low‑code and no‑code platforms for rapid prototyping and internal tools, but always back them up with custom code for complex, scalable, and secure solutions. This combines speed with robustness.",
   },
   {
-    title: "Can your service help me understand how to work with my product?",
+    title: "What modern technologies and frameworks do you use?",
     content:
-      "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing...",
+      "We work with the leading frameworks React, Vue, Angular and keep an eye on rising ones like Svelte. We’re experts in using WebAssembly for performance-critical tasks and embrace new approaches like “vibe coding” to accelerate prototyping.",
   },
-  {
-    title: "Which third-party application do you integrate with?",
-    content:
-      "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing...",
-  },
-  {
-    title: "I have another question!",
-    content:
-      "If you go over your organisations or user limit, a member of the team will reach out about bespoke pricing...",
-  },
+ 
 ];
 
 const Faq: React.FC = () => {
@@ -67,7 +58,7 @@ const Faq: React.FC = () => {
           {/* Title and Description */}
           <div className="flex-1 text-center md:text-left">
             <h1
-              className="md:text-[40px] text-[30px] font-extrabold text-slate-900 mb-4 font-Raleway"
+              className="md:text-[40px] text-[30px] font-extrabold text-slate-900 mb-4 font-raleway"
               data-aos="fade-up"
             >
               Frequently{" "}
@@ -82,10 +73,8 @@ const Faq: React.FC = () => {
                 Asked Questions
               </span>
             </h1>
-            <p className="text-slate-600 md:text-[16px] text-[12px]" data-aos="fade-up">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's <br /> standard
-              dummy text.
+            <p className="text-slate-600 md:text-[16px] text-[12px] font-raleway" data-aos="fade-up ">
+            Discover clear, concise answers to frequently asked questions to help you better understand our solutions and processes.
             </p>
           </div>
 
@@ -152,7 +141,7 @@ const Faq: React.FC = () => {
                       isOpen ? "max-h-[500px] opacity-100 pb-4" : "max-h-0 opacity-0"
                     }`}
                   >
-                    <p className="text-start">{faq.content}</p>
+                    <p className="text-start font-raleway">{faq.content}</p>
                   </div>
                 </div>
               </div>

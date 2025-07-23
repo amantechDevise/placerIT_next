@@ -18,24 +18,22 @@ const OurMission: React.FC = () => {
   return (
     <section
       className="bg-cover bg-no-repeat py-16 px-4 text-center"
-      style={{ backgroundImage: `url(/images/bg-h4-2 1.svg)` }}
+      style={{ backgroundImage: `url(/images/bg-h4-21.svg)` }}
     >
       <h2
-        className="text-[30px] md:text-[42px] font-extrabold mb-4"
+        className="text-[30px] md:text-[42px] font-extrabold mb-4 font-raleway"
         data-aos="fade-up"
       >
         Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">Mission</span>
       </h2>
 
       <p
-        className="max-w-3xl mx-auto text-gray-600 mb-12 text-[12px] md:text-[16px]"
+        className="max-w-3xl mx-auto text-gray-600 mb-12 text-[12px] md:text-[16px] font-raleway"
         data-aos="fade-up"
         data-aos-delay="100"
       >
-        Our mission is to help businesses harness the power of technology to
-        achieve their goals. We work closely with our clients to understand
-        their needs and provide tailored IT solutions that drive productivity,
-        improve operations, and create lasting value.
+     Our reason is to allow agencies to use technological know-how to get the place they want. Working with our clients, we become aware
+of commercial enterprise wants and provide custom-made IT options improving operations, expanding efficiency, and providing long-lasting value.
       </p>
 
       <div className="flex flex-col md:flex-row justify-center items-start">
@@ -55,12 +53,11 @@ const OurMission: React.FC = () => {
             alt="Custom Software Development"
             className="w-[100px] mt-10"
           />
-          <h3 className="text-[22px] font-bold mt-2">
+          <h3 className="text-[22px] font-bold mt-2 font-raleway">
             Custom Software Development
           </h3>
-          <p className="text-sm text-gray-600 mt-2">
-            Tailored software solutions designed to meet your unique business
-            requirements.
+          <p className="text-sm text-gray-600 mt-2 font-raleway">
+           customized tools meant to fit your particular company needs.
           </p>
         </div>
 
@@ -85,12 +82,11 @@ const OurMission: React.FC = () => {
               alt="Cloud Services"
               className="w-[100px] object-contain"
             />
-            <h3 className="text-[22px] font-bold mt-4 mb-2">
+            <h3 className="text-[22px] font-bold mt-4 mb-2 font-raleway">
               Cloud Services
             </h3>
-            <p className="text-sm">
-              Scalable cloud infrastructure, hosting, and management to ensure
-              your business operates seamlessly and securely.
+            <p className="text-sm font-raleway">
+              Scalable cloud service, hosting, and management to guarantee flawless and safe operation of your company.
             </p>
           </div>
         </div>
@@ -111,12 +107,11 @@ const OurMission: React.FC = () => {
             alt="Cybersecurity Solutions"
             className="w-[100px] mt-10"
           />
-          <h3 className="text-[22px] font-bold mt-2">
+          <h3 className="text-[22px] font-bold mt-2 font-raleway">
             Cybersecurity Solutions
           </h3>
-          <p className="text-sm text-gray-600 mt-2">
-            Protecting your digital assets with state-of-the-art security
-            technologies to safeguard against evolving cyber threats.
+          <p className="text-sm text-gray-600 mt-2 font-raleway">
+            Modern security technologies help you to protect your digital resources against changing cyber risks.
           </p>
         </div>
       </div>

@@ -81,8 +81,8 @@ const UI_UXServicesInclude: React.FC = () => {
               onClick={() => setSelected(idx)}
               className={`w-full text-left px-4 py-3 rounded-md font-semibold transition duration-300 ${
                 selected === idx
-                  ? "text-white text-[#6D70F5] "
-                  : "hover:text-white"
+                  ? "text-white text-[#6D70F5] font-raleway "
+                  : "hover:text-white font-raleway"
               }`}
             >
               {idx + 1}. {service.title}
@@ -102,7 +102,7 @@ const UI_UXServicesInclude: React.FC = () => {
               {services[selected].title}
             </h3>
           </div>
-          <p className="text-gray-700 text-md md:text-lg leading-relaxed">
+          <p className="text-gray-700 text-md md:text-lg leading-relaxed font-raleway">
             {services[selected].description}
           </p>
         </div>

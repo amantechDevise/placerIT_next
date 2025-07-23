@@ -44,11 +44,7 @@ const TechnologySolutions = () => {
             blockchain journey.
           </p>
           <p className="text-gray-700 font-regular font-raleway md:text-[16px] text-[12px]">
-            Blockchain is revolutionizing industries by offering solutions that
-            improve transparency, security, efficiency, and traceability. As a
-            trusted blockchain development partner, we provide customized
-            solutions that empower your business to leverage the full potential
-            of this disruptive technology.
+           Blockchain is transforming sectors by providing solutions enhancing traceability, security, efficiency, and openness. Being reliable blockchain development partners, we offer tailored solutions that enable your company to fully use this innovative technology.
           </p>
         </div>
       </div>

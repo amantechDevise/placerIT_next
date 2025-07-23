@@ -34,20 +34,10 @@ const ConsultancyServices = () => {
             Technology Solutions
           </h2>
           <p className="text-gray-700 mb-6 font-regular font-raleway text-[12px] md:text-[16px]">
-            At <span className="font-semibold">PlaceIT</span>, we specialize in
-            harnessing the power of Blockchain technology to create innovative,
-            secure, and transparent solutions for businesses across industries.
-            Whether you're looking to integrate blockchain into your existing
-            systems or build entirely new decentralized applications, our team
-            of experts is here to guide you through every stage of your
-            blockchain journey.
+            At <span className="font-semibold">PlaceIT</span>, we specialize in providing expert software consultancy services that help businesses solve complex problems, streamline operations, and drive digital transformation. Our team of experienced consultants collaborates with you to design, implement, and optimize custom software solutions tailored to your specific business needs.
           </p>
           <p className="text-gray-700 font-regular font-raleway text-[12px] md:text-[16px]">
-            Blockchain is revolutionizing industries by offering solutions that
-            improve transparency, security, efficiency, and traceability. As a
-            trusted blockchain development partner, we provide customized
-            solutions that empower your business to leverage the full potential
-            of this disruptive technology.
+          Whether you’re a startup or an established enterprise, we provide strategic guidance to help you make the most of your technology investments.
           </p>
         </div>
       </div>

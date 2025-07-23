@@ -20,7 +20,8 @@ const BlockchainServices = () => {
   Our <span className="bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] bg-clip-text text-transparent">Blockchain Services</span>
 </h2>
                 <p className="text-gray-600 max-w-2xl mx-auto mb-12 md:text-[16px] text-[12px]">
-                    We offer a wide range of blockchain development and consultancy services tailored to your unique needs. Whether you're looking to build decentralized applications, implement smart contracts, or integrate blockchain into your existing systems, we have the expertise to help.
+                    We provide a large spectrum of blockchain development and consulting services catered to your particular requirements. We
+have the knowledge to help you create decentralized apps, apply smart contracts, or include blockchain into your current systems.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl mx-auto " data-aos="zoom-in-down">

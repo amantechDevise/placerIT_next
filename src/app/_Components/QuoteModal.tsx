@@ -88,15 +88,15 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
 
         {/* Right Side - Form */}
         <div className="flex-1">
-          <h2 className="text-3xl font-bold mb-6">Request a Quote</h2>
-          <p className="mb-8 text-gray-700">
+          <h2 className="text-3xl font-bold mb-6 font-raleway">Request a Quote</h2>
+          <p className="mb-8 text-gray-700 font-raleway">
             Feel the quality by using this full featured quoting tool!
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Name */}
             <div>
-              <label className="block text-gray-700 text-start font-semibold mb-1" htmlFor="name">
+              <label className="block text-gray-700 text-start font-semibold mb-1 font-raleway" htmlFor="name">
                 Name
               </label>
               <input
@@ -111,7 +111,7 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
 
             {/* Email */}
             <div>
-              <label className="block text-gray-700 font-semibold mb-1 text-start" htmlFor="email">
+              <label className="block text-gray-700 font-semibold mb-1 text-start font-raleway" htmlFor="email">
                 Email Address
               </label>
               <input
@@ -126,14 +126,14 @@ const QuoteModal: React.FC<QuoteModalProps> = ({ isOpen, onClose }) => {
 
             {/* Service */}
             <div>
-              <label className="block text-gray-700 font-semibold mb-1 text-start" htmlFor="service">
+              <label className="block text-gray-700 font-semibold mb-1 text-start font-raleway" htmlFor="service">
                 Service Required
               </label>
               <select
                 id="service"
                 value={service}
                 onChange={(e) => setService(Number(e.target.value))}
-                className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full border border-gray-300 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-400 font-raleway"
               >
                 <option value="" disabled>
                   Select

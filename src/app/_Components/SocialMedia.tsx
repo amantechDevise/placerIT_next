@@ -36,7 +36,8 @@ const SocialMedia: React.FC = () => {
         </h2>
 
         <p className="text-gray-600 md:text-[16px] text-[12px] font-raleway max-w-5xl mx-auto">
-          Build a strong social presence that boosts engagement and drives traffic. We craft strategies tailored to your brand’s voice, helping you foster meaningful connections with your audience. Our social media services include:
+         Create a great social presence to increase involvement and generate traffic. We create plans fit for the voice of your brand, so
+enabling you to build close relationships with your audience. Our social media offerings consist:
         </p>
       </div>
 

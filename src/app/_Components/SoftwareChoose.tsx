@@ -53,8 +53,7 @@ const SoftwareChoose: React.FC = () => {
           </span>
         </h2>
         <p className="text-gray-600 text-[12px] md:text-[16px] font-raleway ">
-          In today’s fast-paced, technology-driven world, businesses need to stay ahead of
-          the curve to remain competitive. Our software consultancy services can help you.
+        In today’s fast-paced, technology-driven world, businesses need to stay ahead of the curve to remain competitive. Our software consultancy services can help you.
         </p>
       </div>
 
@@ -84,7 +83,7 @@ const SoftwareChoose: React.FC = () => {
                 <h4 className="text-gray-800 font-bold text-lg font-raleway text-start md:text-[26px] text-[16px] ">
                   {item.title}
                 </h4>
-                <p className="text-gray-600 text-sm mt-1 md:text-[16px]text-[12px] text-start">{item.description}</p>
+                <p className="text-gray-600 text-sm mt-1 md:text-[16px]text-[12px] text-start font-raleway">{item.description}</p>
               </div>
             </div>
           ))}

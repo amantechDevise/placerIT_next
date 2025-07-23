@@ -23,14 +23,15 @@ const AboutUs = () => {
           <div className="absolute inset-0 bg-[#1B1140] opacity-[0.72]"></div>
 
           <div className="relative z-10 h-full flex flex-col justify-center items-center text-center">
-            <h1 className="text-3xl md:text-[73px]  font-semibold font-Raleway text-white leading-tight ">
+            <h1 className="text-3xl md:text-[73px]  font-semibold font-raleway text-white leading-tight ">
               About Us
             </h1>
 
 
 
-            <p className="text-gray-300 text-[12px] lg:text-[16px]  md:mb-44  mb-25 max-w-5xl leading-relaxed">
-              Welcome to PlacerIT, a leading provider of innovative IT solutions. Founded with the vision to empower businesses and organizations through technology, we specialize in delivering cutting-edge solutions that drive growth, efficiency, and transformation.
+            <p className="text-gray-300 text-[12px] lg:text-[16px]  md:mb-44  mb-25 max-w-5xl leading-relaxed font-raleway">
+            We extend a warm welcome to PlacerIT, a premier provider of revolutionary IT solutions. Originally founded with the goal of enabling companies and
+businesses via technology, our area of expertise is providing innovative ideas that propel development, effectiveness, and change.
             </p>
           </div>
            <div className="absolute bottom-0 left-0 w-full z-10">

@@ -41,10 +41,9 @@ const SeoServices: React.FC = () => {
         </h2>
 
         <p className="text-gray-600 text-[16px] font-raleway max-w-5xl mx-auto">
-          Rank higher on search engines like Google and drive organic traffic
-          to your website with our powerful SEO strategies. We ensure that your
-          business gets found by the right people at the right time. Our
-          approach includes:
+          
+With our strong SEO techniques, rank better on search engines like Google and bring natural traffic to your website.
+We make sure the correct individuals find your company at the right moment. Our method incorporates:
         </p>
       </div>
 

@@ -82,13 +82,13 @@ export default function Technologies() {
 
                             <h3
                                 className={`mb-4 md:mb-8 text-center md:text-start ${index === 0
-                                    ? "md:text-[50px] text-[32px]   font-extrabold"
-                                    : "md:text-[22px] text-[16px] font-semibold"
+                                    ? "md:text-[50px] text-[32px]   font-extrabold font-raleway"
+                                    : "md:text-[22px] text-[16px] font-semibold font-raleway"
                                     }`}
                             >
                                 {service.title}
                             </h3>
-                            <p className="md:text-[16px] text-[12px] text-center md:text-start">
+                            <p className="md:text-[16px] text-[12px] text-center md:text-start font-raleway">
                                 {service.description}
                             </p>
                         </div>

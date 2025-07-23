@@ -15,11 +15,9 @@ export default function BlockchainInfo() {
             What is <span className="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] font-raleway">Blockchain?</span>
           </h1>
           <p className="md:text-[16px] text-[12px] text-gray-600 font-raleway leading-relaxed">
-            Blockchain is a distributed digital ledger technology that ensures
-            secure, transparent, and tamper-proof record-keeping without the
-            need for a central authority. It enables peer-to-peer transactions
-            across a decentralized network, making it the ideal solution for
-            industries where trust, security, and accountability are paramount.
+            Without a central authority, blockchain is a distributed digital ledger system guaranteeing safe, open, and
+tamper-proof record-keeping. It is the perfect answer for businesses where responsibility, security, and trust rule since it
+lets peer-to-peer transactions across a distributed network.
           </p>
         </div>
 
@@ -39,8 +37,7 @@ export default function BlockchainInfo() {
                   Decentralization
                 </h3>
                 <p className="text-gray-500 md:text-[16px] text-[12px] font-raleway">
-                  Blockchain operates on a distributed network, eliminating the
-                  need for a central authority.
+                 Blockchain doesn't need a central authority because it works on a distributed network.
                 </p>
               </div>
             </div>
@@ -57,8 +54,7 @@ export default function BlockchainInfo() {
                   Security
                 </h3>
                 <p className="text-gray-500 md:text-[16px] text-[12px] font-raleway">
-                  Data is encrypted and stored in blocks, making it nearly
-                  impossible to alter or hack.
+                 Data is encrypted and stored in "blocks," making it virtually impossible to change or hack.
                 </p>
               </div>
             </div>
@@ -75,8 +71,7 @@ export default function BlockchainInfo() {
                   Immutability
                 </h3>
                 <p className="text-gray-500 md:text-[16px] text-[12px] font-raleway">
-                  Once data is added to the blockchain, it cannot be altered or
-                  deleted, ensuring the integrity of the records.
+                The same data is accessible to every blockchain network user, guaranteeing traceability and openness.
                 </p>
               </div>
             </div>
@@ -93,8 +88,7 @@ export default function BlockchainInfo() {
                   Transparency
                 </h3>
                 <p className="text-gray-500 md:text-[16px] text-[12px] font-raleway">
-                  All participants in the blockchain network can access the same
-                  data, ensuring transparency and traceability.
+                  Data entered into the blockchain cannot be changed or removed, guaranteeing the integrity of the records.
                 </p>
               </div>
             </div>

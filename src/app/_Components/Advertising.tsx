@@ -32,10 +32,8 @@ const Advertising: React.FC = () => {
           </span>
         </h2>
         <p className="text-gray-600 text-[12px] md:text-[16px] font-raleway max-w-3xl mx-auto">
-          Maximize your ROI with expertly managed PPC campaigns. Our team
-          leverages Google Ads, Bing Ads, and social media platforms to ensure
-          your ads reach the most relevant audience, when it matters most. Our
-          PPC services include:
+         With well run PPC advertising, maximize your return on investment. When it counts most, our team uses Google Ads, Bing
+Ads, and social media channels to guarantee your ads get the most relevant audience. Among our PPC services are:
         </p>
       </div>
 

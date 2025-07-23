@@ -20,13 +20,12 @@ export default function BlockchainTechnology() {
         <div className="max-w-4xl text-center md:text-left">
           <h1 className="text-[30px] md:text-[42px] font-extrabold mb-4 font-raleway">
             Get Started with
-           <span className="bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] bg-clip-text text-transparent"> Blockchain Technology</span>
+            <span className="bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] bg-clip-text text-transparent"> Blockchain Technology</span>
           </h1>
           <p className="text-gray-600 text-[12px] md:text-[16px] font-raleway">
-            Ready to take the leap into blockchain? Whether you want to build a new blockchain
-            application, integrate blockchain into your existing system, or explore decentralized
-            finance solutions, PlacerIT is here to help. Contact us today for a consultation and let
-            us show you how blockchain can transform your business!
+            Ready to take the leap into blockchain? Whether you want to build a new blockchain application, integrate blockchain into your
+            existing system, or explore decentralized finance solutions, PlacerIT is here to help. Contact us today for a consultation and let us
+            show you how blockchain can transform your business!
           </p>
         </div>
         <div className="mt-5 md:mt-0 w-40 h-40 relative  animate-[bounce_4s_infinite]">

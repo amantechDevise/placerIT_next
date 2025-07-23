@@ -72,20 +72,20 @@ function Homepage() {
 
   {/* ✅ Content wrapper with max-w-7xl */}
   <div className="relative z-10 h-full flex flex-col justify-center items-start text-left px-4  mx-auto max-w-7xl">
-    <h1 className="text-3xl md:text-[73px] font-semibold font-Raleway text-white leading-tight">
+    <h1 className="text-3xl md:text-[73px] font-semibold font-raleway text-white leading-tight">
       Accelerating
     </h1>
 
     <h2
       ref={textRef}
-      className="text-blue-500 text-3xl md:text-[73px] font-semibold font-Raleway h-[45px] md:h-[60px]"
+      className="text-blue-500 text-3xl md:text-[73px] font-semibold font-raleway h-[45px] md:h-[60px]"
     />
 
-    <h1 className="text-3xl md:text-[73px] text-white mt-4 font-semibold font-Raleway ">
+    <h1 className="text-3xl md:text-[73px] text-white mt-4 font-semibold font-raleway ">
       Innovation
     </h1>
 
-    <p className="text-gray-300 text-base md:text-lg lg:text-[20px] mt-6 max-w-2xl leading-relaxed">
+    <p className="text-gray-300 text-base md:text-lg lg:text-[20px] mt-6 max-w-2xl leading-relaxed font-raleway">
       Leveraging cutting-edge technologies and creative solutions to drive
       business success. By embracing new ideas and innovative strategies,
       businesses can enhance efficiency, improve operations, and stay

@@ -23,9 +23,8 @@ const OurValues = () => {
               <h3 className="text-[18px] font-bold font-raleway text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
                 Integrity
               </h3>
-              <p className="text-gray-700 text-[16px] mt-2">
-                We believe in doing business the right way, with transparency,
-                honesty, and accountability.
+              <p className="text-gray-700 text-[16px] mt-2 font-raleway">
+                We think that business should be done the correct way—openly, honestly, with responsibility.
               </p>
             </div>
 
@@ -34,9 +33,8 @@ const OurValues = () => {
               <h3 className="text-[18px] font-bold font-raleway text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
                 Collaboration
               </h3>
-              <p className="text-gray-700 text-[16px] mt-2">
-                We work hand-in-hand with our clients to understand their needs
-                and create customized solutions.
+              <p className="text-gray-700 text-[16px] mt-2 font-raleway">
+                Working together with our clients, we help them to identify their requirements and design unique solutions.
               </p>
             </div>
 
@@ -45,9 +43,8 @@ const OurValues = () => {
               <h3 className="text-[18px] font-bold font-raleway text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
                 Innovation
               </h3>
-              <p className="text-gray-700 text-[16px] mt-2">
-                We embrace change and continually seek innovative solutions to
-                meet the evolving demands of our clients.
+              <p className="text-gray-700 text-[16px] mt-2 font-raleway">
+               We welcome change and always hunt creative ideas to satisfy our clients' changing needs.
               </p>
             </div>
 
@@ -56,9 +53,8 @@ const OurValues = () => {
               <h3 className="text-[18px] font-bold font-raleway text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF]">
                 Excellence
               </h3>
-              <p className="text-gray-700 text-[16px] mt-2">
-                We are committed to delivering the highest standards of quality
-                in everything we do.
+              <p className="text-gray-700 text-[16px] mt-2 font-raleway">
+             Our first goal in anything we do is to provide the best possible quality.
               </p>
             </div>
           </div>

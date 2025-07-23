@@ -35,7 +35,7 @@ const services = [
     ),
     image: "/images/Group 596.jpg",
     message:
-      "We offer a comprehensive package of Software Quality Assurance (QA) and Testing services. We maximize quality and performance while reducing costs and risks.",
+      "We offer a comprehensive package of Software Quality Assurance(QA) and Testing services. We are maximising the quality and performance of software solutions for our clients while reducing the costs and risks.",
   },
   {
     title: (
@@ -47,7 +47,7 @@ const services = [
     ),
     image: "/images/Group 602.jpg",
     message:
-      "Opt for our result-oriented digital marketing strategies to give your business a strong online presence and visibility boost.",
+      "Is your business finding it difficult to flourish in the online world? Well, it is no surprise because if proper digital marketing is not done then your website will not be able to gain the desired notice from the audience. Hence, opt for our result oriented digital marketing strategies to give your business a boost.",
   },
   {
     title: (
@@ -59,7 +59,7 @@ const services = [
     ),
     image: "/images/Group 601.jpg",
     message:
-      "Capitalize on Blockchain to achieve transparency and automation in business processes. We tailor solutions to combat risks.",
+      "Capitalize on Blockchain technology to achieve complete transparency and automation in varied business processes. Our Blockchain solutions are tailored to help businesses combat operational and strategic risks.",
   },
   {
     title: (
@@ -71,7 +71,7 @@ const services = [
     ),
     image: "/images/Group 600.jpg",
     message:
-      "Build products with a design team that meets deadlines and delivers top UI/UX with clear processes and expert design thinking.",
+      "Want to build your product with a team that establishes a clear design process, meets deadlines, and delivers a spot-on end result? Turn to Techdevise’s UI and UX services. Our design team is a small design studio with best experts in the field that will help you build an engaging product easily and quickly.",
   },
 ];
 
@@ -96,7 +96,7 @@ const Services = () => {
 
       {/* Heading */}
       <div className="relative z-10 text-center mb-12">
-        <h2 className="text-3xl md:text-[40px] font-extrabold text-black font-Raleway">
+        <h2 className="text-3xl md:text-[40px] font-extrabold text-black font-raleway">
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] font-bold">Services</span> we offer
           for you
         </h2>
@@ -118,10 +118,10 @@ const Services = () => {
                     />
 
                     <div className="absolute inset-0 flex flex-col items-center justify-center px-4 py-4 [transform-style:preserve-3d]">
-                      <p className="text-white md:text-[28px] text-[20px] font-bold text-center font-Raleway drop-shadow-[0_2px_3px_rgba(0,0,0,0.5)] transition-transform duration-[1500ms] group-hover:[transform:rotateY(180deg) translateZ(40px)]">
+                      <p className="text-white md:text-[28px] text-[20px] font-bold text-center font-raleway drop-shadow-[0_2px_3px_rgba(0,0,0,0.5)] transition-transform duration-[1500ms] group-hover:[transform:rotateY(180deg) translateZ(40px)]">
                         {service.title}
                       </p>
-                      <p className="text-white  md:text-[16px] text-[12px] text-center font-Raleway leading-6 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] md:hidden mt-10 transition-transform duration-[2000ms] delay-100 group-hover:[transform:rotateY(180deg) translateZ(25px)]">
+                      <p className="text-white  md:text-[16px] text-[12px] text-center font-raleway leading-6 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] md:hidden mt-10 transition-transform duration-[2000ms] delay-100 group-hover:[transform:rotateY(180deg) translateZ(25px)]">
                         {service.message}
                       </p>
                     </div>
@@ -130,7 +130,7 @@ const Services = () => {
                   {/* Back Side */}
                   <div className="absolute w-full h-full rounded-xl overflow-hidden shadow-lg [backface-visibility:hidden] [transform:rotateY(180deg)] bg-gradient-to-br from-[#281165] to-[#1F5196] flex items-center justify-center">
                     <div className="p-6 flex items-center justify-center h-full [transform-style:preserve-3d]">
-                      <p className="text-white md:text-[16px] text-[12px] text-center font-Raleway leading-6 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] transition-transform duration-[2000ms] delay-200 group-hover:[transform:rotateY(360deg) translateZ(20px)]">
+                      <p className="text-white md:text-[16px] text-[12px] text-center font-raleway leading-6 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] transition-transform duration-[2000ms] delay-200 group-hover:[transform:rotateY(360deg) translateZ(20px)]">
                         {service.message}
                       </p>
                     </div>

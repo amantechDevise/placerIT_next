@@ -82,10 +82,10 @@ export default function DevelopmentChoose() {
     <img src={service.icon} alt={service.title} className="inline-block" />
   )}
 </div>
-      <h3 className="font-extrabold mb-2 text-center md:text-start md:text-[22px] text-[16px]">
+      <h3 className="font-extrabold mb-2 text-center md:text-start md:text-[22px] text-[16px] font-raleway">
         {service.title}
       </h3>
-      <p className="md:text-[16px] text-[12px] text-center md:text-start">
+      <p className="md:text-[16px] text-[12px] text-center md:text-start font-raleway">
         {service.description}
       </p>
     </div>

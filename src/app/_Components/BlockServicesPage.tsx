@@ -15,62 +15,62 @@ const services = [
         </>
       ),
     description:
-      'Blockchain has the potential to revolutionize various sectors. We provide blockchain solutions tailored to meet the specific needs of the following industries.',
+      'Blockchain could completely transform many different industries. We offer blockchain solutions specifically fit for the requirements of the following sectors',
     bgColor: 'bg-transparent text-white md:text-[53px] text-[32px] ',
   },
   {
     title: 'Finance & Banking',
     description:
-      'Secure financial transactions, automate processes, and offer decentralized finance solutions (DeFi) to reduce dependency on traditional intermediaries.',
+      'Offer decentralized finance solutions (DeFi) to make people less reliant on standard middle-men, make sure financial transactions are safe, and automate processes.',
     icon: '/images/Group 344.png',
     bgColor: 'bg-white text-black ',
   },
   {
     title: 'Healthcare',
     description:
-      'Enable secure sharing of medical records, improve supply chain transparency, and create tamper-proof systems for pharmaceutical traceability.',
+      'Enable tamper-proof solutions for pharmaceutical traceability, increase supply chain openness, and safe sharing of medical records.',
     icon: '/images/Group 345.png',
     bgColor: 'bg-white text-black',
   },
   {
     title: 'Supply Chain & Logistics',
     description:
-      'Enhance transparency, traceability, and efficiency in supply chains by tracking goods from source to delivery.',
+      "Track items from source to delivery to improve supply chains' efficiency, traceability, and openness.",
     icon: '/images/Group 346.png',
     bgColor: 'bg-white text-black',
   },
   {
     title: 'Real Estate',
     description:
-      'Streamline property transactions, reduce fraud, and automate contracts with blockchain-powered smart contracts.',
+      'With blockchain-powered smart contracts, simplify property transfers, lower fraud rates, and automatically generate contracts.',
     icon: '/images/Group 347.png',
     bgColor: 'bg-white text-black',
   },
   {
     title: 'Government & Public Sector',
     description:
-      'Implement secure, transparent systems for voting, identity management, and public records.',
+      'Set up easy-to-understand methods for voting, managing identities, and keeping public records.',
     icon: '/images/Group 348.png',
     bgColor: 'bg-white text-black',
   },
   {
     title: 'Retail & E-Commerce',
     description:
-      'Facilitate secure payments, improve customer loyalty programs, and track the origin of products.',
+      'Track product source, enhance customer loyalty programs, and enable safe payments.',
     icon: '/images/Group 349.png',
     bgColor: 'bg-white text-black',
   },
   {
     title: 'Insurance',
     description:
-      'Automate claims processing, enhance fraud detection, and streamline policy management using blockchain technology.',
+      'Blockchain technology can help to improve fraud detection, automate policy management, and handle claims.',
     icon: '/images/Group 350.png',
     bgColor: 'bg-white text-black',
   },
   {
     title: 'Energy',
     description:
-      'Manage decentralized energy grids, enhance renewable energy trading, and enable transparent energy consumption tracking.',
+      'Control distributed energy systems, improve trade of renewable energy, and enable open energy use monitoring.',
     icon: '/images/Group 351.png',
     bgColor: 'bg-white text-black',
   },
@@ -115,11 +115,11 @@ export default function BlockServicesPage() {
           )}
         </div>
         <h3
-          className={`font-extrabold mb-2 text-center md:text-start ${index === 0 ? 'md:text-[40px] text-[32px] mt-[-65px]' : 'md:text-[22px] text-[16px]'}`}
+          className={`font-extrabold font-raleway mb-2 text-center md:text-start ${index === 0 ? 'md:text-[40px] text-[32px] mt-[-65px]' : 'md:text-[22px] text-[16px]'}`}
         >
           {service.title}
         </h3>
-        <p className="text-center md:text-start md:text-[16px] text-[12px]">{service.description}</p>
+        <p className="text-center font-raleway md:text-start md:text-[16px] text-[12px]">{service.description}</p>
       </div>
     ))}
   </div>
