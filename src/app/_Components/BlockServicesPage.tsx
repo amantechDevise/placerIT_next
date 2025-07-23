@@ -89,7 +89,7 @@ export default function BlockServicesPage() {
   }, []);
   return (
     <div
-      className="min-h-screen text-white px-6 py-12"
+      className="min-h-full text-white px-6 py-12"
       style={{
         backgroundImage: `linear-gradient(to right, #5D3DAF, #5598F7), url(/images/blockchainbg.svg)`,
         backgroundBlendMode: 'overlay',

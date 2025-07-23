@@ -14,44 +14,45 @@ const Footer: FC = () => {
 
       <div className="w-full px-6 py-12 max-w-7xl mx-auto md:mt-8">
         {/* Newsletter */}
-        <div className="flex flex-col md:flex-row justify-between items-center border-b border-white/20 pb-8 mb-8">
-          <img
-            src="/images/logo.svg"
-            alt="TechDevise Logo"
-            className="h-15 mb-4 md:mb-0"
-          />
-   <div className="flex flex-col md:flex-row items-center w-full max-w-lg gap-6 md:gap-8 px-4 md:px-0">
-  {/* Label */}
-  <p className="text-white font-semibold whitespace-nowrap mb-3 md:mb-0 text-lg md:text-xl">
-    Newsletter!
-  </p>
+    <div className="flex flex-col md:flex-row justify-between items-center border-b border-white/20 pb-6 mb-8 px-4  w-full">
+  {/* Logo */}
+  <img
+    src="/images/logo.svg"
+    alt="TechDevise Logo"
+    className="h-12 md:h-16 mb-4 md:mb-0"
+  />
 
-  {/* Input + Button */}
-  <div className="flex flex-col sm:flex-row items-center w-full gap-4 sm:gap-6">
-    {/* Input with icon */}
-    <div className="flex items-center bg-white rounded-2xl px-6 py-4 w-full sm:flex-grow">
-      <img
-        src="/images/env.png"
-        alt="email icon"
-        className="mr-4 h-6 w-6 object-contain"
-      />
-      <input
-        type="email"
-        placeholder="Enter Email"
-        className="flex-grow outline-none text-black placeholder-black bg-white text-lg"
-      />
+  {/* Newsletter Section */}
+  <div className="flex flex-col md:flex-row items-center w-full max-w-3xl gap-6 md:gap-8">
+    {/* Label */}
+    <p className="text-white font-semibold whitespace-nowrap text-lg md:text-xl">
+      Newsletter!
+    </p>
+
+    {/* Input + Button */}
+    <div className="flex flex-col sm:flex-row items-center w-full gap-4 sm:gap-6">
+      {/* Input with Icon */}
+      <div className="flex items-center bg-white rounded-2xl px-6 py-4 w-full sm:flex-grow">
+        <img
+          src="/images/env.png"
+          alt="Email icon"
+          className="mr-4 h-6 w-6 object-contain"
+        />
+        <input
+          type="email"
+          placeholder="Enter Email"
+          className="flex-grow outline-none text-black placeholder-black bg-white text-lg"
+        />
+      </div>
+
+      {/* Submit Button */}
+      <button className="bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] text-white px-6 sm:px-8 py-4 border border-white rounded-2xl font-semibold text-lg hover:opacity-90 transition w-full sm:w-auto">
+        Submit
+      </button>
     </div>
-
-    {/* Submit Button */}
-    <button className="bg-gradient-to-r from-[#5598F7] to-[#5D3DAF] text-white px-8 py-4 border border-white rounded-2xl font-semibold text-lg hover:opacity-90 transition w-full sm:w-auto">
-      Submit
-    </button>
   </div>
 </div>
 
-
-
-        </div>
 
         {/* Main content */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">

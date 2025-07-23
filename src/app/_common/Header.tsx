@@ -84,12 +84,12 @@ const pathname = usePathname();
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "backdrop-blur-lg bg-black/60 shadow-md" : "bg-black"
           }`}
-        style={{ minHeight: "100px" }}
+        style={{ minHeight: "80px" }}
       >
-        <div className="max-w-7xl mx-auto px-3 md:px-8 flex items-center justify-between md:min-h-[70px] min-h-[50px]">
+        <div className="max-w-7xl mx-auto px-3 md:px-8 flex items-center justify-between md:min-h-[60px] min-h-[40px]">
           <Link href="/"   onClick={() => navigateWithLoader("/")} className="flex items-center md:mt-2 mt-5" >
 
-            <img src="/images/Group 95.svg" alt="Logo" className="md:w-20 md:h-20 w-15 h-15" />
+            <img src="/images/Group 95.svg" alt="Logo" className="md:w-15 md:h-15 w-12 h-12" />
           </Link>
 
           {/* Desktop Nav */}

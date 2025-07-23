@@ -68,7 +68,7 @@ const QAProcess = () => {
       </p>
 
       {/* Top 3 Cards */}
-      <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-10"  data-aos="fade-up"
+      <div className="grid md:grid-cols-3  gap-8 max-w-6xl mx-auto mb-10"  data-aos="fade-up"
      data-aos-anchor-placement="top-bottom"> 
            {steps.map((step, index) => (
           <div
