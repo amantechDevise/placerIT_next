@@ -1,16 +1,16 @@
 import Image from 'next/image';
 
 const logos = [
-  { src: '/images/Platforms1 1.svg', alt: 'Polygon Logo' },
-  { src: '/images/Platforms6 1.svg', alt: 'Telos Logo' },
-  { src: '/images/Platforms5 1.svg', alt: 'Celo Logo' },
-  { src: '/images/Platforms4 1.svg', alt: 'EOS Logo' },
-  { src: '/images/Platforms9 1.svg', alt: 'XinFin Logo' },
-  { src: '/images/Platforms8 1.svg', alt: 'Aurora Logo' },
-  { src: '/images/Platforms12 1.svg', alt: 'Ethereum Logo' },
-  { src: '/images/Platforms2 1.svg', alt: 'Solana Logo' },
-  { src: '/images/Platforms7 1.svg', alt: 'Avalanche Logo' },
-  { src: '/images/Platforms3 1.svg', alt: 'Cardano Logo' },
+  { src: '/images/Platforms1.svg', alt: 'Polygon Logo' },
+  { src: '/images/Platforms6.svg', alt: 'Telos Logo' },
+  { src: '/images/Platforms5.svg', alt: 'Celo Logo' },
+  { src: '/images/Platforms4.svg', alt: 'EOS Logo' },
+  { src: '/images/Platforms9.svg', alt: 'XinFin Logo' },
+  { src: '/images/Platforms8.svg', alt: 'Aurora Logo' },
+  { src: '/images/Platforms12.svg', alt: 'Ethereum Logo' },
+  { src: '/images/Platforms2.svg', alt: 'Solana Logo' },
+  { src: '/images/Platforms7.svg', alt: 'Avalanche Logo' },
+  { src: '/images/Platforms3.svg', alt: 'Cardano Logo' },
 ];
 
 export default function BlockchainTechnology() {

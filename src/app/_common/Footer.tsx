@@ -1,8 +1,11 @@
+'use client';
 import React, { FC } from "react";
 import Link from "next/link";
 
 
 const Footer: FC = () => {
+   const address = "4693 Winona Ct, Roseville, CA 95747";
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
   return (
     <footer
       className="w-full bg-cover bg-center bg-no-repeat pb-10 relative"
@@ -64,25 +67,25 @@ const Footer: FC = () => {
               clients and continued software development.
             </p>
             <div className="flex space-x-3 text-start">
-              <a href="#">
+              <a href="https://www.facebook.com/Placerit889">
                 <img
                   src="/images/facebook.svg"
                   alt="Facebook"
-                  className="h-6 w-6"
+                  className="h-8 w-8"
                 />
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/placer__it/">
                 <img
                   src="/images/insta.svg"
                   alt="Instagram"
-                  className="h-6 w-6"
+                  className="h-8 w-8"
                 />
               </a>
-              <a href="#">
+              <a href="https://x.com/PlacerIT">
                 <img
                   src="/images/tareade.svg"
                   alt="Twitter"
-                  className="h-6 w-6"
+                  className="h-8 w-8"
                 />
               </a>
             </div>
@@ -92,12 +95,13 @@ const Footer: FC = () => {
           <div>
             <h3 className="text-white text-lg font-semibold mb-3 md:text-[18px] text-[14px]  text-start">Services</h3>
             <ul className="space-y-2 text-white/80 md:text-[14px] text-[12px] text-start">
-              <li>Blockchain Development</li>
-              <li>Quality Assurance</li>
-              <li>Software Consultancy</li>
-              <li>Digital Marketing</li>
-              <li>UI/UX Design</li>
-              <li>Website Development</li>
+              <li>   <Link href="/Blockchain">Blockchain Development</Link></li>
+              <li>   <Link href="/QualityAssurance">Quality Assurance</Link></li>
+              <li>   <Link href="/SoftwareConsultancy">Software Consultancy</Link></li>
+              <li>   <Link href="/DigitalMarketing">Digital Marketing</Link></li>
+              <li>   <Link href="/UXDesign">UI/UX Design</Link></li>
+              <li>   <Link href="/WebsiteDevelopment">Website Development</Link></li>
+              <li>   <Link href="/IT_Staff">IT Staffing</Link></li>
             </ul>
           </div>
 
@@ -111,47 +115,67 @@ const Footer: FC = () => {
                 <Link href="/">Home</Link>
               </li>
               <li>
-                <Link href="/about">About Us</Link>
+                <Link href="/AboutUs">About Us</Link>
               </li>
               <li>
-                <Link href="/services">Our Services</Link>
+                <Link href="/Services">Our Services</Link>
               </li>
               <li>
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/ContactUs">Contact Us</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/blog">Blog</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
           {/* Contact */}
-          <div>
-            <h3 className="text-white text-start font-semibold mb-3 md:text-[18px] text-[14px]  text-start">Contact</h3>
-            <ul className="space-y-3 text-white/80  md:text-[14px] text-[12px]">
-              <li className="text-sm items-start text-start">
-                4693 Winona Ct, Roseville, CA
-                <br />
-                95747
-              </li>
-              <li className="flex items-start text-center">
-                <img
-                  src="/images/phone.png"
-                  alt="Phone"
-                  className="w-5 h-5 mr-2"
-                />
-                +1(916)7770077
-              </li>
-              <li className="flex items-start text-center">
-                <img
-                  src="/images/gamilLogo.png"
-                  alt="Email"
-                  className="w-5 h-5 mr-2"
-                />
-                contact@placerit.com
-              </li>
-            </ul>
-          </div>
+            <div>
+      <h3 className="text-white text-start font-semibold mb-3 md:text-[18px] text-[14px]">
+        Contact
+      </h3>
+      <ul className="space-y-3 text-white/80 md:text-[14px] text-[12px]">
+          <li className="text-sm items-start text-start">
+          <Link
+            href={googleMapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-white transition-colors"
+          >
+            4693 Winona Ct, Roseville, CA
+            <br />
+            95747
+          </Link>
+        </li>
+        <li className="flex items-start text-center">
+          <Link 
+            href="https://wa.me/19167770077" 
+            target="_blank"
+            className="flex items-center hover:text-white transition-colors"
+          >
+            <img
+              src="/images/phone.png"
+              alt="Phone"
+              className="w-5 h-5 mr-2"
+            />
+            +1(916)7770077
+          </Link>
+        </li>
+        <li className="flex items-start text-center">
+          <Link 
+            href="mailto:contact@placerit.com"
+            className="flex items-center hover:text-white transition-colors"
+          >
+            <img
+              src="/images/gamilLogo.png"
+              alt="Email"
+              className="w-5 h-5 mr-2"
+            />
+            contact@placerit.com
+          </Link>
+        </li>
+      </ul>
+    </div>
         </div>
       </div>
       <div className="relative pt-12">

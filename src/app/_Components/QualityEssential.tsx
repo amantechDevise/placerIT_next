@@ -2,7 +2,6 @@ const QualityEssential = () => {
     return (
         <div
             className="flex flex-wrap lg:flex-nowrap items-stretch gap-10 bg-cover bg-center"
-            style={{ backgroundImage: "url('/images/background.svg')" }} // 👈 Change the path as needed
         >
             <div className="w-full lg:w-[35%] md:h-[900px] h-[500px]">
                 <img
